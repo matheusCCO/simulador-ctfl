@@ -1,0 +1,644 @@
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Qual o principal objetivo do teste de software?",
+      "alternativas": {
+        "A": "Encontrar defeitos",
+        "B": "Provar que o software não tem erros",
+        "C": "Documentar o código",
+        "D": "Acelerar o desenvolvimento",
+        "E": "Reduzir custos de infraestrutura"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "02",
+      "questao": "Quais são os princípios do teste de software?",
+      "alternativas": {
+        "A": "Teste exaustivo é possível",
+        "B": "Teste mostra presença de defeitos",
+        "C": "Teste depende do contexto",
+        "D": "Defeitos se agrupam",
+        "E": "Teste antecipado economiza tempo"
+      },
+      "correta": "B,C,D,E",
+      "erradas": ["A"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "03",
+      "questao": "Qual a diferença entre teste e depuração?",
+      "alternativas": {
+        "A": "Teste identifica defeitos, depuração os corrige",
+        "B": "São a mesma coisa",
+        "C": "Depuração é feita antes do teste",
+        "D": "Teste é feito por desenvolvedores",
+        "E": "Depuração não é necessária"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "04",
+      "questao": "Quais atividades fazem parte do processo de teste?",
+      "alternativas": {
+        "A": "Planejamento",
+        "B": "Análise",
+        "C": "Implementação",
+        "D": "Execução",
+        "E": "Conclusão"
+      },
+      "correta": "A,B,C,D,E",
+      "erradas": [],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "05",
+      "questao": "O que é testware?",
+      "alternativas": {
+        "A": "Ferramentas de teste",
+        "B": "Produtos de trabalho dos testes",
+        "C": "Ambiente de teste",
+        "D": "Documentação de requisitos",
+        "E": "Código-fonte do sistema"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "06",
+      "questao": "Qual a vantagem da independência nos testes?",
+      "alternativas": {
+        "A": "Testadores encontram diferentes tipos de defeitos",
+        "B": "Reduz custos",
+        "C": "Elimina necessidade de documentação",
+        "D": "Permite testes sem planejamento",
+        "E": "Substitui a necessidade de habilidades técnicas"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "07",
+      "questao": "Quais são níveis de teste no ISTQB?",
+      "alternativas": {
+        "A": "Teste de componente",
+        "B": "Teste de integração",
+        "C": "Teste de sistema",
+        "D": "Teste de aceite",
+        "E": "Teste de performance"
+      },
+      "correta": "A,B,C,D",
+      "erradas": ["E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "08",
+      "questao": "O que é teste de regressão?",
+      "alternativas": {
+        "A": "Testar novas funcionalidades",
+        "B": "Verificar se alterações causaram defeitos em áreas existentes",
+        "C": "Testar apenas interfaces",
+        "D": "Executar todos os testes manualmente",
+        "E": "Testar apenas em produção"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "09",
+      "questao": "Quais produtos podem ser examinados por testes estáticos?",
+      "alternativas": {
+        "A": "Código-fonte",
+        "B": "Requisitos",
+        "C": "Casos de teste",
+        "D": "Documentação de projeto",
+        "E": "Ambiente de produção"
+      },
+      "correta": "A,B,C,D",
+      "erradas": ["E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "10",
+      "questao": "Qual técnica de particionamento de equivalência divide os dados em grupos com comportamento similar?",
+      "alternativas": {
+        "A": "Análise de valor limite",
+        "B": "Tabela de decisão",
+        "C": "Particionamento de equivalência",
+        "D": "Teste exploratório",
+        "E": "Teste de estado"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "11",
+      "questao": "O que é cobertura de instrução?",
+      "alternativas": {
+        "A": "Porcentagem de requisitos testados",
+        "B": "Porcentagem de instruções executadas",
+        "C": "Número de defeitos encontrados",
+        "D": "Tempo gasto em testes",
+        "E": "Número de casos de teste"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "12",
+      "questao": "Qual a vantagem do teste exploratório?",
+      "alternativas": {
+        "A": "Não requer planejamento",
+        "B": "Pode encontrar defeitos inesperados",
+        "C": "Substitui outros testes",
+        "D": "É totalmente automatizado",
+        "E": "Não precisa de relatórios"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "13",
+      "questao": "Quais elementos compõem uma história de usuário no formato 3C?",
+      "alternativas": {
+        "A": "Cartão",
+        "B": "Conversação",
+        "C": "Confirmação",
+        "D": "Código",
+        "E": "Cronograma"
+      },
+      "correta": "A,B,C",
+      "erradas": ["D", "E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "14",
+      "questao": "O que deve conter um plano de teste?",
+      "alternativas": {
+        "A": "Objetivos",
+        "B": "Estratégia",
+        "C": "Cronograma",
+        "D": "Critérios de entrada/saída",
+        "E": "Orçamento"
+      },
+      "correta": "A,B,C,D,E",
+      "erradas": [],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "15",
+      "questao": "Qual técnica de estimativa usa valores otimista, mais provável e pessimista?",
+      "alternativas": {
+        "A": "Wideband Delphi",
+        "B": "Planning Poker",
+        "C": "Estimativa de três pontos",
+        "D": "Extrapolação",
+        "E": "Análise de pontos de função"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "16",
+      "questao": "O que representa a pirâmide de testes?",
+      "alternativas": {
+        "A": "Níveis de teste e sua granularidade",
+        "B": "Custos de teste",
+        "C": "Número de testadores",
+        "D": "Tempo de execução",
+        "E": "Complexidade do código"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "17",
+      "questao": "Como se calcula o nível de risco?",
+      "alternativas": {
+        "A": "Probabilidade x Impacto",
+        "B": "Custo x Tempo",
+        "C": "Número de testadores x Horas",
+        "D": "Requisitos x Casos de teste",
+        "E": "Defeitos encontrados x Corrigidos"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "18",
+      "questao": "Quais informações devem constar em um relatório de defeito?",
+      "alternativas": {
+        "A": "Título",
+        "B": "Passos para reproduzir",
+        "C": "Resultado esperado",
+        "D": "Resultado atual",
+        "E": "Severidade"
+      },
+      "correta": "A,B,C,D,E",
+      "erradas": [],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "19",
+      "questao": "Qual o benefício da automação de testes?",
+      "alternativas": {
+        "A": "Reduz trabalho repetitivo",
+        "B": "Elimina a necessidade de testadores",
+        "C": "Substitui testes manuais",
+        "D": "Não requer manutenção",
+        "E": "É sempre mais barato"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "20",
+      "questao": "Quais são riscos da automação de testes?",
+      "alternativas": {
+        "A": "Expectativas irreais",
+        "B": "Dependência de fornecedor",
+        "C": "Custos de manutenção",
+        "D": "Falta de compatibilidade",
+        "E": "Necessidade de habilidades técnicas"
+      },
+      "correta": "A,B,C,D,E",
+      "erradas": [],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "21",
+      "questao": "Qual princípio afirma que 'testes exaustivos são impossíveis'?",
+      "alternativas": {
+        "A": "Princípio 1",
+        "B": "Princípio 2",
+        "C": "Princípio 3",
+        "D": "Princípio 4",
+        "E": "Princípio 5"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "22",
+      "questao": "O que é rastreabilidade no teste?",
+      "alternativas": {
+        "A": "Relacionar casos de teste a requisitos",
+        "B": "Rastrear defeitos",
+        "C": "Monitorar progresso",
+        "D": "Controlar versões",
+        "E": "Gerenciar configuração"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "23",
+      "questao": "Qual a diferença entre teste funcional e não funcional?",
+      "alternativas": {
+        "A": "Funcional testa 'o que', não funcional testa 'como'",
+        "B": "São a mesma coisa",
+        "C": "Funcional é automatizado, não funcional manual",
+        "D": "Não funcional é mais importante",
+        "E": "Funcional testa apenas interfaces"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "24",
+      "questao": "Quais são tipos de revisão?",
+      "alternativas": {
+        "A": "Informal",
+        "B": "Walkthrough",
+        "C": "Técnica",
+        "D": "Inspeção",
+        "E": "Dinâmica"
+      },
+      "correta": "A,B,C,D",
+      "erradas": ["E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "25",
+      "questao": "O que é análise de valor limite?",
+      "alternativas": {
+        "A": "Testar valores nos limites das partições",
+        "B": "Testar valores aleatórios",
+        "C": "Testar apenas valores válidos",
+        "D": "Testar uma vez cada partição",
+        "E": "Testar sem critérios"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "26",
+      "questao": "Qual técnica usa estados e transições para modelar testes?",
+      "alternativas": {
+        "A": "Tabela de decisão",
+        "B": "Teste de transição de estado",
+        "C": "Particionamento de equivalência",
+        "D": "Análise de valor limite",
+        "E": "Teste exploratório"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "27",
+      "questao": "O que é cobertura de ramificação?",
+      "alternativas": {
+        "A": "Executar todas as decisões do código",
+        "B": "Testar todos os requisitos",
+        "C": "Executar todo o código uma vez",
+        "D": "Testar todas as interfaces",
+        "E": "Validar todos os dados de entrada"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "28",
+      "questao": "Quais são características INVEST de boas histórias de usuário?",
+      "alternativas": {
+        "A": "Independente",
+        "B": "Negociável",
+        "C": "Valiosa",
+        "D": "Estimável",
+        "E": "Testável"
+      },
+      "correta": "A,B,C,D,E",
+      "erradas": [],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "29",
+      "questao": "O que é critério de aceite?",
+      "alternativas": {
+        "A": "Condições para aceitar uma história",
+        "B": "Requisitos não funcionais",
+        "C": "Documentação de teste",
+        "D": "Plano de projeto",
+        "E": "Relatório de defeitos"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "30",
+      "questao": "Qual abordagem deriva testes antes da implementação?",
+      "alternativas": {
+        "A": "TDD",
+        "B": "ATDD",
+        "C": "BDD",
+        "D": "Waterfall",
+        "E": "V-Model"
+      },
+      "correta": "A,B,C",
+      "erradas": ["D", "E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "31",
+      "questao": "O que são critérios de entrada em testes?",
+      "alternativas": {
+        "A": "Pré-condições para iniciar testes",
+        "B": "Resultados esperados",
+        "C": "Casos de teste",
+        "D": "Relatórios finais",
+        "E": "Métricas de qualidade"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "32",
+      "questao": "Como priorizar casos de teste?",
+      "alternativas": {
+        "A": "Baseado em risco",
+        "B": "Baseado em cobertura",
+        "C": "Baseado em requisitos",
+        "D": "Aleatoriamente",
+        "E": "Por ordem de criação"
+      },
+      "correta": "A,B,C",
+      "erradas": ["D", "E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "33",
+      "questao": "O que representam os quadrantes de teste?",
+      "alternativas": {
+        "A": "Níveis e tipos de teste",
+        "B": "Fases do projeto",
+        "C": "Equipes envolvidas",
+        "D": "Orçamento",
+        "E": "Tempo de execução"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "34",
+      "questao": "Qual a diferença entre risco de produto e de projeto?",
+      "alternativas": {
+        "A": "Produto: qualidade; Projeto: cronograma/orçamento",
+        "B": "São a mesma coisa",
+        "C": "Produto: técnico; Projeto: gerencial",
+        "D": "Apenas risco de produto importa",
+        "E": "Risco de projeto não afeta testes"
+      },
+      "correta": "A,C",
+      "erradas": ["B", "D", "E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "35",
+      "questao": "Quais métricas são usadas em testes?",
+      "alternativas": {
+        "A": "Progresso",
+        "B": "Cobertura",
+        "C": "Defeitos",
+        "D": "Qualidade",
+        "E": "Custo"
+      },
+      "correta": "A,B,C,D,E",
+      "erradas": [],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "36",
+      "questao": "O que deve conter um relatório de conclusão de teste?",
+      "alternativas": {
+        "A": "Resumo",
+        "B": "Avaliação de qualidade",
+        "C": "Desvios do plano",
+        "D": "Lições aprendidas",
+        "E": "Riscos não mitigados"
+      },
+      "correta": "A,B,C,D,E",
+      "erradas": [],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "37",
+      "questao": "Como o gerenciamento de configuração apoia testes?",
+      "alternativas": {
+        "A": "Controle de versões",
+        "B": "Rastreabilidade",
+        "C": "Reprodutibilidade",
+        "D": "Identificação única",
+        "E": "Integração contínua"
+      },
+      "correta": "A,B,C,D",
+      "erradas": ["E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "38",
+      "questao": "Qual a importância da comunicação em testes?",
+      "alternativas": {
+        "A": "Evita mal-entendidos",
+        "B": "Facilita colaboração",
+        "C": "Melhora relatórios",
+        "D": "Reduz necessidade de documentação",
+        "E": "Substitui testes formais"
+      },
+      "correta": "A,B,C",
+      "erradas": ["D", "E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "39",
+      "questao": "Quais ferramentas apoiam testes?",
+      "alternativas": {
+        "A": "Gerenciamento",
+        "B": "Teste estático",
+        "C": "Execução",
+        "D": "Não funcional",
+        "E": "Colaboração"
+      },
+      "correta": "A,B,C,D,E",
+      "erradas": [],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "40",
+      "questao": "Qual princípio diz que 'testes dependem do contexto'?",
+      "alternativas": {
+        "A": "Princípio 1",
+        "B": "Princípio 2",
+        "C": "Princípio 3",
+        "D": "Princípio 6",
+        "E": "Princípio 7"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    }
+  ]
+}
