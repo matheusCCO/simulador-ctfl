@@ -1,112 +1,126 @@
+
 # 📋 Simulador CTFL v4.0 - Exame Oficial ISTQB
 
 ## ✅ Questões Oficiais Incluídas
 
-**O Exame A contém as 40 questões oficiais extraídas diretamente do PDF oficial do ISTQB CTFL v4.0**, incluindo as respostas corretas conforme o gabarito oficial.
+Este projeto traz um simulado do exame **ISTQB CTFL v4.0** (Certified Tester Foundation Level) com as **40 questões oficiais do Exame A**, extraídas diretamente do PDF oficial, incluindo as respostas corretas conforme o gabarito.
 
 ## 🎯 Sobre o Projeto
 
-Simulador para prática da certificação **ISTQB CTFL v4.0** (Certified Tester Foundation Level) com questões oficiais do exame real e questões adicionais de exemplo para prática complementar.
+O objetivo é permitir que candidatos pratiquem para a certificação ISTQB CTFL v4.0, simulando a experiência do exame real.
 
 ## ✨ Características
 
-### 📚 Conteúdo Atual
-- **40 questões oficiais** do ISTQB CTFL v4.0 no Exame A
-- Questões extraídas diretamente do PDF oficial com gabarito correto
-- Questões classificadas pelos **6 capítulos do programa CTFL v4.0**:
-  1. Fundamentos de Teste
-  2. Teste durante o Ciclo de Vida de Desenvolvimento de Software
-  3. Teste Estático
-  4. Técnicas de Projeto de Teste
-  5. Gestão de Teste
-  6. Ferramentas de Apoio ao Teste
-
-### 🎯 Simulação Realística
-- **Tempo de 60 minutos** por simulado (padrão ISTQB)
-- **65% de aprovação** (26 de 40 questões)
-- Questões categorizadas por **nível de conhecimento K1-K4**
-- Interface similar aos exames oficiais
-
-### 📊 Funcionalidades Avançadas
-- ⏱️ **Timer regressivo** com alerta visual
-- 🔄 **Randomização** das questões e alternativas
-- 📈 **Relatório detalhado** com análise de performance
-- 💾 **Histórico persistente** de tentativas
-- 🎨 **Interface responsiva** para desktop e mobile
-- 🔍 **Revisão de respostas** ao final do simulado
+- 40 questões oficiais do Exame A (CTFL v4.0)
+- Questões categorizadas por nível de conhecimento (K1-K4)
+- Tempo de 60 minutos por simulado (padrão ISTQB)
+- Nota mínima para aprovação: 65% (26 de 40)
+- Interface responsiva e similar ao exame oficial
+- Timer regressivo
+- Relatório de desempenho ao final da tentativa
+- Histórico de tentativas salvo no navegador (LocalStorage)
 
 ## 🚀 Como Usar
 
-1. **Acesse o simulador** abrindo o arquivo `index.html` no navegador
-2. **Selecione um simulado** (A, B, C, D ou E)
-3. **Configure suas preferências** (timer, randomização)
-4. **Inicie o simulado** e responda às 40 questões
-5. **Analise seu desempenho** no relatório final
+1. Abra o arquivo `index.html` no seu navegador.
+2. Clique em "Iniciar Quiz" para começar o simulado oficial (Exame A).
+3. Responda às 40 questões dentro do tempo limite.
+4. Clique em "Finalizar Tentativa" para ver seu resultado e análise de desempenho.
+5. Consulte o histórico de tentativas na mesma página.
 
-## 📋 Estrutura dos Simulados
-
-### Simulado A - Fundamentos e Processo
-- Objetivos e definições do teste
-- Princípios fundamentais do ISTQB
-- Processo de teste e atividades
-- Papéis e responsabilidades
-
-### Simulado B - Técnicas de Teste
-- Técnicas de caixa-preta
-- Técnicas de caixa-branca
-- Técnicas baseadas em experiência
-- Cobertura de teste
-
-### Simulado C - Níveis de Teste
-- Teste de componente
-- Teste de integração
-- Teste de sistema
-- Teste de aceitação
-
-### Simulado D - Gestão e Ferramentas
-- Planejamento e controle de teste
-- Monitoramento e relatórios
-- Gestão de configuração
-- Ferramentas de apoio
-
-### Simulado E - Tópicos Avançados
-- Teste estático e revisões
-- Teste em metodologias ágeis
-- Teste não-funcional
-- Melhoria do processo de teste
-5. Clique em "Finalizar Tentativa" para ver o resultado
+> **Atenção:** No momento, apenas o Exame A (oficial) está disponível. Outros exames e funcionalidades avançadas citadas anteriormente ainda não estão implementados.
 
 ## Estrutura das Questões
 
-Cada exame contém 40 questões categorizadas pelos níveis de conhecimento:
+Cada questão possui:
 
-- **K1 (Lembrar)**: Conhecimento factual básico - fundo amarelo
-- **K2 (Entender)**: Compreensão de conceitos - fundo azul
-- **K3 (Aplicar)**: Aplicação do conhecimento - fundo vermelho
-- **K4 (Analisar)**: Análise e avaliação - fundo roxo
+- Enunciado
+- Alternativas (única ou múltipla escolha)
+- Nível de conhecimento (K1, K2, K3, K4)
+- Resposta correta
+
+**Níveis de conhecimento:**
+
+- K1 (Lembrar): fundo amarelo
+- K2 (Entender): fundo azul
+- K3 (Aplicar): fundo vermelho
+- K4 (Analisar): fundo roxo
 
 ## Critério de Aprovação
 
-- **Nota mínima**: 65%
-- **Tempo limite**: 60 minutos
-- **Questões**: 40 por exame específico, 40 no modo aleatório
+- Nota mínima: 65%
+- Tempo limite: 60 minutos
+- 40 questões por tentativa
 
 ## Tecnologias Utilizadas
 
 - HTML5
 - CSS3 (Tailwind CSS)
 - JavaScript vanilla
-- LocalStorage para persistência de dados
+- LocalStorage para persistência do histórico
 
-## Melhorias Implementadas
+## Como criar seu próprio arquivo de questões (JSON)
 
-- **200 questões completas**: 40 questões por exame cobrindo todo o syllabus CTFL v4.0
-- Sistema de persistência do histórico usando LocalStorage
-- Indicação visual de aprovação/reprovação
-- Detalhamento de desempenho por nível de conhecimento
-- Interface mais intuitiva e responsiva
-- Modo aleatório com 40 questões (8 de cada exame)
-- Questões abrangendo todos os tópicos: fundamentos, ciclo de vida, técnicas de teste, gerenciamento e ferramentas
+O simulador lê um arquivo JSON no formato abaixo. Você pode criar novos simulados seguindo este padrão e salvando como, por exemplo, `SimuladoB.json`.
+
+**Exemplo de estrutura mínima:**
+
+```json
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Enunciado da questão aqui.",
+      "alternativas": {
+        "A": "Texto da alternativa A",
+        "B": "Texto da alternativa B",
+        "C": "Texto da alternativa C",
+        "D": "Texto da alternativa D"
+      },
+      "correta": "A", // ou "A,B" para múltipla escolha
+      "tipo": "Radio button" // ou "Checkbox" para múltipla escolha
+      "imagem": "", // (opcional) caminho para imagem
+      "level": "K1" // K1, K2, K3 ou K4
+    }
+    // ...outras questões...
+  ]
+}
+```
+
+**Campos obrigatórios por questão:**
+- `id`: identificador único
+- `questao`: enunciado
+- `alternativas`: objeto com letras e textos das opções
+- `correta`: letra(s) da(s) resposta(s) correta(s) (ex: "A" ou "A,B")
+- `tipo`: "Radio button" (única escolha) ou "Checkbox" (múltipla escolha)
+- `level`: nível de conhecimento (K1, K2, K3, K4)
+
+**Campos opcionais:**
+- `imagem`: caminho para imagem ilustrativa
+
+Salve o arquivo na mesma pasta do `index.html` e ajuste o código para carregar o novo arquivo, se desejar.
+```
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Qual o principal objetivo do teste de software?",
+      "alternativas": {
+        "A": "Encontrar defeitos",
+        "B": "Provar que o software não tem erros",
+        "C": "Documentar o código",
+        "D": "Acelerar o desenvolvimento",
+        "E": "Reduzir custos de infraestrutura"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D", "E"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+}
+```
+---
 
 ## Autor
 
