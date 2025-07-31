@@ -1,0 +1,845 @@
+{
+    "questoes": 
+    [
+        {
+            "id": "01",
+            "questao": "Qual dos itens a seguir fornece a definição do termo caso de teste?",
+            "alternativas": 
+            {
+                "A": "Subconjunto do domínio do valor de uma variável dentro de um componente ou sistema no qual todos os valores devem ser tratados da mesma forma com base na especificação",
+                "B": "Um conjunto de condições prévias, insumos, ações, resultados esperados e pós condições, desenvolvido com base em condições de teste",
+                "C": "Produtos de trabalho produzidos durante o processo de teste para uso no planejamento, projeto, execução, avaliação e relatórios sobre testes",
+                "D": "Uma fonte para determinar um resultado esperado para comparar com o resultado real do sistema em teste"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K1"
+        },
+        {
+            "id": "02",
+            "questao": "Qual dos seguintes é um objetivo típico dos testes?",
+            "alternativas": 
+            {
+                "A": "Encontrar defeitos e falhas",
+                "B": "Para validar os trabalhos do plano do projeto, conforme necessário",
+                "C": "Garantia de testes completos",
+                "D": "Comparação dos resultados reais com os resultados esperados"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K1"
+        },
+        {
+            "id": "03",
+            "questao": "Qual dos seguintes é um exemplo de falha em um sistema de controle de velocidade “cruize control” de um carro?",
+            "alternativas": 
+            {
+                "A": "O desenvolvedor do sistema esqueceu de renomear variáveis após uma operação de cortar e colar",
+                "B": "Código desnecessário que soa um alarme quando a inversão de marcha foi incluída no sistema",
+                "C": "O sistema deixa de manter uma velocidade definida quando o volume do rádio é aumentado ou diminuído",
+                "D": "A especificação do projeto do sistema indica erroneamente as velocidades"
+            },
+            "correta": "C",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "04",
+            "questao": "Qual dos seguintes aspectos é mais um defeito do que uma causa raiz em um rastreador de fitness?",
+            "alternativas": 
+            {
+                "A": "Como o autor dos requisitos não estava familiarizado com o domínio do treinamento físico, ele, portanto, assumiu erroneamente que os usuários queriam batimentos cardíacos em batidas por hora",
+                "B": "O testador da interface do smartphone não tinha sido treinado em testes de transição de estado, então falhou um defeito grave",
+                "C": "Uma variável de configuração incorreta implementada para a função GPS poderia causar problemas de localização durante o horário de verão",
+                "D": "Como a projetista nunca havia trabalhado em dispositivos que pudessem ser usados, ela, como projetista da interface do usuário, entendeu mal os efeitos da luz solar refletida."
+            },
+            "correta": "C",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "05",
+            "questao": "Como resultado da análise de risco, mais testes estão sendo direcionados para aquelas áreas do sistema em teste onde os testes iniciais encontraram mais defeitos do que a média. Qual dos seguintes princípios de teste está sendo aplicado?",
+            "alternativas": 
+            {
+                "A": "Cuidado com o paradoxo do pesticida",
+                "B": "Os testes são dependentes do contexto",
+                "C": "A ausência de erros é uma falácia",
+                "D": "Defeitos agrupados"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "06",
+            "questao": "Dadas as seguintes atividades e tarefas de teste: (a) Projeto do teste (b) Implementação de testes (c) Execução de testes (d) Conclusão do teste (1) Entrada de pedidos de alteração para relatórios de defeitos em aberto (2) Identificação de dados de teste para apoiar os casos de teste (3) Priorização de procedimentos de teste e criação de dados de teste (4) Analisar as discrepâncias para determinar sua causa Qual dos seguintes MELHORES combina as atividades com as tarefas?",
+            "alternativas": 
+            {
+                "A": "A-2, B-3, C-4, D-1",
+                "B": "A-2, B-1, C-3, D-4",
+                "C": "A-3, B-2, C-4, D-1",
+                "D": "A-3, B-2, C-1, D-4"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "07",
+            "questao": "Qual dos seguintes MELHORES descreve como o valor é agregado ao manter a rastreabilidade entre a base de teste e os artefatos de teste?",
+            "alternativas": 
+            {
+                "A": "Os testes de manutenção podem ser totalmente automatizados com base em mudanças nas exigências iniciais",
+                "B": "É possível determinar se um novo caso de teste aumentou a cobertura das exigências",
+                "C": "Os gerentes de testes podem identificar quais testadores encontraram os defeitos de maior gravidade",
+                "D": "As áreas que podem ser impactadas por efeitos colaterais de uma mudança podem ser alvo de testes de confirmação"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "08",
+            "questao": "Qual das seguintes qualidades é MAIS provável que seja encontrada na mentalidade de um testador e não na de um desenvolvedor?",
+            "alternativas": 
+            {
+                "A": "A mentalidade de um testador tende a crescer e amadurecer à medida que o testador ganha experiência",
+                "B": "Capacidade de ver o que pode dar errado",
+                "C": "Boa comunicação com os membros da equipe",
+                "D": "Atenção aos detalhes"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "09",
+            "questao": "Dadas as seguintes declarações sobre as relações entre as atividades de desenvolvimento de software e as atividades de teste no ciclo de vida de desenvolvimento de software: (1) Cada atividade de desenvolvimento deve ter uma atividade de teste correspondente (2) A revisão deve começar assim que as versões finais dos documentos estiverem disponíveis. (3) O projeto e a implementação de testes devem começar durante a atividade de desenvolvimento correspondente (4) As atividades de teste devem começar nos estágios iniciais do ciclo de vida de desenvolvimento de software Quais dos seguintes CORRETAMENTE mostram quais são verdadeiros e quais são falsos?",
+            "alternativas": 
+            {
+                "A": "Verdadeiro - 1, 2; Falso - 3, 4",
+                "B": "Verdadeiro - 2, 3; Falso - 1, 4",
+                "C": "Verdadeiro - 1, 2, 4; Falso - 3",
+                "D": "Verdadeiro - 1, 4; Falso - 2, 3"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "10",
+            "questao": "Dado que os testes que estão sendo realizados têm os seguintes atributos: • Com base nas especificações da interface • Focado em encontrar falhas na comunicação • A abordagem de teste utiliza tanto tipos de teste funcionais quanto estruturais Qual dos seguintes níveis de teste é o MAIS provável de ser realizado?",
+            "alternativas": 
+            {
+                "A": "Teste de integração",
+                "B": "Teste de aceitação",
+                "C": "Teste do sistema",
+                "D": "Teste de componentes"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "11",
+            "questao": "Qual das seguintes declarações sobre tipos e níveis de teste é CORRETA?",
+            "alternativas": 
+            {
+                "A": "Os testes funcionais e não funcionais podem ser realizados nos níveis de teste do sistema e de aceitação, enquanto o teste caixa-branca é restrito aos testes de componentes e de integração",
+                "B": "Os testes funcionais podem ser realizados em qualquer nível de teste, enquanto o teste caixa-branca é restrito ao teste de componentes",
+                "C": "É possível realizar testes funcionais, não-funcionais e caixa-branca em qualquer nível de teste",
+                "D": "Os testes funcionais e não funcionais podem ser realizados em qualquer nível de teste, enquanto os testes caixa branca são restritos aos testes de componentes e integração"
+            },
+            "correta": "C",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K1"
+        },
+        {
+            "id": "12",
+            "questao": "Qual das seguintes declarações BEST compara os propósitos de teste de confirmação e teste de regressão?",
+            "alternativas": 
+            {
+                "A": "O objetivo do teste de regressão é garantir que todos os testes executados anteriormente ainda funcionem corretamente, enquanto o objetivo do teste de confirmação é garantir que quaisquer reparos feitos em uma parte do sistema não tenham afetado adversamente outras partes",
+                "B": "O objetivo do teste de confirmação é verificar se um defeito previamente encontrado foi corrigido, enquanto o objetivo do teste de regressão é garantir que nenhuma outra parte do sistema foi afetada adversamente pela correção",
+                "C": "O objetivo dos testes de regressão é assegurar que quaisquer mudanças em uma parte do sistema não tenham causado falha em outra parte, enquanto o objetivo dos testes de confirmação é verificar se todos os testes executados anteriormente ainda fornecem os mesmos resultados que antes",
+                "D": "O objetivo dos testes de confirmação é confirmar que as mudanças no sistema foram feitas com sucesso, enquanto o objetivo dos testes de regressão é executar testes que anteriormente não funcionavam para garantir que agora funcionem corretamente"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "13",
+            "questao": "Qual das seguintes declarações descreve CORRETAMENTE um papel da análise de impacto nos testes de manutenção?",
+            "alternativas": 
+            {
+                "A": "A análise de impacto é utilizada quando se decide se vale a pena uma correção para um sistema mantido",
+                "B": "A análise de impacto é utilizada para identificar como os dados devem ser migrados para o sistema mantido",
+                "C": "A análise de impacto é utilizada para decidir quais correções quentes são de maior valor para o usuário",
+                "D": "A análise de impacto é utilizada para determinar a eficácia de novos casos de teste de manutenção"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "14",
+            "questao": "Qual das seguintes afirmações reflete CORRETAMENTE o valor dos testes estáticos?",
+            "alternativas": 
+            {
+                "A": "Ao introduzir revisões, descobrimos que tanto a qualidade das especificações quanto o tempo necessário para o desenvolvimento e os testes aumentaram",
+                "B": "Usando testes estáticos significa que temos melhor controle e gerenciamento de defeitos mais barato devido à facilidade de detecção de defeitos mais tarde no ciclo de vida",
+                "C": "Agora que exigimos o uso de análise estática, as exigências não atendidas diminuíram e a comunicação entre testadores e desenvolvedores melhorou",
+                "D": "Desde que começamos a usar análise estática, encontramos defeitos de codificação que podem não ter sido encontrados realizando apenas testes dinâmicos"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "15",
+            "questao": "Qual das seguintes declarações sobre o uso de listas de verificação em uma revisão formal é CORRETA?",
+            "alternativas": 
+            {
+                "A": "Como parte do planejamento da revisão, os revisores criam as listas de verificação necessárias para a revisão",
+                "B": "Como parte da comunicação da questão, os revisores preenchem as listas de verificação previstas para a revisão",
+                "C": "Como parte da reunião de revisão, os revisores criam relatórios de defeitos com base nas listas de verificação previstas para a revisão",
+                "D": "Como parte do início da revisão, os revisores recebem as listas de verificação necessárias para a revisão"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "16",
+            "questao": "Qual das seguintes funções e responsabilidades se encaixa CORRETAMENTE em uma revisão formal?",
+            "alternativas": 
+            {
+                "A": "Gerente - Decide sobre a execução das revisões",
+                "B": "Líder de revisão - Assegura o funcionamento eficaz das reuniões de revisão",
+                "C": "Escriba - Corrige defeitos no produto de trabalho em revisão",
+                "D": "Moderador - Monitora a relação custo-benefício contínua"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K1"
+        },
+        {
+            "id": "17",
+            "questao": "As revisões que estão sendo utilizadas em sua organização têm os seguintes atributos • Há um papel de escriba • O objetivo é detectar defeitos potenciais • A reunião de revisão é liderada pelo autor • Os revisores encontram defeitos potenciais por revisão individual • É produzido um relatório de revisão Qual dos seguintes tipos de revisão é o MAIS provável que seja utilizado?",
+            "alternativas": 
+            {
+                "A": "Revisão Informal",
+                "B": "Caminhada",
+                "C": "Revisão Técnica",
+                "D": "Inspeção"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "18",
+            "questao": "Você foi convidado a participar de uma revisão baseada em checklist do seguinte trecho da especificação de requisitos para um sistema de biblioteca: Os bibliotecários podem: (1) Registrar novos mutuários (2) Devolver livros dos mutuários (3) Aceitar multas de mutuários (4) Acrescentar novos livros ao sistema com seu ISBN, autor e título (5) Remover livros do sistema (6) Obter respostas do sistema em 5 segundos Os tomadores de empréstimo podem: (7) Pedir emprestado um máximo de 3 livros de uma vez (8) Veja a história dos livros que eles emprestaram/reservaram (9) Ser multado por não devolver um livro dentro de 3 semanas (10) Obter respostas do sistema em 3 segundos (11) Emprestar um livro sem custo por um período máximo de 4 semanas (12) Livros de reserva (se estiverem em empréstimo) Todos os usuários (bibliotecários e mutuários): (13) Podem pesquisar livros por ISBN, autor ou título (14) Pode consultar o catálogo do sistema (15) O sistema deve responder às solicitações dos usuários em 3 segundos (16) A interface do usuário deve ser fácil de usar Foi-lhe atribuída a entrada da lista de verificação que exige a revisão da especificação em busca de inconsistências entre exigências individuais (ou seja, conflitos entre exigências). Qual dos seguintes CORRETAMENTE identifica inconsistências entre pares de requisitos?",
+            "alternativas": 
+            {
+                "A": "6-10,6-15, 7-12",
+                "B": "6-15,9-11",
+                "C": "6-10, 6-15, 9-11",
+                "D": "6-15,7-12"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K3"
+        },
+        {
+            "id": "19",
+            "questao": "Qual dos itens a seguir fornece a MELHOR descrição de testes exploratórios?",
+            "alternativas": 
+            {
+                "A": "Uma prática de teste na qual uma investigação aprofundada dos antecedentes do objeto de teste é utilizada para identificar potenciais pontos fracos que são examinados pelos casos de teste",
+                "B": "Uma abordagem aos testes em que os testadores projetam e executam dinamicamente testes baseados em seu conhecimento, exploração do item de teste e nos resultados dos testes anteriores",
+                "C": "Uma abordagem de projeto de teste na qual as atividades de teste são planejadas como sessões ininterruptas de análise e projeto de teste, frequentemente usadas em conjunto com testes baseados em checklist",
+                "D": "Testes baseados na experiência, conhecimento e intuição do testador"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K1"
+        },
+        {
+            "id": "20",
+            "questao": "Qual dos seguintes MELHORES combina as descrições com as diferentes categorias de técnicas de teste? (1) A cobertura é medida com base em uma estrutura selecionada do objeto de teste (2) O processamento dentro do objeto de teste é verificado (3) Os testes são baseados na probabilidade de defeitos e sua distribuição (4) Os desvios das exigências são verificados (5) As histórias de usuários são usadas como base de teste Usando notação para as 4 opções a seguir: Preto - técnicas de teste caixa-preta Branco - Técnicas de teste caixa-branca Experiência - Técnicas de teste baseadas na experiência",
+            "alternativas": 
+            {
+                "A": "Preto-4,5; Branco 1, 2; Experiência - 3",
+                "B": "Preto 3; Branco 1, 2; Experiência - 4,5",
+                "C": "Preto 4; Branco 1, 2; Experiência - 3,5",
+                "D": "Preto 1, 3, 5; Branco - 2; Experiência - 4"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "21",
+            "questao": "Um aplicativo de fitness mede o número de etapas que são percorridas a cada dia e fornece feedback para encorajar o usuário a manter-se em forma. O feedback para diferentes números de etapas deve ser: Até 1000: Preguiçoso! Acima de 1000, até 2000: Molenga! Acima de 2000, até 4000: Chegando lá! Acima de 4000, até 6000: Nada mal! Acima de 6000, até 6000: Muito bom! Qual dos seguintes conjuntos de entradas de teste alcançaria a MELHOR equivalência de cobertura de partição?",
+            "alternativas": 
+            {
+                "A": "0, 1000, 2000, 3000, 4000",
+                "B": "1000, 2001, 4000, 4001, 6000",
+                "C": "123, 2345, 3456, 4567, 5678",
+                "D": "666, 999, 2222, 5555, 6666"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K3"
+        },
+        {
+            "id": "22",
+            "questao": "Um gravador de radiação diário para plantas produz uma pontuação de luz solar baseada na combinação do número de horas que uma planta está exposta ao sol (abaixo de 3 horas, 3 a 6 horas ou acima de 6 horas) e a intensidade média da luz solar (muito baixa, baixa, média, alta). Dados os seguintes casos de teste: Horas Intensidade T1 1,5 Muito baixa Placar T2 10 7,0 Média T3 60 0,5 Muito baixa 10 Qual é o número mínimo de casos de teste adicionais que são necessários para garantir a cobertura total de TODAS as partições de equivalência de entrada válida?",
+            "alternativas": 
+            {
+                "A": "1",
+                "B": "2",
+                "C": "3",
+                "D": "4"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K3"
+        },
+        {
+            "id": "23",
+            "questao": "Um aplicativo doméstico inteligente mede a temperatura média na casa durante a semana anterior e fornece feedback aos ocupantes sobre sua compatibilidade ambiental com base nessa temperatura. O feedback para diferentes faixas de temperatura média (para a temperatura mais próxima) deve ser: Até $10^{\\circ}C$: Gelado de $11^{\\circ}C$ a $15^{\\circ}C$: Refrigerado $16^{\\circ}C$ a $19^{\\circ}C$: Agradável $20^{\\circ}C$ a $22^{\\circ}C$: Quente Acima de $22^{\\circ}C$: Muito quente Usando BVA (somente valores Min e Max), qual dos seguintes conjuntos de entradas de teste fornece o mais alto nível de cobertura de limite?",
+            "alternativas": 
+            {
+                "A": "$0^{\\circ}C$, $11^{\\circ}C$, $20^{\\circ}C$ $22^{\\circ}C$ $23^{\\circ}C$",
+                "B": "$9^{\\circ}C,$ 15°C, 19 $9^{\\circ}C,$ 23°C, $100^{\\circ}C$",
+                "C": "$10^{\\circ}C,$ $16^{\\circ}C$ 19°C, $22^{\\circ}C$ $23^{\\circ}C$",
+                "D": "$14^{\\circ}C$ $15^{\\circ}C$ $18^{\\circ}C$, $19^{\\circ}C$ $19^{\\circ}C$ $21^{\\circ}C$, $22^{\\circ}C$"
+            },
+            "correta": "C",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K3"
+        },
+        {
+            "id": "24",
+            "questao": "Os testes de tabela de decisão estão sendo realizados em um sistema de multa por excesso de velocidade. Dois casos de teste já foram gerados para as regras R1 e R4, que são mostradas abaixo: Regras Condições Velocidade > 50 R1 R2 Zona Escolar T F T Ações Multa de $250 F Recolhimento da Habilitação F F T Dados os seguintes casos de teste adicionais: Regras DT1 F Entrada DT2 Velocidade > 50 55 DT3 DT4 Zona Escolar 44 T 66 77 Resultado esperado Multa de $250 T F T F Recolhimento da Habilitação F F T T F T F Quais dos dois casos de teste adicionais alcançariam cobertura total da tabela de decisão completa (quando combinados com os casos de teste que já foram gerados para as regras R1 e R4)?",
+            "alternativas": 
+            {
+                "A": "DT1, DT2",
+                "B": "DT2, DT3",
+                "C": "DT2, DT4",
+                "D": "DT3, DT4"
+            },
+            "correta": "C",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K3"
+        },
+        {
+            "id": "25",
+            "questao": "Dado o seguinte modelo de estado de um software carregador de bateria: Qual das seguintes sequências de transições proporciona o mais alto nível de cobertura de transição para o modelo?",
+            "alternativas": 
+            {
+                "A": "OFF WAIT OFF WAIT → TRICKLE CHARGE LOW",
+                "B": "WAIT TRICKLE LOW CHARGE WAIT OFF CHARGE",
+                "C": "HIGH LOW CHARGE → TRICKLE → WAIT → TRICKLE WAIT TRICKLE",
+                "D": "WAIT TRICKLE CHARGE → HIGH → CHARGE → TRICKLE → WAIT OFF → WAIT"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "assets/img.jpg",
+            "level": "K3"
+        },
+        {
+            "id": "26",
+            "questao": "Qual das seguintes declarações BEST descreve como os casos de teste são derivados de um caso de uso?",
+            "alternativas": 
+            {
+                "A": "Os casos de teste são criados para exercer comportamentos básicos, excepcionais e de erro definidos pelo sistema em teste, em colaboração com os atores",
+                "B": "Os casos de teste são derivados da identificação dos componentes incluídos no caso de uso e da criação de testes de integração que exercem as interações desses componentes",
+                "C": "Os casos de teste são gerados através da análise das interações dos atores com o sistema para garantir que as interfaces do usuário sejam fáceis de usar",
+                "D": "Os casos de teste são derivados para exercer cada um dos pontos de decisão nos fluxos do processo comercial do caso de uso, para atingir 100% de cobertura de decisão desses fluxos"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "27",
+            "questao": "Qual das seguintes descrições de cobertura de declarações é CORRETA?",
+            "alternativas": 
+            {
+                "A": "A cobertura de declaração é uma medida do número de linhas de código fonte exercidas por testes",
+                "B": "A cobertura das declarações é uma medida da proporção de declarações executáveis no código fonte exercida por testes",
+                "C": "A cobertura de declaração é uma medida da porcentagem de linhas de código fonte (sem comentários) exercida por testes",
+                "D": "A cobertura das declarações é uma medida do número de declarações executáveis no código fonte exercido por testes"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "28",
+            "questao": "Qual das seguintes descrições de cobertura de decisão é CORRETA?",
+            "alternativas": 
+            {
+                "A": "A cobertura de decisão é uma medida da porcentagem de caminhos possíveis através do código fonte exercida por testes",
+                "B": "A cobertura de decisão é uma medida da porcentagem dos fluxos comerciais através do componente exercido por testes",
+                "C": "A cobertura de decisão é uma medida das declarações \"se\" no código que são exercidas tanto com os resultados verdadeiros como falsos",
+                "D": "A cobertura de decisão é uma medida da proporção de resultados de decisão no código fonte exercida por testes"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "29",
+            "questao": "Qual dos seguintes itens descreve MELHOR o conceito por trás da adivinhação de erros?",
+            "alternativas": 
+            {
+                "A": "Adivinhação de erro requer que você imagine que é o usuário do objeto de teste e adivinhe os erros que o usuário poderia cometer ao interagir com ele",
+                "B": "A adivinhação de erros envolve o uso de sua experiência pessoal de desenvolvimento e os erros que você cometeu como desenvolvedor",
+                "C": "A suposição de erros envolve o uso de seu conhecimento e experiência de defeitos encontrados no passado e erros típicos cometidos pelos desenvolvedores",
+                "D": "A adivinhação de erros exige que você duplique rapidamente a tarefa de desenvolvimento para identificar o tipo de erros que um desenvolvedor pode cometer"
+            },
+            "correta": "C",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "30",
+            "questao": "Qual dos seguintes explica MELHOR um benefício dos testes independentes?",
+            "alternativas": 
+            {
+                "A": "O uso de uma equipe de teste independente permite que a gerência do projeto atribua a responsabilidade pela qualidade da entrega final à equipe de teste, garantindo assim que todos estejam cientes de que a qualidade é responsabilidade geral da equipe de teste",
+                "B": "Se uma equipe de teste externa à organização pode ser proporcionada, então há benefícios distintos em termos de esta equipe externa não ser tão facilmente influenciada pelas preocupações de entrega do gerenciamento do projeto e pela necessidade de cumprir prazos de entrega rígidos",
+                "C": "Uma equipe de teste independente pode trabalhar totalmente separada dos desenvolvedores, não precisa se distrair com a mudança dos requisitos do projeto e pode restringir a comunicação com os desenvolvedores a relatórios de defeitos através do sistema de gerenciamento de defeitos",
+                "D": "Quando as especificações contêm ambiguidades e inconsistências, são feitas suposições sobre sua interpretação, e um testador independente pode ser útil para questionar essas suposições e a interpretação feita pelo desenvolvedor"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "31",
+            "questao": "Qual das seguintes tarefas é MUITO MAIS EFICIENTE a ser executada pelo gerente de testes?",
+            "alternativas": 
+            {
+                "A": "Escrever relatórios resumidos de testes com base nas informações coletadas durante os testes",
+                "B": "Testes de revisão desenvolvidos por outros",
+                "C": "Preparar e adquirir dados de teste",
+                "D": "Analisar, rever e avaliar os requisitos, especificações e modelos de testabilidade"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K1"
+        },
+        {
+            "id": "32",
+            "questao": "Dados os seguintes exemplos de critérios de entrada e saída: (1) O orçamento original de teste de $30.000 mais a contingência de $7.000 foi gasto (2) 96% dos testes planejados para o pacote de desenho foram executados e os testes restantes estão agora fora do escopo (3) O ambiente de teste de desempenho comercial foi projetado, montado e verificado (4) O status atual não é nenhum defeito crítico pendente e dois de alta prioridade (5) As especificações de projeto do piloto automático foram revisadas e retrabalhadas. (6) O componente de cálculo da taxa de imposto passou nos testes unitários. Qual dos seguintes MELHORES os classifica como critérios de entrada e saída:",
+            "alternativas": 
+            {
+                "A": "Critérios de entrada - 5, 6; Critérios de saída - 1, 2, 3, 4",
+                "B": "Critérios de entrada - 2, 3, 6; Critérios de saída - 1, 4, 5",
+                "C": "Critérios de entrada - 1, 3; Critérios de saída - 2, 4, 5, 6",
+                "D": "Critérios de entrada - 3, 5, 6; Critérios de saída - 1, 2, 4"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "33",
+            "questao": "Dadas as seguintes prioridades e dependências para estes casos de teste: Caso de Teste Prioridade Dependência técnica Dependência lógica TC1 Alta TC4 TC2 Baixa TC3 Alta TC4 TC4 Média TC5 Baixa TC2 TC6 Média TC5 Qual dos seguintes cronogramas de execução de testes BEST considera as prioridades e dependências técnicas e lógicas?",
+            "alternativas": 
+            {
+                "A": "TC1 - TC3 - TC4 - TC6 - TC2 - TC5",
+                "B": "TC4 - TC3 - TC1 - TC2 - TC5 - TC6",
+                "C": "TC4 - TC1 - TC3 - TC5 - TC6 - TC2",
+                "D": "TC4 - TC2 - TC5 - TC1 - TC3 - TC6"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K3"
+        },
+        {
+            "id": "34",
+            "questao": "Qual das seguintes afirmações sobre os métodos de estimativa de teste é CORRETA?",
+            "alternativas": 
+            {
+                "A": "Com a abordagem baseada em métricas, a estimativa é baseada em medidas de teste do projeto e, portanto, esta estimativa só está disponível após o início dos testes",
+                "B": "Com a abordagem baseada em especialistas, um grupo de usuários experientes identificados pelo cliente recomenda o orçamento de teste necessário",
+                "C": "Com a abordagem baseada em especialistas, os gerentes de testes responsáveis pelas diferentes atividades de teste preveem o esforço de teste esperado",
+                "D": "Com a abordagem baseada em métricas, uma média dos custos de teste registrados de vários projetos passados é usada como orçamento de teste"
+            },
+            "correta": "C",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "35",
+            "questao": "Qual dos seguintes define MELHOR o nível de risco?",
+            "alternativas": 
+            {
+                "A": "O nível de risco é calculado somando as probabilidades de todas as situações problemáticas e os danos financeiros que delas resultam",
+                "B": "O nível de risco é estimado pela multiplicação da probabilidade de uma ameaça ao sistema pela chance de que a ameaça ocorra e resulte em dano financeiro",
+                "C": "O nível de risco é determinado por uma combinação da probabilidade de um evento indesejável e o impacto esperado desse evento",
+                "D": "O nível de risco é a soma de todos os perigos potenciais de um sistema multiplicada pela soma de todas as perdas potenciais desse sistema"
+            },
+            "correta": "C",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K1"
+        },
+        {
+            "id": "36",
+            "questao": "Qual dos seguintes é o mais provável de ser um exemplo de risco de PRODUTO?",
+            "alternativas": 
+            {
+                "A": "As características de segurança esperadas podem não ser suportadas pela arquitetura do sistema",
+                "B": "Os desenvolvedores podem não ter tempo para corrigir todos os defeitos encontrados pela equipe de teste",
+                "C": "Os casos de teste podem não oferecer cobertura total dos requisitos especificados",
+                "D": "O ambiente de teste de desempenho pode não estar pronto antes que o sistema esteja pronto para entrega"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "37",
+            "questao": "Qual dos seguintes é o MENOS provável que seja um exemplo de análise de risco do produto CORRETAMENTE influenciando os testes?",
+            "alternativas": 
+            {
+                "A": "O impacto potencial das falhas de segurança foi identificado como sendo particularmente alto, portanto os testes de segurança foram priorizados antes de algumas outras atividades de teste",
+                "B": "Os testes constataram que a qualidade do módulo de rede é superior ao esperado, portanto não serão realizados testes adicionais nessa área",
+                "C": "Os usuários tiveram problemas com a interface de usuário do sistema anterior, de modo que testes de usabilidade adicionais estão planejados para o sistema de substituição",
+                "D": "O tempo necessário para carregar as páginas web é crucial para o sucesso do novo site, por isso foi empregado para este projeto um especialista em testes de desempenho"
+            },
+            "correta": "B",
+            "erradas": 
+            [
+                "A",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "38",
+            "questao": "Você está realizando testes de sistema de reserva de trens. Com base nos casos de teste realizados, você notou que o sistema ocasionalmente relata que não há trens disponíveis, embora este deva ser realmente o caso. Você forneceu aos desenvolvedores um resumo do defeito e a versão do sistema testado. Eles reconhecem a urgência do defeito e agora estão esperando que você forneça mais detalhes. Além das informações já fornecidas, são fornecidas as seguintes informações adicionais: (1) Grau de impacto (gravidade) do defeito (2) Identificação do item de teste (3) Detalhes do ambiente de teste (4) Urgência/prioridade para consertar (5) Resultados reais (6) Referência à especificação do caso de teste Qual destas informações é a mais útil para incluir no relatório de defeitos?",
+            "alternativas": 
+            {
+                "A": "1, 2, 6",
+                "B": "1, 4, 5, 6",
+                "C": "2, 3, 4, 5",
+                "D": "3, 5, 6"
+            },
+            "correta": "D",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "C"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K3"
+        },
+        {
+            "id": "39",
+            "questao": "Dadas as seguintes atividades de teste e ferramentas de teste: (1) Medição de desempenho e análise dinâmica (2) Execução de testes e registro (3) Gerenciamento de testes e tesouras (4) Projeto do teste (a) Ferramentas de cobertura de necessidades (b) Ferramentas de análise dinâmica (c) Ferramentas de preparação de dados de teste (d) Ferramentas de gerenciamento de defeitos Qual dos seguintes MELHORES combina com as atividades e ferramentas?",
+            "alternativas": 
+            {
+                "A": "1 - B, 2 - C, 3 - D, 4 - A",
+                "B": "1 - B, 2 - A, 3 - C, 4 - D",
+                "C": "1 - B, 2 - A, 3 - D, 4 - C",
+                "D": "1 - A, 2 - B, 3 - D, 4 - C"
+            },
+            "correta": "C",
+            "erradas": 
+            [
+                "A",
+                "B",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K2"
+        },
+        {
+            "id": "40",
+            "questao": "Qual dos seguintes é o mais provável de ser usado como motivo para usar um projeto piloto para introduzir uma ferramenta em uma organização?",
+            "alternativas": 
+            {
+                "A": "A necessidade de avaliar como a ferramenta se ajusta aos processos e práticas existentes e determinar o que precisaria mudar",
+                "B": "A necessidade de avaliar as habilidades de automação de testes e as necessidades de treinamento, mentoria e coaching dos testadores que irão utilizar a ferramenta",
+                "C": "A necessidade de avaliar se a ferramenta fornece a funcionalidade necessária e não duplica as ferramentas de teste existentes",
+                "D": "A necessidade de avaliar o fornecedor de ferramentas em termos de treinamento e outros tipos de apoio que eles fornecem"
+            },
+            "correta": "A",
+            "erradas": 
+            [
+                "B",
+                "C",
+                "D"
+            ],
+            "tipo": "Radio button",
+            "imagem": "",
+            "level": "K1"
+        }
+    ]
+}

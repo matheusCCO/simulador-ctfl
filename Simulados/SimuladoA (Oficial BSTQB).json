@@ -193,7 +193,7 @@
       "correta": "A",
       "erradas": ["B", "C", "D"],
       "tipo": "Radio button",
-      "imagens": ["./assets/img/Q13.png"],
+      "imagens": ["./assets/img/SimuladoA/Q13.png"],
       "level": "K2"
     },
     {
@@ -208,7 +208,7 @@
       "correta": "B",
       "erradas": ["A", "C", "D"],
       "tipo": "Radio button",
-      "imagens": ["./assets/img/Q14.png"],
+      "imagens": ["./assets/img/SimuladoA/Q14.png"],
       "level": "K2"
     },
     {
@@ -313,7 +313,7 @@
       "correta": "A",
       "erradas": ["B", "C", "D"],
       "tipo": "Radio button",
-      "imagens": ["./assets/img/Q21a.png", "./assets/img/Q21b.png"],
+      "imagens": ["./assets/img/SimuladoA/Q21a.png", "./assets/img/SimuladoA/Q21b.png"],
       "level": "K3"
     },
     {
@@ -328,7 +328,7 @@
       "correta": "D",
       "erradas": ["A", "B", "C"],
       "tipo": "Radio button",
-      "imagens": ["./assets/img/Q22.png"],
+      "imagens": ["./assets/img/SimuladoA/Q22.png"],
       "level": "K3"
     },
     {
@@ -343,7 +343,7 @@
       "correta": "D",
       "erradas": ["A", "B", "C"],
       "tipo": "Radio button",
-      "imagens": ["./assets/img/Q23.png"],
+      "imagens": ["./assets/img/SimuladoA/Q23.png"],
       "level": "K3"
     },
     {
@@ -494,7 +494,7 @@
       "correta": "A",
       "erradas": ["B", "C", "D"],
       "tipo": "Radio button",
-      "imagens": ["./assets/img/Q33.png"],
+      "imagens": ["./assets/img/SimuladoA/Q33.png"],
       "level": "K3"
     },
     {
@@ -509,7 +509,7 @@
       "correta": "A",
       "erradas": ["B", "C", "D"],
       "tipo": "Radio button",
-      "imagens": ["./assets/img/Q34.png"],
+      "imagens": ["./assets/img/SimuladoA/Q34.png"],
       "level": "K2"
     },
     {

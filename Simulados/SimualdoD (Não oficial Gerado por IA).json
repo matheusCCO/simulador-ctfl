@@ -1,0 +1,606 @@
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Qual das seguintes afirmações melhor define um objetivo primário dos testes de software?",
+      "alternativas": {
+        "A": "Garantir que o software não contenha nenhum defeito antes do lançamento",
+        "B": "Provar que o software atende a todos os requisitos funcionais",
+        "C": "Fornecer informações sobre a qualidade do software para auxiliar na tomada de decisão",
+        "D": "Eliminar completamente a necessidade de manutenção pós-lançamento"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "02",
+      "questao": "Qual das seguintes práticas contribui mais para o sucesso do processo de teste em metodologias ágeis?",
+      "alternativas": {
+        "A": "Testadores trabalhando isoladamente para manter a objetividade",
+        "B": "Realização de testes apenas no final de cada sprint",
+        "C": "Integração contínua entre testadores e desenvolvedores durante todo o ciclo",
+        "D": "Uso exclusivo de testes automatizados para maior eficiência"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "03",
+      "questao": "Em um projeto com testes de regressão automatizados que sempre passam sem encontrar novos defeitos, qual princípio de teste justifica a preocupação do testador?",
+      "alternativas": {
+        "A": "Testes exaustivos são impossíveis",
+        "B": "Pesticide Paradox",
+        "C": "Defeitos se agrupam",
+        "D": "Ausência de erros é uma falácia"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "04",
+      "questao": "Durante o desenvolvimento de um módulo de autenticação, qual atividade abaixo faz parte da fase de análise de testes?",
+      "alternativas": {
+        "A": "Executar testes de carga na API de autenticação",
+        "B": "Identificar que devem ser testados cenários de autenticação com tokens expirados",
+        "C": "Implementar um teste automatizado para verificar o login com credenciais inválidas",
+        "D": "Relatar um defeito quando o sistema não bloqueia após múltiplas tentativas falhas"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "05",
+      "questao": "Quais dos seguintes fatores têm maior impacto no processo de teste de um sistema de saúde crítico?",
+      "alternativas": {
+        "A": "i. Regulamentações médicas; iii. Riscos à vida do paciente; iv. Requisitos de auditoria",
+        "B": "ii. Número de testadores na equipe; iii. Complexidade do domínio; v. Cor preferida da interface",
+        "C": "i. Framework de teste utilizado; ii. Experiência prévia da equipe; v. Orçamento disponível",
+        "D": "iii. Prazos de entrega; iv. Número de certificações da equipe; v. Tecnologias utilizadas"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "06",
+      "questao": "Quais DUAS das seguintes atividades são responsabilidades típicas de um testador?",
+      "alternativas": {
+        "A": "Priorizar requisitos com stakeholders",
+        "B": "Projetar casos de teste baseados em requisitos",
+        "C": "Implementar funcionalidades de negócio",
+        "D": "Documentar resultados de testes",
+        "E": "Definir arquitetura do sistema"
+      },
+      "correta": ["B", "D"],
+      "erradas": ["A", "C", "E"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "07",
+      "questao": "Quais das seguintes habilidades são mais críticas para um testador em um ambiente ágil?",
+      "alternativas": {
+        "A": "Capacidade de trabalhar isoladamente",
+        "B": "Habilidade de comunicação e colaboração",
+        "C": "Conhecimento profundo de linguagens de programação",
+        "D": "Experiência em gerenciamento de projetos"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "08",
+      "questao": "Como a abordagem de equipe inteira se manifesta na relação entre testadores e Product Owners?",
+      "alternativas": {
+        "A": "Product Owners definem os critérios de aceite sem consultar os testadores",
+        "B": "Testadores ajudam a refinar critérios de aceite durante o refinamento do backlog",
+        "C": "Testadores trabalham separadamente para garantir imparcialidade",
+        "D": "Product Owners revisam todos os casos de teste antes da execução"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "09",
+      "questao": "Em qual modelo de ciclo de vida é mais comum ter fases de teste distintas para cada nível de teste?",
+      "alternativas": {
+        "A": "Modelo em V",
+        "B": "Scrum",
+        "C": "Kanban",
+        "D": "Extreme Programming"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "10",
+      "questao": "Qual afirmação melhor descreve o Behavior-Driven Development (BDD)?",
+      "alternativas": {
+        "A": "Foca em casos de teste técnicos escritos pelos desenvolvedores",
+        "B": "Utiliza linguagem natural para descrever comportamentos esperados",
+        "C": "Requer documentação detalhada antes de qualquer implementação",
+        "D": "É utilizado apenas para testes de unidade"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "11",
+      "questao": "Qual das seguintes NÃO é uma prática shift-left?",
+      "alternativas": {
+        "A": "Revisão estática de requisitos antes da implementação",
+        "B": "Testes de segurança no início do ciclo de desenvolvimento",
+        "C": "Testes exploratórios apenas na fase de aceitação",
+        "D": "Integração contínua com testes automatizados"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "12",
+      "questao": "Qual seria o argumento mais forte para implementar retrospectivas regulares?",
+      "alternativas": {
+        "A": "Permitem identificar e corrigir problemas no processo continuamente",
+        "B": "São exigidas pelo framework Scrum",
+        "C": "Fornecem métricas para avaliação de desempenho individual",
+        "D": "Geram documentação para auditorias futuras"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "13",
+      "questao": "Qual nível de teste é mais adequado para identificar cada tipo de problema?",
+      "alternativas": {
+        "A": "1C, 2B, 3A, 4D",
+        "B": "1D, 2C, 3B, 4A",
+        "C": "1B, 2A, 3D, 4C",
+        "D": "1A, 2D, 3C, 4B"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "14",
+      "questao": "Em um teste de regressão para um módulo de pagamento, quais testes seriam considerados de confirmação versus regressão?",
+      "alternativas": {
+        "A": "Testes que falharam na última execução são de confirmação, os que passaram são de regressão",
+        "B": "Testes para novas funcionalidades são de confirmação, os existentes são de regressão",
+        "C": "Testes manuais são de confirmação, automatizados são de regressão",
+        "D": "Testes de performance são de confirmação, funcionais são de regressão"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "15",
+      "questao": "Qual NÃO é uma vantagem dos testes estáticos?",
+      "alternativas": {
+        "A": "Reduzir o custo total de qualidade ao encontrar defeitos cedo",
+        "B": "Eliminar completamente a necessidade de testes dinâmicos",
+        "C": "Identificar ambiguidades em requisitos antes da implementação",
+        "D": "Melhorar a comunicação entre os membros da equipe"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "16",
+      "questao": "Qual é o principal benefício do feedback rápido em metodologias ágeis?",
+      "alternativas": {
+        "A": "Permitir correções rápidas enquanto o contexto ainda está fresco",
+        "B": "Reduzir a necessidade de documentação",
+        "C": "Eliminar a fase de teste formal",
+        "D": "Permitir que os testadores trabalhem de forma independente"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "17",
+      "questao": "Qual tipo de revisão é caracterizado por ser liderado pelo autor, com foco em melhorar a qualidade, e inclui preparação individual?",
+      "alternativas": {
+        "A": "Inspeção",
+        "B": "Walkthrough",
+        "C": "Revisão técnica",
+        "D": "Revisão informal"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "18",
+      "questao": "Qual fator NÃO contribui para revisões eficazes?",
+      "alternativas": {
+        "A": "Tempo adequado para preparação",
+        "B": "Foco em encontrar defeitos, não em criticar pessoas",
+        "C": "Participantes com perfis e habilidades diversas",
+        "D": "Pressão por resultados rápidos para cumprir prazos"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "19",
+      "questao": "Qual característica é típica de técnicas de teste baseadas em experiência?",
+      "alternativas": {
+        "A": "Uso de métricas de cobertura para medir completude",
+        "B": "Dependência do conhecimento e intuição do testador",
+        "C": "Baseadas exclusivamente em especificações formais",
+        "D": "Foco na estrutura interna do código"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "20",
+      "questao": "Para testar um sistema de reservas de hotel que considera: tipo de quarto (Standard, Luxo, Suíte) e temporada (Baixa, Alta), onde Suítes só estão disponíveis na Alta Temporada, qual o número mínimo de casos para particionamento por equivalência?",
+      "alternativas": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "21",
+      "questao": "Em um sistema que calcula descontos baseado em valor de compra: 0-100 (0%), 101-500 (5%), 501-1000 (10%), >1000 (15%), qual a cobertura BVA para testes nos valores 100, 101, 500, 501, 1000, 1001?",
+      "alternativas": {
+        "A": "75%",
+        "B": "100%",
+        "C": "50%",
+        "D": "66%"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "22",
+      "questao": "Em um sistema de empréstimos com regras: Cliente Premium pode emprestar até 5 livros por 4 semanas; Regular até 3 livros por 3 semanas; Novos clientes só 1 livro. Qual combinação na tabela de decisão representa uma situação impossível?",
+      "alternativas": {
+        "A": "Premium tentando emprestar 6 livros",
+        "B": "Novo cliente Premium",
+        "C": "Regular tentando renovar empréstimo",
+        "D": "Novo cliente emprestando 2 livros"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "23",
+      "questao": "Para um sistema com estados: Inativo -> Ativo -> Pausado -> Ativo ou Encerrado, qual o número mínimo de casos para cobrir todas transições?",
+      "alternativas": {
+        "A": "2",
+        "B": "3",
+        "C": "4",
+        "D": "5"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "assets/img.jpg",
+      "level": "K3"
+    },
+    {
+      "id": "24",
+      "questao": "Se um conjunto de testes alcança 100% de cobertura de decisão, o que isso significa?",
+      "alternativas": {
+        "A": "Todos os possíveis valores de entrada foram testados",
+        "B": "Todos os caminhos lógicos do código foram exercitados",
+        "C": "Todas as instruções do código foram executadas",
+        "D": "Todos os requisitos foram completamente validados"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "25",
+      "questao": "Qual afirmação sobre teste caixa-branca é FALSA?",
+      "alternativas": {
+        "A": "Pode ser aplicado em testes de componentes e integração",
+        "B": "Requer acesso ao código fonte",
+        "C": "Pode identificar código não executável",
+        "D": "Garante que todos os requisitos foram implementados"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "26",
+      "questao": "Qual melhor descreve suposição de erros?",
+      "alternativas": {
+        "A": "Antecipar falhas com base em padrões conhecidos de defeitos",
+        "B": "Testar todas as combinações possíveis de entrada",
+        "C": "Repetir os mesmos testes com dados diferentes",
+        "D": "Validar apenas os caminhos mais utilizados no sistema"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "27",
+      "questao": "Em um projeto com requisitos incompletos e prazos curtos, qual técnica seria mais adequada?",
+      "alternativas": {
+        "A": "Teste baseado em especificação formal",
+        "B": "Teste exploratório",
+        "C": "Teste de regressão completa",
+        "D": "Teste de carga automatizado"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "28",
+      "questao": "Qual formato é mais eficaz para documentar critérios de aceite?",
+      "alternativas": {
+        "A": "Documentos formais assinados por stakeholders",
+        "B": "Exemplos em formato Given-When-Then",
+        "C": "Diagramas de arquitetura detalhados",
+        "D": "Listas de verificações genéricas"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "29",
+      "questao": "Para a história: 'Como cliente, quero filtrar produtos por faixa de preço', qual teste melhor representa ATDD?",
+      "alternativas": {
+        "A": "Verificar se o sistema mostra apenas produtos entre R$100 e R$200 quando filtro é aplicado",
+        "B": "Testar o desempenho do filtro com 1000 produtos",
+        "C": "Validar o código SQL do filtro",
+        "D": "Verificar a cor do botão de filtro"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "30",
+      "questao": "Como testadores agregam valor no planejamento de sprint?",
+      "alternativas": {
+        "A": "Definindo prazos para as histórias",
+        "B": "Identificando riscos e dependências de teste",
+        "C": "Atribuindo tarefas aos desenvolvedores",
+        "D": "Priorizando o backlog do produto"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "31",
+      "questao": "Quais DUAS opções são critérios de saída válidos para testes?",
+      "alternativas": {
+        "A": "Todos os casos de teste planejados foram executados",
+        "B": "O Product Owner aprova os testes",
+        "C": "O nível de risco residual é aceitável",
+        "D": "Todos os desenvolvedores estão de férias",
+        "E": "A cobertura acordada foi alcançada"
+      },
+      "correta": ["A", "E"],
+      "erradas": ["B", "C", "D"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "32",
+      "questao": "Usando estimativa de três pontos (otimista=8, mais provável=12, pessimista=20), qual o esforço estimado?",
+      "alternativas": {
+        "A": "12",
+        "B": "13",
+        "C": "14",
+        "D": "15"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "33",
+      "questao": "Em um app de viagens com testes: Pesquisar voos (prioridade 1), Selecionar assento (2, depende de Pesquisar), Pagamento (1, depende de Selecionar), Cancelar (3, depende de Pesquisar), qual deve ser a 3ª execução?",
+      "alternativas": {
+        "A": "Cancelar",
+        "B": "Pagamento",
+        "C": "Selecionar assento",
+        "D": "Pesquisar voos"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "34",
+      "questao": "Qual mapeamento de tipos de teste para quadrantes ágeis está correto?",
+      "alternativas": {
+        "A": "Teste de usabilidade: Q3; Teste de API: Q1; Teste funcional: Q2; Teste de segurança: Q4",
+        "B": "Teste de unidade: Q4; Teste exploratório: Q3; Teste de carga: Q1; Teste de aceite: Q2",
+        "C": "Teste de componentes: Q3; Teste de contrato: Q1; Teste de acessibilidade: Q4; Teste de smoke: Q2",
+        "D": "Teste de regressão: Q2; Teste de performance: Q3; Teste de integração: Q1; Teste de compatibilidade: Q4"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "35",
+      "questao": "Para um risco de 'Dados sensíveis podem ser expostos' (probabilidade média, impacto alto), qual abordagem de mitigação é mais adequada?",
+      "alternativas": {
+        "A": "Testes de segurança especializados durante o desenvolvimento",
+        "B": "Transferir o risco para um terceiro",
+        "C": "Aceitar o risco sem ações específicas",
+        "D": "Evitar completamente a funcionalidade de dados sensíveis"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "36",
+      "questao": "Qual artefato ágil mostra trabalho concluído versus restante na iteração?",
+      "alternativas": {
+        "A": "Quadro de tarefas",
+        "B": "Burndown chart",
+        "C": "Mapa de histórias",
+        "D": "Relatório de cobertura"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "37",
+      "questao": "Qual processo controla versões de scripts de teste quando requisitos mudam?",
+      "alternativas": {
+        "A": "Gerenciamento de configuração",
+        "B": "Controle de mudanças",
+        "C": "Gerenciamento de incidentes",
+        "D": "Monitoramento contínuo"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "38",
+      "questao": "Um bug report diz: 'O sistema trava ao inserir caracteres especiais no campo CPF'. O que está faltando?",
+      "alternativas": {
+        "A": "Resultado esperado versus atual",
+        "B": "Severidade e prioridade",
+        "C": "Passos exatos para reproduzir",
+        "D": "ID do caso de teste relacionado"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "39",
+      "questao": "Qual atividade é suportada por ferramentas de geração de dados de teste?",
+      "alternativas": {
+        "A": "Análise estática de código",
+        "B": "Preparação de massa de teste",
+        "C": "Gerenciamento de configuração",
+        "D": "Monitoramento de desempenho"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "40",
+      "questao": "Qual é um risco real da automação de testes?",
+      "alternativas": {
+        "A": "Pode aumentar a cobertura de testes",
+        "B": "Manutenção pode consumir mais recursos que o esperado",
+        "C": "Pode encontrar mais bugs que testes manuais",
+        "D": "Pode reduzir o tempo de execução dos testes"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    }
+  ]
+}

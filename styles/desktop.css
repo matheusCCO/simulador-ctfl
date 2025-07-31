@@ -1,0 +1,16 @@
+/* Estilos para visão desktop */
+@media (min-width: 641px) {
+  #timerBar {
+    font-size: 1.5rem !important;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.5rem 2rem;
+  }
+  #timer {
+    font-size: 1.5rem !important;
+  }
+  #finalizarBtn {
+    margin-left: 1rem !important;
+    width: auto;
+  }
+}
