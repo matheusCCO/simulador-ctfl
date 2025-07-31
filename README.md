@@ -61,6 +61,7 @@ Cada questão possui:
 
 ## Como criar seu próprio arquivo de questões (JSON)
 
+
 O simulador lê um arquivo JSON no formato abaixo. Você pode criar novos simulados seguindo este padrão e salvando como, por exemplo, `SimuladoB.json`.
 
 **Exemplo de estrutura mínima:**
@@ -77,9 +78,9 @@ O simulador lê um arquivo JSON no formato abaixo. Você pode criar novos simula
         "C": "Texto da alternativa C",
         "D": "Texto da alternativa D"
       },
-      "correta": "A", // ou "A,B" para múltipla escolha
-      "tipo": "Radio button" // ou "Checkbox" para múltipla escolha
-      "imagem": "", // (opcional) caminho para imagem
+      "correta": "A", // ou ["A", "B"] para múltipla escolha
+      "tipo": "Radio button", // ou "Checkbox" para múltipla escolha
+      "imagens": [], // array de caminhos para imagens (pode ser vazio)
       "level": "K1" // K1, K2, K3 ou K4
     }
     // ...outras questões...
@@ -91,12 +92,15 @@ O simulador lê um arquivo JSON no formato abaixo. Você pode criar novos simula
 - `id`: identificador único
 - `questao`: enunciado
 - `alternativas`: objeto com letras e textos das opções
-- `correta`: letra(s) da(s) resposta(s) correta(s) (ex: "A" ou "A,B")
+- `correta`: letra(s) da(s) resposta(s) correta(s) (ex: "A" ou ["A", "B"])
 - `tipo`: "Radio button" (única escolha) ou "Checkbox" (múltipla escolha)
 - `level`: nível de conhecimento (K1, K2, K3, K4)
+- `imagens`: array de caminhos para imagens (pode ser vazio)
 
-**Campos opcionais:**
-- `imagem`: caminho para imagem ilustrativa
+**Observações:**
+- O campo `alternativas` agora é sempre um objeto (letra: texto).
+- O campo `imagens` é sempre um array (mesmo que não haja imagens).
+- O campo `correta` pode ser string (única escolha) ou array (múltipla escolha).
 
 Salve o arquivo na mesma pasta do `index.html` e ajuste o código para carregar o novo arquivo, se desejar.
 ```

@@ -21,9 +21,13 @@
 
     <div class="mb-4">
       <label for="examSelect" class="block font-semibold">Escolha o simulado:</label>
-      <select id="examSelect" class="border p-2 rounded w-full">
-        <option value="examA">Exame A (Oficial ISTQB)</option>
-      </select>
+      <div class="flex gap-2 items-center">
+        <select id="examSelect" class="border p-2 rounded w-full transition-colors focus:ring-2 focus:ring-blue-400 focus:border-blue-400">
+          <option value="examA">Exame A (Oficial ISTQB)</option>
+        </select>
+        <input type="file" id="importJson" accept="application/json" class="hidden" />
+        <button id="importBtn" type="button" class="bg-blue-100 border border-blue-400 px-3 py-2 rounded hover:bg-blue-200 text-sm font-semibold transition-colors">Importar JSON</button>
+      </div>
     </div>
 
     <button onclick="startQuiz()" class="bg-blue-600 text-white px-4 py-2 rounded">Iniciar Quiz</button>
@@ -45,42 +49,103 @@
     let currentQuestions = [];
     let timer;
     let remainingTime = 60 * 60;
+    let simulados = {
+      examA: {
+        nome: 'Exame A (Oficial ISTQB)',
+        arquivo: 'SimuladoA.json',
+        questoes: null,
+        importado: false
+      }
+    };
 
     async function startQuiz() {
       const selected = document.getElementById("examSelect").value;
-      if (selected === "examA") {
-        try {
-          const response = await fetch('SimuladoA.json');
-          if (!response.ok) throw new Error('Erro ao carregar SimuladoA.json');
-          const data = await response.json();
-          // Suporte ao formato com array 'questoes'
-          if (Array.isArray(data)) {
-            currentQuestions = data;
-          } else if (Array.isArray(data.questoes)) {
-            currentQuestions = data.questoes;
-          } else {
-            currentQuestions = [];
-          }
-        } catch (e) {
-          alert('Erro ao carregar questões do SimuladoA.json: ' + e.message);
-          return;
-        }
-      } else {
-        alert('Por enquanto, apenas o Exame A (SimuladoA.json) está disponível neste formato.');
+      let simulado = simulados[selected];
+      if (!simulado) {
+        alert('Simulado não encontrado.');
         return;
       }
-
+      if (simulado.importado) {
+        // Simulado importado já está em memória
+        currentQuestions = simulado.questoes;
+      } else {
+        // Simulado local, carrega do arquivo se necessário
+        if (simulado.questoes) {
+          currentQuestions = simulado.questoes;
+        } else {
+          try {
+            const response = await fetch(simulado.arquivo);
+            if (!response.ok) throw new Error('Erro ao carregar ' + simulado.arquivo);
+            const data = await response.json();
+            if (Array.isArray(data)) {
+              currentQuestions = data;
+            } else if (Array.isArray(data.questoes)) {
+              currentQuestions = data.questoes;
+            } else {
+              currentQuestions = [];
+            }
+            simulados[selected].questoes = currentQuestions;
+          } catch (e) {
+            alert('Erro ao carregar questões do simulado: ' + e.message);
+            return;
+          }
+        }
+      }
       if (!currentQuestions || currentQuestions.length === 0) {
         alert("Esse exame ainda não tem questões disponíveis.");
         return;
       }
-
       document.getElementById("quiz").classList.remove("hidden");
       document.getElementById("result").classList.add("hidden");
-
       renderQuestions();
       startTimer();
     }
+
+    // Importação de JSON para cadastrar novos simulados
+    document.addEventListener('DOMContentLoaded', () => {
+      const importBtn = document.getElementById('importBtn');
+      const importInput = document.getElementById('importJson');
+      const examSelect = document.getElementById('examSelect');
+      importBtn.addEventListener('click', () => importInput.click());
+      importInput.addEventListener('change', (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(ev) {
+          try {
+            const data = JSON.parse(ev.target.result);
+            let questoes = Array.isArray(data) ? data : data.questoes;
+            if (!Array.isArray(questoes) || !questoes.length) throw new Error('Arquivo sem questões válidas.');
+            // Gera id único
+            const id = 'simulado_' + Date.now();
+            simulados[id] = {
+              nome: file.name.replace(/\.json$/i, ''),
+              arquivo: null,
+              questoes,
+              importado: true
+            };
+            // Adiciona ao select
+            const opt = document.createElement('option');
+            opt.value = id;
+            opt.textContent = simulados[id].nome + ' (importado)';
+            opt.className = 'bg-blue-50 text-blue-900 font-semibold';
+            examSelect.appendChild(opt);
+            examSelect.value = id;
+            alert('Simulado importado com sucesso!');
+          } catch (err) {
+            alert('Erro ao importar JSON: ' + err.message);
+          }
+        };
+        reader.readAsText(file);
+        // Limpa input para permitir importar o mesmo arquivo novamente se quiser
+        e.target.value = '';
+      });
+      // Ao trocar o select, limpa quiz/result e prepara para novo simulado
+      examSelect.addEventListener('change', () => {
+        document.getElementById("quiz").classList.add("hidden");
+        document.getElementById("result").classList.add("hidden");
+      });
+    });
 
     function renderQuestions() {
       const container = document.getElementById("questionContainer");
@@ -96,27 +161,37 @@
         let letras = [];
         if (Array.isArray(q.alternativas)) {
           alternativas = q.alternativas;
+          letras = alternativas.map((_, idx) => String.fromCharCode(65 + idx));
         } else if (q.alternativas && typeof q.alternativas === 'object') {
           letras = Object.keys(q.alternativas);
-          alternativas = Object.entries(q.alternativas).map(([letra, texto]) => `${letra}) ${texto}`);
+          alternativas = letras.map(letra => q.alternativas[letra]);
         } else if (Array.isArray(q.options)) {
           alternativas = q.options;
+          letras = alternativas.map((_, idx) => String.fromCharCode(65 + idx));
         }
         const isCheckbox = (q.tipo && q.tipo.toLowerCase().includes('checkbox')) || q.multiple === true;
-        let html = `<p class="font-semibold">${i + 1}. ${texto} <span class='text-xs px-2 py-1 rounded ${level ? 'k'+level[1] : ''}'>${level}</span></p>`;
-        if (q.imagem) {
-          html += `<img src="${q.imagem}" alt="Imagem da questão" class="mt-2 max-w-xs" />`;
+        let html = `<p class="font-semibold flex items-center gap-2">${i + 1}. ${texto} `;
+        if (level) {
+          html += `<span class="inline-block align-middle text-xs font-bold px-2 py-1 rounded-full border border-gray-400 shadow-sm ml-2 ${level ? 'k'+level[1] : ''}" style="min-width:2.5em;text-align:center;">${level}</span>`;
+        }
+        html += `</p>`;
+        if (Array.isArray(q.imagens) && q.imagens.length > 0) {
+          html += '<div class="flex flex-col items-center">';
+          q.imagens.forEach(img => {
+            html += `<img src="${img}" alt="Imagem da questão" class="mt-2" style="width:500px;max-width:100%;height:auto;" />`;
+          });
+          html += '</div>';
         }
         if (isCheckbox) {
-          html += alternativas.map((opt, j) => `
+          html += letras.map((letra, j) => `
             <label class="block mt-2 cursor-pointer">
-              <input type="checkbox" name="q${i}" value="${letras[j] || j}" class="mr-2" /> ${opt}
+              <input type="checkbox" name="q${i}" value="${letra}" class="mr-2" /> <span class="font-mono">${letra}</span>) ${alternativas[j]}
             </label>
           `).join("");
         } else {
-          html += alternativas.map((opt, j) => `
+          html += letras.map((letra, j) => `
             <label class="block mt-2 cursor-pointer">
-              <input type="radio" name="q${i}" value="${letras[j] || j}" class="mr-2" /> ${opt}
+              <input type="radio" name="q${i}" value="${letra}" class="mr-2" /> <span class="font-mono">${letra}</span>) ${alternativas[j]}
             </label>
           `).join("");
         }
@@ -176,10 +251,18 @@
         if (acertou) acertos++;
         // Renderiza resultado da questão
         const level = (q.level || q.nivel || '').toUpperCase();
-        html += `<div class="mb-4 p-4 rounded bg-gray-50 border ${acertou ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50'}">
-          <p class="font-semibold">${i + 1}. ${(q.questao || q.questão || q.question || '')} <span class='text-xs px-2 py-1 rounded ${level ? 'k'+level[1] : ''}'>${level}</span></p>`;
-        if (q.imagem) {
-          html += `<img src="${q.imagem}" alt="Imagem da questão" class="mt-2 max-w-xs" />`;
+        html += `<div class="mb-4 p-4 rounded bg-gray-50 border ${acertou ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50'}">`;
+        html += `<p class="font-semibold flex items-center gap-2">${i + 1}. ${(q.questao || q.questão || q.question || '')}`;
+        if (level) {
+          html += `<span class="inline-block align-middle text-xs font-bold px-2 py-1 rounded-full border bg-Se border-gray-400 shadow-sm ml-2 ${level ? 'k'+level[1] : ''}" style="min-width:2.5em;text-align:center;">${level}</span>`;
+        }
+        html += `</p>`;
+        if (Array.isArray(q.imagens) && q.imagens.length > 0) {
+          html += '<div class="flex flex-col items-center">';
+          q.imagens.forEach(img => {
+            html += `<img src="${img}" alt="Imagem da questão" class="mt-2" style="width:500px;max-width:100%;height:auto;" />`;
+          });
+          html += '</div>';
         }
         html += `<div class="mt-2">Sua resposta: <span class="font-mono">${userAnswers.join(', ') || '-'}</span></div>`;
         html += `<div class="mt-1">Correta: <span class="font-mono">${corretaArr.join(', ')}</span></div>`;
