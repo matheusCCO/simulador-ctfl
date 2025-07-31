@@ -1,10 +1,3 @@
-// JavaScript principal do Simulador CTFL
-
-let currentQuestions = [];
-let timer;
-let remainingTime = 60 * 60;
-let simulados = {};
-
 const simuladosArquivos = [
   'Simulados/SimuladoA (Oficial BSTQB).json',
   'Simulados/SimuladoB (Oficial BSTQB).json',
@@ -41,9 +34,13 @@ function inicializarSimuladosDropdown() {
     examSelect.appendChild(opt);
   });
 }
+// JavaScript principal do Simulador CTFL
 
+let currentQuestions = [];
+let currentQuestionIndex = 0;
+let userSelections = {};
+let timer;
 async function startQuiz() {
-  // Corrige bug do timer duplicado: limpa o timer anterior antes de iniciar um novo
   if (timer) {
     clearInterval(timer);
     timer = null;
@@ -111,11 +108,155 @@ async function startQuiz() {
     alert("Esse exame ainda não tem questões disponíveis.");
     return;
   }
+  currentQuestionIndex = 0;
+  userSelections = {};
   document.getElementById("quiz").classList.remove("hidden");
   document.getElementById("result").classList.add("hidden");
-  renderQuestions();
+  fixTimerHeader();
+  renderCurrentQuestion();
   startTimer();
 }
+
+function renderCurrentQuestion() {
+  const container = document.getElementById("questionContainer");
+  container.innerHTML = "";
+  if (!currentQuestions.length) return;
+  const i = currentQuestionIndex;
+  const q = currentQuestions[i];
+  const qDiv = document.createElement("div");
+  const level = (q.level || q.nivel || '').toUpperCase();
+  qDiv.className = `mb-4 p-4 rounded bg-gray-50 ${level ? 'k'+level[1] : ''}`;
+  const texto = q.questao || q.questão || q.question || '';
+  let alternativas = [];
+  let letras = [];
+  if (Array.isArray(q.alternativas)) {
+    alternativas = q.alternativas;
+    letras = alternativas.map((_, idx) => String.fromCharCode(65 + idx));
+  } else if (q.alternativas && typeof q.alternativas === 'object') {
+    letras = Object.keys(q.alternativas);
+    alternativas = letras.map(letra => q.alternativas[letra]);
+  } else if (Array.isArray(q.options)) {
+    alternativas = q.options;
+    letras = alternativas.map((_, idx) => String.fromCharCode(65 + idx));
+  }
+  const isCheckbox = (q.tipo && q.tipo.toLowerCase().includes('checkbox')) || q.multiple === true;
+  let html = `<p class="font-semibold flex items-center gap-2">${i + 1}. ${texto} `;
+  if (level) {
+    html += `<span class="inline-block align-middle text-xs font-bold px-2 py-1 rounded-full border border-gray-400 shadow-sm ml-2 ${level ? 'k'+level[1] : ''}" style="min-width:2.5em;text-align:center;">${level}</span>`;
+  }
+  html += `</p>`;
+  if (Array.isArray(q.imagens) && q.imagens.length > 0) {
+    html += '<div class="flex flex-col items-center">';
+    q.imagens.forEach(img => {
+      html += `<img src="${img}" alt="Imagem da questão" class="mt-2" style="width:500px;max-width:100%;height:auto;" />`;
+    });
+    html += '</div>';
+  }
+  if (isCheckbox) {
+    html += letras.map((letra, j) => `
+      <label class="block mt-2 cursor-pointer">
+        <input type="checkbox" name="q${i}" value="${letra}" class="mr-2" /> <span class="font-mono">${letra}</span>) ${alternativas[j]}
+      </label>
+    `).join("");
+  } else {
+    html += letras.map((letra, j) => `
+      <label class="block mt-2 cursor-pointer">
+        <input type="radio" name="q${i}" value="${letra}" class="mr-2" /> <span class="font-mono">${letra}</span>) ${alternativas[j]}
+      </label>
+    `).join("");
+  }
+  // Navegação removida do bloco da questão. Agora será renderizada no footer fixo.
+  renderFooterNavigation();
+// Ir para uma questão específica pelo número
+window.goToQuestion = function(idx) {
+  saveUserSelection(currentQuestionIndex);
+  if (idx >= 0 && idx < currentQuestions.length) {
+    currentQuestionIndex = idx;
+    renderCurrentQuestion();
+  }
+}
+  qDiv.innerHTML = html;
+  container.appendChild(qDiv);
+  // Restaurar seleção se já respondida
+  restoreUserSelection(i);
+}
+
+// Footer fixo com navegação
+function renderFooterNavigation() {
+  let i = currentQuestionIndex;
+  const total = currentQuestions.length;
+  // Responsivo: 5 em 5 no mobile, 10 em 10 no desktop
+  let pageSize = 10;
+  if (window.innerWidth <= 640) pageSize = 5; // sm: 640px
+  let pageStart = Math.floor(i / pageSize) * pageSize;
+  let pageEnd = Math.min(pageStart + pageSize, total);
+  let html = '<div class="flex gap-2 items-center justify-center w-full h-full">';
+  // Botão voltar
+  html += `<button type="button" class="px-4 py-2 rounded" onclick="goToPreviousQuestion()" ${i === 0 ? 'disabled style="opacity:0.5;cursor:not-allowed"' : ''}>◄</button>`;
+  // Números das questões (paginados)
+  html += `<div class="flex flex-wrap gap-1 mx-2 items-center justify-center" style="flex:1;justify-content:center;">`;
+  if (pageStart > 0) {
+    html += `<button type="button" onclick="goToQuestion(${pageStart - 1})" class="w-8 h-8 rounded-full border text-xs font-bold bg-gray-200 border-gray-400 hover:bg-blue-100">&laquo;</button>`;
+  }
+  for (let n = pageStart; n < pageEnd; n++) {
+    html += `<button type="button" onclick="goToQuestion(${n})" class="w-8 h-8 rounded-full border text-xs font-bold ${n === i ? 'bg-blue-600 text-white border-blue-700' : 'bg-gray-100 border-gray-400 hover:bg-blue-100'}">${n + 1}</button>`;
+  }
+  if (pageEnd < total) {
+    html += `<button type="button" onclick="goToQuestion(${pageEnd})" class="w-8 h-8 rounded-full border text-xs font-bold bg-gray-200 border-gray-400 hover:bg-blue-100">&raquo;</button>`;
+  }
+  html += `</div>`;
+  // Botão avançar ou finalizar
+  if (i < total - 1) {
+    html += `<button type="button" class="px-4 py-2 rounded ml-auto" onclick="goToNextQuestion()">►</button>`;
+  } else {
+    html += `<button type="button" class="px-4 py-2 rounded ml-auto" onclick="submitQuiz()">Finalizar Quiz</button>`;
+  }
+  html += '</div>';
+  let footer = document.getElementById('quizFooter');
+  if (!footer) {
+    footer = document.createElement('div');
+    footer.id = 'quizFooter';
+    footer.className = 'fixed bottom-0 left-0 w-full bg-white border-t border-gray-300 shadow-lg z-50 py-3';
+    document.body.appendChild(footer);
+  }
+  footer.innerHTML = html;
+  // Esconde footer se quiz não estiver visível
+  if (document.getElementById('quiz').classList.contains('hidden')) {
+    footer.style.display = 'none';
+  } else {
+    footer.style.display = 'block';
+  }
+}
+
+function goToNextQuestion() {
+  saveUserSelection(currentQuestionIndex);
+  if (currentQuestionIndex < currentQuestions.length - 1) {
+    currentQuestionIndex++;
+    renderCurrentQuestion();
+  }
+}
+
+function goToPreviousQuestion() {
+  saveUserSelection(currentQuestionIndex);
+  if (currentQuestionIndex > 0) {
+    currentQuestionIndex--;
+    renderCurrentQuestion();
+  }
+}
+
+function saveUserSelection(idx) {
+  const inputs = Array.from(document.querySelectorAll(`[name='q${idx}']`));
+  userSelections[idx] = inputs.filter(el => el.checked).map(el => el.value);
+}
+
+function restoreUserSelection(idx) {
+  if (!userSelections[idx]) return;
+  const inputs = Array.from(document.querySelectorAll(`[name='q${idx}']`));
+  inputs.forEach(el => {
+    el.checked = userSelections[idx].includes(el.value);
+  });
+}
+// (bloco removido, pois agora o fluxo é controlado por renderCurrentQuestion/startQuiz async)
 
 // Importação de JSON para cadastrar novos simulados
 
@@ -158,6 +299,9 @@ document.addEventListener('DOMContentLoaded', () => {
   examSelect.addEventListener('change', () => {
     document.getElementById("quiz").classList.add("hidden");
     document.getElementById("result").classList.add("hidden");
+    // Esconde footer ao trocar simulado
+    let footer = document.getElementById('quizFooter');
+    if (footer) footer.style.display = 'none';
   });
 });
 
@@ -242,6 +386,26 @@ function updateTimer() {
   document.getElementById("timer").textContent = `Tempo: ${min}:${sec}`;
 }
 
+// Fixar o timer no topo da tela
+function fixTimerHeader() {
+  let timerDiv = document.getElementById('timerHeaderFixed');
+  if (!timerDiv) {
+    timerDiv = document.createElement('div');
+    timerDiv.id = 'timerHeaderFixed';
+    timerDiv.className = 'fixed top-0 left-0 w-full bg-white border-b border-gray-300 shadow z-50 py-2 flex justify-center';
+    document.body.appendChild(timerDiv);
+  }
+  // Garante que o timer original existe
+  let timer = document.getElementById('timer');
+  if (!timer) {
+    timer = document.createElement('span');
+    timer.id = 'timer';
+    timer.textContent = 'Tempo: 00:00';
+  }
+  timerDiv.innerHTML = '';
+  timerDiv.appendChild(timer);
+}
+
 function submitQuiz() {
   clearInterval(timer);
   let acertos = 0;
@@ -312,6 +476,9 @@ function submitQuiz() {
   document.getElementById("result").innerHTML = html;
   document.getElementById("result").classList.remove("hidden");
   document.getElementById("quiz").classList.add("hidden");
+  // Esconde footer ao finalizar
+  let footer = document.getElementById('quizFooter');
+  if (footer) footer.style.display = 'none';
 }
 
 function renderHistory() {
@@ -332,3 +499,9 @@ function renderHistory() {
 }
 
 window.addEventListener('DOMContentLoaded', renderHistory);
+// Atualiza a paginação ao redimensionar a tela
+window.addEventListener('resize', function() {
+  if (document.getElementById('quizFooter') && !document.getElementById('quiz').classList.contains('hidden')) {
+    renderFooterNavigation();
+  }
+});

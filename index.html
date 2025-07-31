@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="styles/desktop.css">
   <link rel="stylesheet" href="styles/mobile.css">
 </head>
-<body class="bg-gray-100 p-4">
+<body class="bg-gray-100 p-6" style="padding-top: 80px; padding-bottom: 80px;">
   <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
     <h1 class="text-2xl font-bold mb-4">Simulado CTFL v4.0 - Exame Oficial ISTQB</h1>
     <div class="mb-4 p-3 bg-green-100 border border-green-400 rounded">
@@ -26,13 +26,13 @@
         <button id="importBtn" type="button" class="bg-blue-100 border border-blue-400 px-3 py-2 rounded hover:bg-blue-200 text-sm font-semibold transition-colors">Importar JSON</button>
       </div>
     </div>
-    
+
     <button onclick="startQuiz()" class="bg-blue-600 text-white px-4 py-2 rounded">Iniciar Quiz</button>
 
     <div id="quiz" class="mt-6 hidden">
       <div id="timer" class="text-right font-bold text-red-500">Tempo: 60:00</div>
       <div id="questionContainer" class="mt-4"></div>
-      <button onclick="submitQuiz()" class="bg-green-600 text-white px-4 py-2 rounded mt-4">Finalizar Tentativa</button>
+      <!-- O botão de finalizar tentativa será exibido apenas na última questão via JS -->
     </div>
 
     <div id="result" class="mt-6 hidden"></div>
