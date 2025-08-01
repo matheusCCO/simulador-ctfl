@@ -16,23 +16,26 @@
       <p class="text-sm"><strong>✅ Simulados A,B e C possuem Questões Oficiais:</strong> Os Exames A, B e C contém as 40 questões oficiais extraídas do PDF do BSTQB CTFL v4.0. Os demais exames contêm questões de geradas por I.A exemplo para prática adicional.</p>
     </div>
 
-    <div class="mb-4">
-      <label for="examSelect" class="block font-semibold">Escolha o simulado:</label>
-      <div class="flex gap-2 items-center">
-        <select id="examSelect" class="border p-2 rounded w-full transition-colors focus:ring-2 focus:ring-blue-400 focus:border-blue-400">
-          <option value="examA">Exame A (Oficial ISTQB)</option>
-        </select>
-        <input type="file" id="importJson" accept="application/json" class="hidden" />
-        <button id="importBtn" type="button" class="bg-blue-100 border border-blue-400 px-3 py-2 rounded hover:bg-blue-200 text-sm font-semibold transition-colors">Importar JSON</button>
-      </div>
+    <p class="font-semibold mb-1">Baixar Simulados Oficiais (PDF)</p>
+    <p class="text-gray-600 mb-2">Algumas perguntas estão sem imagens, portanto, faça seu simulado com o <strong>PDF aberto</strong>.</p>
+    <ul class="mb-4">
+      <li><a href="./bstqb/Simulado A.pdf" class="text-blue-600 underline hover:text-blue-800 transition-colors" download>Simulado A.pdf</a></li>
+      <li><a href="./bstqb/Simulado B.pdf" class="text-blue-600 underline hover:text-blue-800 transition-colors" download>Simulado B.pdf</a></li>
+      <li><a href="./bstqb/Simulado C.pdf" class="text-blue-600 underline hover:text-blue-800 transition-colors" download>Simulado C.pdf</a></li>
+    </ul>
+    <label for="examSelect" class="block font-semibold">Escolha o simulado:</label>
+    <div class="flex gap-2 items-center mb-4">
+      <select id="examSelect" class="border p-2 rounded w-full transition-colors focus:ring-2 focus:ring-blue-400 focus:border-blue-400">
+        <option value="examA">Exame A (Oficial ISTQB)</option>
+      </select>
+      <input type="file" id="importJson" accept="application/json" class="hidden" />
+      <button id="importBtn" type="button" class="bg-blue-300 rounded hover:bg-blue-200 text-sm font-semibold transition-colors">Importar JSON</button>
     </div>
-
-    <button onclick="startQuiz()" class="bg-blue-600 text-white px-4 py-2 rounded">Iniciar Quiz</button>
+    <button onclick="startQuiz()" class="bg-blue-600 text-white px-4 py-2 rounded mb-4">Iniciar Quiz</button>
 
     <div id="quiz" class="mt-6 hidden">
       <div id="timer" class="text-right font-bold text-red-500">Tempo: 60:00</div>
       <div id="questionContainer" class="mt-4"></div>
-      <!-- O botão de finalizar tentativa será exibido apenas na última questão via JS -->
     </div>
 
     <div id="result" class="mt-6 hidden"></div>

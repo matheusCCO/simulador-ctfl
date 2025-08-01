@@ -110,8 +110,10 @@ async function startQuiz() {
   }
   currentQuestionIndex = 0;
   userSelections = {};
+  renderHistory(); // garante que o histórico está atualizado
   document.getElementById("quiz").classList.remove("hidden");
   document.getElementById("result").classList.add("hidden");
+  hideHistory(); // oculta histórico durante o quiz
   fixTimerHeader();
   renderCurrentQuestion();
   startTimer();
@@ -209,7 +211,7 @@ function renderFooterNavigation() {
   if (i < total - 1) {
     html += `<button type="button" class="px-4 py-2 rounded ml-auto" onclick="goToNextQuestion()">►</button>`;
   } else {
-    html += `<button type="button" class="px-4 py-2 rounded ml-auto" onclick="submitQuiz()">Finalizar Quiz</button>`;
+    html += `<button type="button" class="rounded p-4 ml-auto text-blue-600 hover:text-blue-800 transition-colors" onclick="submitQuiz()">Finalizar Quiz</button>`;
   }
   html += '</div>';
   let footer = document.getElementById('quizFooter');
@@ -262,6 +264,8 @@ function restoreUserSelection(idx) {
 
 document.addEventListener('DOMContentLoaded', () => {
   inicializarSimuladosDropdown();
+  renderHistory(); // exibe histórico na tela inicial
+  showHistory(); // garante que o histórico está visível na tela inicial
   const importBtn = document.getElementById('importBtn');
   const importInput = document.getElementById('importJson');
   const examSelect = document.getElementById('examSelect');
@@ -302,6 +306,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Esconde footer ao trocar simulado
     let footer = document.getElementById('quizFooter');
     if (footer) footer.style.display = 'none';
+    renderHistory(); // atualiza histórico ao trocar simulado
+    showHistory(); // garante que o histórico está visível ao trocar simulado
   });
 });
 
@@ -411,8 +417,12 @@ function submitQuiz() {
   let acertos = 0;
   let total = currentQuestions.length;
   let html = '';
+  // Array para salvar o gabarito completo
+  let gabarito = [];
   currentQuestions.forEach((q, i) => {
-    const userAnswers = Array.from(document.querySelectorAll(`[name='q${i}']:checked`)).map(el => el.value);
+    // Recupera a resposta marcada pelo usuário
+    let userAnswers = userSelections[i] || [];
+    if (!Array.isArray(userAnswers)) userAnswers = [userAnswers];
     let correta = q.correta || q.answer;
     let isCheckbox = (q.tipo && q.tipo.toLowerCase().includes('checkbox')) || q.multiple === true;
     let corretaArr = [];
@@ -432,6 +442,14 @@ function submitQuiz() {
       acertou = userAnswers.length === 1 && corretaArr.includes(userAnswers[0]);
     }
     if (acertou) acertos++;
+    // Salva no gabarito
+    gabarito.push({
+      questao: i + 1,
+      user: userAnswers,
+      correta: corretaArr,
+      acertou
+    });
+    // ...renderização do resultado...
     const level = (q.level || q.nivel || '').toUpperCase();
     html += `<div class="mb-4 p-4 rounded bg-gray-50 border ${acertou ? 'border-green-400 bg-green-50' : 'border-red-400 bg-red-50'}">`;
     html += `<p class="font-semibold flex items-center gap-2">${i + 1}. ${(q.questao || q.questão || q.question || '')}`;
@@ -460,7 +478,8 @@ function submitQuiz() {
     acertos,
     erros,
     total,
-    aprovado
+    aprovado,
+    gabarito // salva o gabarito completo
   };
   let historico = [];
   try {
@@ -476,6 +495,7 @@ function submitQuiz() {
   document.getElementById("result").innerHTML = html;
   document.getElementById("result").classList.remove("hidden");
   document.getElementById("quiz").classList.add("hidden");
+  showHistory(); // exibe histórico ao finalizar quiz
   // Esconde footer ao finalizar
   let footer = document.getElementById('quizFooter');
   if (footer) footer.style.display = 'none';
@@ -494,11 +514,162 @@ function renderHistory() {
     return;
   }
   historico.forEach((t, idx) => {
-    ul.innerHTML += `<li class="mb-1">${t.data}: <b>${t.nota}%</b> (${t.acertos} acertos, ${t.erros} erros) - ${t.aprovado ? '<span class=\'text-green-700\'>APROVADO</span>' : '<span class=\'text-red-700\'>REPROVADO</span>'}</li>`;
+    ul.innerHTML += `<li class="mb-1">${t.data}: <b>${t.nota}%</b> (${t.acertos} acertos, ${t.erros} erros) - ${t.aprovado ? '<span class=\'text-green-700\'>APROVADO</span>' : '<span class=\'text-red-700\'>REPROVADO</span>'} <button onclick="showGabarito(${idx})" class="ml-2 px-2 py-1 rounded bg-gray-200 hover:bg-blue-100 text-xs">Ver Gabarito</button></li>`;
   });
 }
 
-window.addEventListener('DOMContentLoaded', renderHistory);
+// Modal para exibir o gabarito detalhado
+function showGabarito(idx) {
+  let historico = [];
+  try {
+    historico = JSON.parse(localStorage.getItem('ctfl_historico') || '[]');
+  } catch {}
+  const tentativa = historico[idx];
+  if (!tentativa || !tentativa.gabarito) return;
+  let html = `
+  <div id='gabaritoModal' class='fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50'>
+    <div class='bg-white rounded-lg shadow-lg w-full max-w-2xl mx-2 sm:mx-auto flex flex-col' style='max-height:90vh;'>
+      <div class='sticky top-0 bg-white z-10 pt-4 pb-2 px-6 border-b flex flex-col sm:flex-row sm:items-center sm:justify-between'>
+        <h3 class='text-lg font-bold mb-2 sm:mb-0'>Gabarito da tentativa (${tentativa.data})</h3>
+        <div class='flex gap-2'>
+          <button onclick="document.getElementById('gabaritoModal').remove()" class='bg-blue-600 text-white px-4 py-2 rounded'>Fechar</button>
+          <button onclick="exportGabarito(${idx})" class='bg-green-600 text-white px-4 py-2 rounded'>Exportar Gabarito</button>
+        </div>
+      </div>
+      <div class='overflow-auto px-6 py-4' style='max-height:70vh;'>
+        <table class='w-full text-sm mb-4'>
+          <thead>
+            <tr>
+              <th class='text-left'>Questão</th>
+              <th class='text-left'>Sua resposta</th>
+              <th class='text-left'>Correta</th>
+              <th class='text-left'>Acertou?</th>
+            </tr>
+          </thead>
+          <tbody>
+            ${tentativa.gabarito.map(g => `
+              <tr>
+                <td class='font-bold'>${g.questao}</td>
+                <td>${g.user.join(', ') || '-'}</td>
+                <td>${g.correta.join(', ')}</td>
+                <td>${g.acertou ? '<span class="text-green-700">✔</span>' : '<span class="text-red-700">✘</span>'}</td>
+              </tr>
+            `).join('')}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>`;
+  document.body.insertAdjacentHTML('beforeend', html);
+}
+
+// Exporta o gabarito para arquivo JSON
+function exportGabarito(idx) {
+  let historico = [];
+  try {
+    historico = JSON.parse(localStorage.getItem('ctfl_historico') || '[]');
+  } catch {}
+  const tentativa = historico[idx];
+  if (!tentativa || !tentativa.gabarito) return;
+  const dataStr = JSON.stringify({
+    data: tentativa.data,
+    nota: tentativa.nota,
+    acertos: tentativa.acertos,
+    erros: tentativa.erros,
+    total: tentativa.total,
+    aprovado: tentativa.aprovado,
+    gabarito: tentativa.gabarito
+  }, null, 2);
+  const blob = new Blob([dataStr], { type: 'application/json' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = `gabarito_ctfl_${idx + 1}.json`;
+  document.body.appendChild(a);
+  a.click();
+  setTimeout(() => {
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }, 100);
+}
+
+// Exporta o gabarito para arquivo PDF
+function exportGabarito(idx) {
+  // jsPDF pode estar em window.jspdf ou window.jsPDF
+  let jsPDF = window.jsPDF;
+  if (!jsPDF && window.jspdf && window.jspdf.jsPDF) jsPDF = window.jspdf.jsPDF;
+  if (!jsPDF) {
+    const script = document.createElement('script');
+    script.src = 'https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js';
+    script.onload = () => exportGabarito(idx);
+    document.body.appendChild(script);
+    return;
+  }
+  let historico = [];
+  try {
+    historico = JSON.parse(localStorage.getItem('ctfl_historico') || '[]');
+  } catch {}
+  const tentativa = historico[idx];
+  if (!tentativa || !tentativa.gabarito) return;
+  const doc = new jsPDF();
+  let y = 15;
+  doc.setFontSize(16);
+  doc.setTextColor(33, 37, 41);
+  doc.text(`Gabarito CTFL - ${tentativa.data}`, 10, y);
+  y += 10;
+  doc.setFontSize(12);
+  doc.setTextColor(33, 37, 41);
+  doc.text(`Nota: ${tentativa.nota}% | Acertos: ${tentativa.acertos} | Erros: ${tentativa.erros} | Total: ${tentativa.total} | ${tentativa.aprovado ? 'APROVADO' : 'REPROVADO'}`, 10, y);
+  y += 10;
+  // Cabeçalho da tabela
+  doc.setFontSize(11);
+  doc.setFillColor(220, 230, 241);
+  doc.rect(10, y - 5, 190, 8, 'F');
+  doc.setTextColor(33, 37, 41);
+  doc.text('Questão', 12, y);
+  doc.text('Sua resposta', 35, y);
+  doc.text('Correta', 80, y);
+  doc.text('Acertou?', 120, y);
+  y += 8;
+  // Linhas da tabela
+  tentativa.gabarito.forEach(g => {
+    // Alterna cor de fundo para linhas
+    if ((g.questao % 2) === 0) {
+      doc.setFillColor(245, 247, 250);
+      doc.rect(10, y - 5, 190, 8, 'F');
+    }
+    doc.setFontSize(10);
+    doc.setTextColor(33, 37, 41);
+    doc.text(`${g.questao}`, 12, y);
+    doc.text(`${g.user.join(', ') || '-'}`, 35, y);
+    doc.text(`${g.correta.join(', ')}`, 80, y);
+    if (g.acertou) {
+      doc.setTextColor(34, 197, 94); // verde
+      doc.text('✔', 120, y);
+    } else {
+      doc.setTextColor(239, 68, 68); // vermelho
+      doc.text('✘', 120, y);
+    }
+    doc.setTextColor(33, 37, 41);
+    y += 8;
+    if (y > 280) {
+      doc.addPage();
+      y = 15;
+    }
+  });
+  doc.save(`gabarito_ctfl_${idx + 1}.pdf`);
+}
+
+// Exibe o histórico sempre antes do quiz e oculta durante o quiz
+function showHistory() {
+  const historyDiv = document.getElementById('history');
+  if (historyDiv) historyDiv.classList.remove('hidden');
+}
+function hideHistory() {
+  const historyDiv = document.getElementById('history');
+  if (historyDiv) historyDiv.classList.add('hidden');
+}
+
 // Atualiza a paginação ao redimensionar a tela
 window.addEventListener('resize', function() {
   if (document.getElementById('quizFooter') && !document.getElementById('quiz').classList.contains('hidden')) {
