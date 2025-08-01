@@ -62,7 +62,7 @@
     },
     {
       "id": "05",
-      "questao": "Quais dos seguintes fatores (i-v) têm influência SIGNIFICATIVA no processo de teste?",
+      "questao": "Quais dos seguintes fatores (i-v) têm influência SIGNIFICATIVA no processo de teste?<br><br>i. O SDLC;<br>ii. O número de defeitos detectados em projetos anteriores;<br>iii. Os riscos identificados do produto;<br>iv. Novos requisitos regulatórios forçando;<br>v. O número de testadores certificados na organização;",
       "alternativas": {
         "A": "i, ii têm influência significativa; iii, iv, v não têm",
         "B": "i, iii, iv têm influência significativa; ii, v não têm",
@@ -93,7 +93,7 @@
     },
     {
       "id": "07",
-      "questao": "Quais das seguintes habilidades (i-v) são as MAIS importantes para um testador?",
+      "questao": "Quais das seguintes habilidades (i-v) são as MAIS importantes para um testador?<br><br>i. Ter conhecimento do domínio;<br>ii. Criação de uma visão do produto;<br>iii. Ser um bom membro da equipe;<br>iv. Planejar e organizar o trabalho da equipe;<br>v. Pensamento crítico;",
       "alternativas": {
         "A": "ii e iv são importantes; i, iii e v não são",
         "B": "i, iii e v são importantes; ii e iv não são",
