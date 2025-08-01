@@ -126,6 +126,6 @@ Salve o arquivo na mesma pasta do `index.html` e ajuste o código para carregar 
 ```
 ---
 
-## Autor
+## Autor Matheus Bonotto | Quality assurance
 
 Simulado CTFL para estudos da certificação Foundation Level v4.0
