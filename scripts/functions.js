@@ -442,11 +442,39 @@ function submitQuiz() {
       acertou = userAnswers.length === 1 && corretaArr.includes(userAnswers[0]);
     }
     if (acertou) acertos++;
+    // Obter textos das alternativas
+    let alternativas = [];
+    let letras = [];
+    if (Array.isArray(q.alternativas)) {
+      alternativas = q.alternativas;
+      letras = alternativas.map((_, idx) => String.fromCharCode(65 + idx));
+    } else if (q.alternativas && typeof q.alternativas === 'object') {
+      letras = Object.keys(q.alternativas);
+      alternativas = letras.map(letra => q.alternativas[letra]);
+    } else if (Array.isArray(q.options)) {
+      alternativas = q.options;
+      letras = alternativas.map((_, idx) => String.fromCharCode(65 + idx));
+    }
+
+    // Textos das respostas do usuário
+    let userTextos = userAnswers.map(letra => {
+      const index = letras.indexOf(letra);
+      return index >= 0 ? `${letra}) ${alternativas[index]}` : letra;
+    });
+
+    // Textos das respostas corretas
+    let corretaTextos = corretaArr.map(letra => {
+      const index = letras.indexOf(letra);
+      return index >= 0 ? `${letra}) ${alternativas[index]}` : letra;
+    });
+
     // Salva no gabarito
     gabarito.push({
       questao: i + 1,
       user: userAnswers,
+      userTextos: userTextos,
       correta: corretaArr,
+      corretaTextos: corretaTextos,
       acertou
     });
     // ...renderização do resultado...
@@ -464,9 +492,9 @@ function submitQuiz() {
       });
       html += '</div>';
     }
-    html += `<div class="mt-2">Sua resposta: <span class="font-mono">${userAnswers.join(', ') || '-'}</span></div>`;
-    html += `<div class="mt-1">Correta: <span class="font-mono">${corretaArr.join(', ')}</span></div>`;
-    html += acertou ? `<div class="text-green-700 font-bold">✔ Acertou</div>` : `<div class="text-red-700 font-bold">✘ Errou</div>`;
+    html += `<div class="mt-2"><strong>Sua resposta:</strong> ${userTextos.length > 0 ? userTextos.join('<br>') : '<span class="text-gray-500">Nenhuma resposta</span>'}</div>`;
+    html += `<div class="mt-2"><strong>Resposta correta:</strong> ${corretaTextos.join('<br>')}</div>`;
+    html += acertou ? `<div class="text-green-700 font-bold mt-2">✔ Acertou</div>` : `<div class="text-red-700 font-bold mt-2">✘ Errou</div>`;
     html += `</div>`;
   });
   const nota = Math.round((acertos / total) * 100);
@@ -537,22 +565,22 @@ function showGabarito(idx) {
         </div>
       </div>
       <div class='overflow-auto px-6 py-4' style='max-height:70vh;'>
-        <table class='w-full text-sm mb-4'>
+        <table class='w-full text-sm mb-4 border-collapse border border-gray-300'>
           <thead>
-            <tr>
-              <th class='text-left'>Questão</th>
-              <th class='text-left'>Sua resposta</th>
-              <th class='text-left'>Correta</th>
-              <th class='text-left'>Acertou?</th>
+            <tr class='bg-gray-100'>
+              <th class='text-left border border-gray-300 px-2 py-2 w-16'>Questão</th>
+              <th class='text-left border border-gray-300 px-2 py-2'>Sua resposta</th>
+              <th class='text-left border border-gray-300 px-2 py-2'>Correta</th>
+              <th class='text-left border border-gray-300 px-2 py-2 w-20'>Acertou?</th>
             </tr>
           </thead>
           <tbody>
-            ${tentativa.gabarito.map(g => `
-              <tr>
-                <td class='font-bold'>${g.questao}</td>
-                <td>${g.user.join(', ') || '-'}</td>
-                <td>${g.correta.join(', ')}</td>
-                <td>${g.acertou ? '<span class="text-green-700">✔</span>' : '<span class="text-red-700">✘</span>'}</td>
+            ${tentativa.gabarito.map((g, index) => `
+              <tr class='${index % 2 === 0 ? 'bg-gray-50' : 'bg-white'}'>
+                <td class='font-bold border border-gray-300 px-2 py-2 text-center'>${g.questao}</td>
+                <td class='border border-gray-300 px-2 py-2 text-xs'>${g.userTextos && g.userTextos.length > 0 ? g.userTextos.join('<br>') : (g.user && g.user.length > 0 ? g.user.join(', ') : '<span class="text-gray-500">Nenhuma resposta</span>')}</td>
+                <td class='border border-gray-300 px-2 py-2 text-xs'>${g.corretaTextos ? g.corretaTextos.join('<br>') : (Array.isArray(g.correta) ? g.correta.join(', ') : g.correta)}</td>
+                <td class='border border-gray-300 px-2 py-2 text-center'>${g.acertou ? '<span class="text-green-700 font-bold">✔</span>' : '<span class="text-red-700 font-bold">✘</span>'}</td>
               </tr>
             `).join('')}
           </tbody>
@@ -641,8 +669,36 @@ function exportGabarito(idx) {
     doc.setFontSize(10);
     doc.setTextColor(33, 37, 41);
     doc.text(`${g.questao}`, 12, y);
-    doc.text(`${g.user.join(', ') || '-'}`, 35, y);
-    doc.text(`${g.correta.join(', ')}`, 80, y);
+    
+    // Para sua resposta, usa o texto se disponível, senão a letra
+    let suaResposta = '-';
+    if (g.userTextos && g.userTextos.length > 0) {
+      // Trunca o texto para caber no PDF (máximo 40 caracteres)
+      suaResposta = g.userTextos.map(texto => {
+        const letra = texto.split(')')[0];
+        const textoCompleto = texto.split(') ')[1] || '';
+        return textoCompleto.length > 30 ? `${letra}) ${textoCompleto.substring(0, 27)}...` : texto;
+      }).join(', ');
+    } else if (g.user && g.user.length > 0) {
+      suaResposta = g.user.join(', ');
+    }
+    
+    // Para resposta correta, usa o texto se disponível, senão a letra
+    let respostaCorreta = '';
+    if (g.corretaTextos && g.corretaTextos.length > 0) {
+      respostaCorreta = g.corretaTextos.map(texto => {
+        const letra = texto.split(')')[0];
+        const textoCompleto = texto.split(') ')[1] || '';
+        return textoCompleto.length > 30 ? `${letra}) ${textoCompleto.substring(0, 27)}...` : texto;
+      }).join(', ');
+    } else if (Array.isArray(g.correta)) {
+      respostaCorreta = g.correta.join(', ');
+    } else {
+      respostaCorreta = g.correta;
+    }
+    
+    doc.text(suaResposta, 35, y);
+    doc.text(respostaCorreta, 80, y);
     if (g.acertou) {
       doc.setTextColor(34, 197, 94); // verde
       doc.text('✔', 120, y);
