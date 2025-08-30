@@ -17,57 +17,27 @@
     },
     {
       "id": "02",
-      "questao": "Qual dos seguintes é um objetivo típico dos testes?",
+      "questao": "Qual das seguintes afirmações sobre garantia de qualidade (QA) e/ou controle de qualidade (QC) está correta?",
       "alternativas": {
-        "A": "Encontrar defeitos e falhas",
-        "B": "Para validar os trabalhos do plano do projeto, conforme necessário",
-        "C": "Garantia de testes completos",
-        "D": "Comparação dos resultados reais com os resultados esperados"
+        "A": "O controle de qualidade é realizado como parte do teste",
+        "B": "Os testes são realizados como parte do controle de qualidade",
+        "C": "Teste é outro termo para CQ",
+        "D": "O teste é realizado como parte do controle de qualidade"
       },
-      "correta": "A",
-      "erradas": ["B", "C", "D"],
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
       "tipo": "Radio button",
       "imagem": "",
       "level": "K1"
     },
     {
       "id": "03",
-      "questao": "Qual dos seguintes é um exemplo de falha em um sistema de controle de velocidade “cruize control” de um carro?",
+      "questao": "Um dos 'princípios de teste' afirma que o teste exaustivo é impossível. Qual das seguintes opções é um exemplo de como abordar esse princípio na prática?",
       "alternativas": {
-        "A": "O desenvolvedor do sistema esqueceu de renomear variáveis após uma operação de cortar e colar",
-        "B": "Código desnecessário que soa um alarme quando a inversão de marcha foi incluída no sistema",
-        "C": "O sistema deixa de manter uma velocidade definida quando o volume do rádio é aumentado ou diminuído",
-        "D": "A especificação do projeto do sistema indica erroneamente as velocidades"
-      },
-      "correta": "C",
-      "erradas": ["A", "B", "D"],
-      "tipo": "Radio button",
-      "imagem": "",
-      "level": "K2"
-    },
-    {
-      "id": "04",
-      "questao": "Qual dos seguintes aspectos é mais um defeito do que uma causa raiz em um rastreador de fitness?",
-      "alternativas": {
-        "A": "Como o autor dos requisitos não estava familiarizado com o domínio do treinamento físico, ele, portanto, assumiu erroneamente que os usuários queriam batimentos cardíacos em batidas por hora",
-        "B": "O testador da interface do smartphone não tinha sido treinado em testes de transição de estado, então falhou um defeito grave",
-        "C": "Uma variável de configuração incorreta implementada para a função GPS poderia causar problemas de localização durante o horário de verão",
-        "D": "Como a projetista nunca havia trabalhado em dispositivos que pudessem ser usados, ela, como projetista da interface do usuário, entendeu mal os efeitos da luz solar refletida."
-      },
-      "correta": "C",
-      "erradas": ["A", "B", "D"],
-      "tipo": "Radio button",
-      "imagem": "",
-      "level": "K2"
-    },
-    {
-      "id": "05",
-      "questao": "Como resultado da análise de risco, mais testes estão sendo direcionados para aquelas áreas do sistema em teste onde os testes iniciais encontraram mais defeitos do que a média. Qual dos seguintes princípios de teste está sendo aplicado?",
-      "alternativas": {
-        "A": "Cuidado com o paradoxo do pesticida",
-        "B": "Os testes são dependentes do contexto",
-        "C": "A ausência de erros é uma falácia",
-        "D": "Defeitos agrupados"
+        "A": "Criação de casos de teste que abrangem todos os resultados possíveis especificados",
+        "B": "Documentar todas as possíveis variações de entrada de teste e priorizá-las com base na importância",
+        "C": "Iniciar os testes o mais cedo possível com revisões e outras abordagens de testes estáticos",
+        "D": "Usando o particionamento de equivalência e a análise de valor de limite para gerar casos de teste"
       },
       "correta": "D",
       "erradas": ["A", "B", "C"],
@@ -76,13 +46,13 @@
       "level": "K2"
     },
     {
-      "id": "06",
-      "questao": "Dadas as seguintes atividades e tarefas de teste: (a) Projeto do teste (b) Implementação de testes (c) Execução de testes (d) Conclusão do teste (1) Entrada de pedidos de alteração para relatórios de defeitos em aberto (2) Identificação de dados de teste para apoiar os casos de teste (3) Priorização de procedimentos de teste e criação de dados de teste (4) Analisar as discrepâncias para determinar sua causa Qual dos seguintes MELHORES combina as atividades com as tarefas?",
+      "id": "04",
+      "questao": "Qual atividade de teste envolve trabalhar com requisitos de dados de teste, condições de teste, requisitos de ambiente de teste e casos de teste?",
       "alternativas": {
-        "A": "A-2, B-3, C-4, D-1",
-        "B": "A-2, B-1, C-3, D-4",
-        "C": "A-3, B-2, C-4, D-1",
-        "D": "A-3, B-2, C-1, D-4"
+        "A": "Projeto de teste",
+        "B": "Execução de testes",
+        "C": "Análise de teste",
+        "D": "Implementação do teste"
       },
       "correta": "A",
       "erradas": ["B", "C", "D"],
@@ -91,13 +61,43 @@
       "level": "K2"
     },
     {
-      "id": "07",
-      "questao": "Qual dos seguintes MELHORES descreve como o valor é agregado ao manter a rastreabilidade entre a base de teste e os artefatos de teste?",
+      "id": "05",
+      "questao": "Qual das opções a seguir tem MAIS probabilidade de afetar a forma como o teste é realizado para um determinado objeto de teste?",
       "alternativas": {
-        "A": "Os testes de manutenção podem ser totalmente automatizados com base em mudanças nas exigências iniciais",
-        "B": "É possível determinar se um novo caso de teste aumentou a cobertura das exigências",
-        "C": "Os gerentes de testes podem identificar quais testadores encontraram os defeitos de maior gravidade",
-        "D": "As áreas que podem ser impactadas por efeitos colaterais de uma mudança podem ser alvo de testes de confirmação"
+        "A": "O nível médio de experiência da equipe de marketing da organização",
+        "B": "O conhecimento dos usuários de que um novo sistema está sendo desenvolvido para eles",
+        "C": "O número de anos de experiência dos membros da equipe de teste",
+        "D": "A estrutura organizacional do usuário final para um aplicativo comercial de streaming de música"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "06",
+      "questao": "Qual das seguintes afirmações é um exemplo CORRETO do valor da rastreabilidade?",
+      "alternativas": {
+        "A": "A rastreabilidade entre os riscos atenuados e os casos de teste aprovados fornece um meio de determinar o nível de risco residual",
+        "B": "A rastreabilidade entre os requisitos do usuário e os resultados da execução do teste fornece um meio de medir o progresso do projeto em relação às metas comerciais",
+        "C": "A rastreabilidade entre os testadores e os casos de teste com falha fornece um meio de determinar o nível de habilidade dos testadores",
+        "D": "A rastreabilidade entre os riscos identificados e as condições de teste escritas fornece um meio de determinar quais riscos merecem ser testados"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "07",
+      "questao": "Qual das opções a seguir é a MAIS provável de ser um exemplo de um testador usando uma habilidade genérica ao testar?",
+      "alternativas": {
+        "A": "O profundo conhecimento do testador de uma variedade de jogos de computador fez com que eles se dessem bem com um dos desenvolvedores que também gostava de jogos",
+        "B": "O testador era um ex-piloto e tinha mais condições de entender os critérios de aceitação do sistema de controle do helicóptero",
+        "C": "O testador trabalhou anteriormente programador e usou suas habilidades nessa área para se comunicar melhor com os analistas de negócios",
+        "D": "O testador foi muito cuidadoso para não cometer erros ao gerar metodicamente casos de teste antes de iniciar a sessão de teste exploratório"
       },
       "correta": "B",
       "erradas": ["A", "C", "D"],
