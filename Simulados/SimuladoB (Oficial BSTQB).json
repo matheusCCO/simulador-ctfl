@@ -2,12 +2,12 @@
   "questoes": [
     {
       "id": "01",
-      "questao": "Qual das opções a seguir é um exemplo de por que os testes são necessários?",
+      "questao": "Qual das alternativas a seguir é um exemplo do porquê o teste é necessário?",
       "alternativas": {
-        "A": "Os testes dinâmicos aumentam a qualidade fazendo com que os objetos de teste falhem de maneiras que nunca poderiam ser alcançadas pelos usuários",
-        "B": "Os testes estáticos são usados pelos desenvolvedores para identificar falhas no código de seus programas antes do que pode ser obtido por meio de testes dinâmicos",
-        "C": "A análise estática fornece evidências aos clientes de que os elementos do sistema que não fornecem saídas estão aptos a serem liberados",
-        "D": "As revisões aumentam a qualidade das especificações de requisitos e levam à necessidade de menos alterações nos produtos de trabalho derivados"
+        "A": "O teste dinâmico aumenta a qualidade ao fazer com que os objetos de teste falhem de maneiras que nunca poderiam ser alcançadas pelos usuários.",
+        "B": "O teste estático é usado pelos desenvolvedores para identificar falhas em seu código mais cedo do que seria possível por meio do teste dinâmico.",
+        "C": "A análise estática fornece evidências aos clientes de que os elementos do sistema que não produzem saídas estão prontos para liberação.",
+        "D": "As revisões aumentam a qualidade das especificações de requisitos e levam à necessidade de menos mudanças nos produtos de trabalho derivados."
       },
       "correta": "D",
       "erradas": ["A", "B", "C"],
@@ -17,12 +17,12 @@
     },
     {
       "id": "02",
-      "questao": "Qual das seguintes afirmações sobre garantia de qualidade (QA) e/ou controle de qualidade (QC) está correta?",
+      "questao": "Qual das seguintes afirmações sobre garantia da qualidade (QA) e/ou controle da qualidade (QC) está correta?",
       "alternativas": {
-        "A": "O controle de qualidade é realizado como parte do teste",
-        "B": "Os testes são realizados como parte do controle de qualidade",
-        "C": "Teste é outro termo para CQ",
-        "D": "O teste é realizado como parte do controle de qualidade"
+        "A": "QA é realizada como parte do teste",
+        "B": "O teste é realizado como parte do QC",
+        "C": "Teste é outro termo para QC",
+        "D": "O teste é realizado como parte do QA"
       },
       "correta": "B",
       "erradas": ["A", "C", "D"],
@@ -32,12 +32,12 @@
     },
     {
       "id": "03",
-      "questao": "Um dos 'princípios de teste' afirma que o teste exaustivo é impossível. Qual das seguintes opções é um exemplo de como abordar esse princípio na prática?",
+      "questao": "Um dos “princípios de teste” afirma que o teste exaustivo é impossível. Qual das seguintes alternativas é um exemplo de como abordar esse princípio na prática?",
       "alternativas": {
-        "A": "Criação de casos de teste que abrangem todos os resultados possíveis especificados",
-        "B": "Documentar todas as possíveis variações de entrada de teste e priorizá-las com base na importância",
-        "C": "Iniciar os testes o mais cedo possível com revisões e outras abordagens de testes estáticos",
-        "D": "Usando o particionamento de equivalência e a análise de valor de limite para gerar casos de teste"
+        "A": "Criar casos de teste que cubram todas as saídas especificadas possíveis",
+        "B": "Documentar todas as variações possíveis de entradas de teste e priorizá-las com base na importância",
+        "C": "Iniciar o teste o mais cedo possível, com revisões e outras abordagens de teste estático",
+        "D": "Usar particionamento de equivalência e análise de valor limite para gerar casos de teste"
       },
       "correta": "D",
       "erradas": ["A", "B", "C"],
@@ -50,7 +50,7 @@
       "questao": "Qual atividade de teste envolve trabalhar com requisitos de dados de teste, condições de teste, requisitos de ambiente de teste e casos de teste?",
       "alternativas": {
         "A": "Projeto de teste",
-        "B": "Execução de testes",
+        "B": "Execução de teste",
         "C": "Análise de teste",
         "D": "Implementação do teste"
       },
@@ -62,7 +62,7 @@
     },
     {
       "id": "05",
-      "questao": "Qual das opções a seguir tem MAIS probabilidade de afetar a forma como o teste é realizado para um determinado objeto de teste?",
+      "questao": "Qual das alternativas a seguir é a que MAIS provavelmente impacta em como o teste é realizado para um determinado objeto de teste?",
       "alternativas": {
         "A": "O nível médio de experiência da equipe de marketing da organização",
         "B": "O conhecimento dos usuários de que um novo sistema está sendo desenvolvido para eles",
@@ -79,10 +79,10 @@
       "id": "06",
       "questao": "Qual das seguintes afirmações é um exemplo CORRETO do valor da rastreabilidade?",
       "alternativas": {
-        "A": "A rastreabilidade entre os riscos atenuados e os casos de teste aprovados fornece um meio de determinar o nível de risco residual",
-        "B": "A rastreabilidade entre os requisitos do usuário e os resultados da execução do teste fornece um meio de medir o progresso do projeto em relação às metas comerciais",
-        "C": "A rastreabilidade entre os testadores e os casos de teste com falha fornece um meio de determinar o nível de habilidade dos testadores",
-        "D": "A rastreabilidade entre os riscos identificados e as condições de teste escritas fornece um meio de determinar quais riscos merecem ser testados"
+        "A": "A rastreabilidade entre os riscos mitigados e os casos de teste que passaram fornece um meio de determinar o nível de risco residual",
+        "B": "A rastreabilidade entre os requisitos do usuário e os resultados de teste fornece um meio de medir o progresso do projeto em relação aos objetivos de negócio",
+        "C": "A rastreabilidade entre os testadores e os casos de teste que falharam fornece um meio de determinar o nível de habilidade dos testadores",
+        "D": "A rastreabilidade entre os riscos identificados e as condições de teste escritas fornece um meio de determinar quais riscos valem a pena testar"
       },
       "correta": "B",
       "erradas": ["A", "C", "D"],
@@ -92,12 +92,12 @@
     },
     {
       "id": "07",
-      "questao": "Qual das opções a seguir é a MAIS provável de ser um exemplo de um testador usando uma habilidade genérica ao testar?",
+      "questao": "Qual das alternativas a seguir é a que MAIS provavelmente representa um exemplo de um testador utilizando uma habilidade genérica durante o teste?",
       "alternativas": {
-        "A": "O profundo conhecimento do testador de uma variedade de jogos de computador fez com que eles se dessem bem com um dos desenvolvedores que também gostava de jogos",
-        "B": "O testador era um ex-piloto e tinha mais condições de entender os critérios de aceitação do sistema de controle do helicóptero",
-        "C": "O testador trabalhou anteriormente programador e usou suas habilidades nessa área para se comunicar melhor com os analistas de negócios",
-        "D": "O testador foi muito cuidadoso para não cometer erros ao gerar metodicamente casos de teste antes de iniciar a sessão de teste exploratório"
+        "A": "O profundo conhecimento do testador sobre diversos jogos de computador fez com que ele se desse bem com um dos desenvolvedores que também gostava de jogos",
+        "B": "O testador era um ex-piloto e conseguiu compreender melhor os critérios de aceitação para o sistema de controle de helicópteros",
+        "C": "O testador já havia trabalhado como programador e utilizou suas habilidades nessa área para se comunicar melhor com os analistas de negócios",
+        "D": "O testador foi muito cuidadoso para não cometer erros ao gerar metodicamente casos de teste antes de iniciar sua sessão de testes exploratórios"
       },
       "correta": "B",
       "erradas": ["A", "C", "D"],
@@ -107,30 +107,30 @@
     },
     {
       "id": "08",
-      "questao": "Qual das seguintes qualidades é MAIS provável que seja encontrada na mentalidade de um testador e não na de um desenvolvedor?",
+      "questao": "Qual das seguintes é uma vantagem da abordagem de equipe inteira (whole-team approach)?",
       "alternativas": {
-        "A": "A mentalidade de um testador tende a crescer e amadurecer à medida que o testador ganha experiência",
-        "B": "Capacidade de ver o que pode dar errado",
-        "C": "Boa comunicação com os membros da equipe",
-        "D": "Atenção aos detalhes"
-      },
-      "correta": "B",
-      "erradas": ["A", "C", "D"],
-      "tipo": "Radio button",
-      "imagem": "",
-      "level": "K2"
-    },
-    {
-      "id": "09",
-      "questao": "Dadas as seguintes declarações sobre as relações entre as atividades de desenvolvimento de software e as atividades de teste no ciclo de vida de desenvolvimento de software: (1) Cada atividade de desenvolvimento deve ter uma atividade de teste correspondente (2) A revisão deve começar assim que as versões finais dos documentos estiverem disponíveis. (3) O projeto e a implementação de testes devem começar durante a atividade de desenvolvimento correspondente (4) As atividades de teste devem começar nos estágios iniciais do ciclo de vida de desenvolvimento de software Quais dos seguintes CORRETAMENTE mostram quais são verdadeiros e quais são falsos?",
-      "alternativas": {
-        "A": "Verdadeiro - 1, 2; Falso - 3, 4",
-        "B": "Verdadeiro - 2, 3; Falso - 1, 4",
-        "C": "Verdadeiro - 1, 2, 4; Falso - 3",
-        "D": "Verdadeiro - 1, 4; Falso - 2, 3"
+        "A": "Permite que os membros da equipe assumam qualquer função a qualquer momento",
+        "B": "Necessita apenas de uma única equipe para dar suporte a todo o projeto de desenvolvimento",
+        "C": "Incorpora representantes do negócio junto aos desenvolvedores na mesma equipe",
+        "D": "Gera uma sinergia de equipe que beneficia todo o projeto"
       },
       "correta": "D",
       "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "09",
+      "questao": "Qual das seguintes afirmações sobre o ciclo de vida de desenvolvimento de software escolhido está CORRETA?",
+      "alternativas": {
+        "A": "Se o desenvolvimento ágil de software for utilizado, a automação dos testes de sistema substitui a necessidade de testes de regressão",
+        "B": "Se um modelo de desenvolvimento sequencial for utilizado, então o teste dinâmico é tipicamente restrito às fases posteriores do ciclo de vida",
+        "C": "Se um modelo de desenvolvimento iterativo for utilizado, então o teste de componentes é tipicamente realizado manualmente pelos desenvolvedores",
+        "D": "Se um modelo de desenvolvimento incremental for utilizado, então o teste estático é feito nos primeiros incrementos e o teste dinâmico nos incrementos posteriores"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
       "tipo": "Radio button",
       "imagem": "",
       "level": "K2"
