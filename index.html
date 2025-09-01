@@ -1,50 +1,107 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Simulado CTFL - Quiz</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles/globals.css" />
-  <link rel="stylesheet" href="styles/desktop.css">
-  <link rel="stylesheet" href="styles/mobile.css">
-</head>
-<body class="bg-gray-100 p-6" style="padding-top: 80px; padding-bottom: 80px;">
-  <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
-    <h1 class="text-2xl font-bold mb-4">Simulado CTFL v4.0 - Exame Oficial ISTQB</h1>
-    <div class="mb-4 p-3 bg-green-100 border border-green-400 rounded">
-      <p class="text-sm"><strong>✅ Simulados A,B e C possuem Questões Oficiais:</strong> Os Exames A, B e C contém as 40 questões oficiais extraídas do PDF do BSTQB CTFL v4.0. Os demais exames contêm questões de geradas por I.A exemplo para prática adicional.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulado CTFL - Quiz</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/globals.css" />
+    <link rel="stylesheet" href="styles/desktop.css" />
+    <link rel="stylesheet" href="styles/mobile.css" />
+  </head>
+  <body class="bg-gray-100 p-6" style="padding-top: 80px; padding-bottom: 80px">
+    <div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6">
+      <h1 class="text-2xl font-bold mb-4">
+        Simulado CTFL v4.0 - Exame Oficial ISTQB
+      </h1>
+      <div class="mb-4 p-3 bg-green-100 border border-green-400 rounded">
+        <p class="text-sm">
+          <strong>✅ Simulados A,B e C possuem Questões Oficiais:</strong> Os
+          Exames A, B e C contém as 40 questões oficiais extraídas do PDF do
+          BSTQB CTFL v4.0. Os demais exames contêm questões de geradas por I.A
+          exemplo para prática adicional.
+        </p>
+      </div>
+
+      <p class="font-semibold mb-1">Baixar Simulados Oficiais (PDF)</p>
+      <p class="text-gray-600 mb-2">
+        Algumas perguntas estão sem imagens, portanto, faça seu simulado com o
+        <strong>PDF aberto</strong>.
+      </p>
+      <ul class="mb-4">
+        <li>
+          <a
+            href="./bstqb/Simulado A.pdf"
+            class="text-blue-600 underline hover:text-blue-800 transition-colors"
+            download
+            >Simulado A.pdf</a
+          >
+        </li>
+        <li>
+          <a
+            href="./bstqb/Simulado B.pdf"
+            class="text-blue-600 underline hover:text-blue-800 transition-colors"
+            download
+            >Simulado B.pdf</a
+          >
+        </li>
+        <li>
+          <a
+            href="./bstqb/Simulado C.pdf"
+            class="text-blue-600 underline hover:text-blue-800 transition-colors"
+            download
+            >Simulado C.pdf</a
+          >
+        </li>
+      </ul>
+      <label for="examSelect" class="block font-semibold"
+        >Escolha o simulado:</label
+      >
+      <div class="flex gap-2 items-center mb-4">
+        <select
+          id="examSelect"
+          class="border p-2 rounded w-full transition-colors focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
+        >
+          <option value="examA">Exame A (Oficial ISTQB)</option>
+        </select>
+        <input
+          type="file"
+          id="importJson"
+          accept="application/json"
+          class="hidden"
+        />
+        <button
+          id="importBtn"
+          type="button"
+          class="bg-blue-300 rounded hover:bg-blue-200 text-sm font-semibold transition-colors"
+        >
+          Importar JSON
+        </button>
+      </div>
+      <button
+        onclick="startQuiz()"
+        class="bg-blue-600 text-white px-4 py-2 rounded mb-4"
+      >
+        Iniciar Quiz
+      </button>
+
+      <div id="quiz" class="mt-6 hidden">
+        <div id="timer" class="text-right font-bold text-red-500">
+          Tempo: 60:00
+        </div>
+        <div id="questionContainer" class="mt-4"></div>
+      </div>
+
+      <div id="result" class="mt-6 hidden"></div>
+      <div id="history" class="mt-6">
+        <h2 class="text-xl font-bold mb-2">Histórico de Tentativas</h2>
+        <ul id="historyList" class="list-disc pl-5"></ul>
+      </div>
     </div>
 
-    <p class="font-semibold mb-1">Baixar Simulados Oficiais (PDF)</p>
-    <p class="text-gray-600 mb-2">Algumas perguntas estão sem imagens, portanto, faça seu simulado com o <strong>PDF aberto</strong>.</p>
-    <ul class="mb-4">
-      <li><a href="./bstqb/Simulado A.pdf" class="text-blue-600 underline hover:text-blue-800 transition-colors" download>Simulado A.pdf</a></li>
-      <li><a href="./bstqb/Simulado B.pdf" class="text-blue-600 underline hover:text-blue-800 transition-colors" download>Simulado B.pdf</a></li>
-      <li><a href="./bstqb/Simulado C.pdf" class="text-blue-600 underline hover:text-blue-800 transition-colors" download>Simulado C.pdf</a></li>
-    </ul>
-    <label for="examSelect" class="block font-semibold">Escolha o simulado:</label>
-    <div class="flex gap-2 items-center mb-4">
-      <select id="examSelect" class="border p-2 rounded w-full transition-colors focus:ring-2 focus:ring-blue-400 focus:border-blue-400">
-        <option value="examA">Exame A (Oficial ISTQB)</option>
-      </select>
-      <input type="file" id="importJson" accept="application/json" class="hidden" />
-      <button id="importBtn" type="button" class="bg-blue-300 rounded hover:bg-blue-200 text-sm font-semibold transition-colors">Importar JSON</button>
-    </div>
-    <button onclick="startQuiz()" class="bg-blue-600 text-white px-4 py-2 rounded mb-4">Iniciar Quiz</button>
-
-    <div id="quiz" class="mt-6 hidden">
-      <div id="timer" class="text-right font-bold text-red-500">Tempo: 60:00</div>
-      <div id="questionContainer" class="mt-4"></div>
-    </div>
-
-    <div id="result" class="mt-6 hidden"></div>
-    <div id="history" class="mt-6">
-      <h2 class="text-xl font-bold mb-2">Histórico de Tentativas</h2>
-      <ul id="historyList" class="list-disc pl-5"></ul>
-    </div>
-  </div>
-
-  <script src="scripts/functions.js"></script>
+    <script src="scripts/functions.js"></script>
   </body>
 </html>
