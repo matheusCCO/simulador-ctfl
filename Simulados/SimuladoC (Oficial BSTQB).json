@@ -1,845 +1,605 @@
 {
-    "questoes": 
-    [
-        {
-            "id": "01",
-            "questao": "O que é qualidade?",
-            "alternativas": 
-            {
-                "A": "Atividades focadas em proporcionar confiança de que os requisitos de qualidade serão cumpridos",
-                "B": "O grau em que um componente ou sistema satisfaz as necessidades declaradas e implícitas de suas diversas partes interessadas",
-                "C": "O grau em que um componente ou sistema protege informações e dados para que as pessoas ou outros componentes ou sistemas tenham o grau de acesso adequado a seus tipos e níveis de autorização",
-                "D": "Os custos totais incorridos em atividades e questões de qualidade e frequentemente divididos em custos de prevenção, custos de avaliação, custos de falhas internas e custos de falhas externas"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K1"
-        },
-        {
-            "id": "02",
-            "questao": "Qual dos seguintes é um objetivo típico do teste?",
-            "alternativas": 
-            {
-                "A": "Prevenir defeitos",
-                "B": "Reparação de defeitos",
-                "C": "Comparação dos resultados reais com os resultados esperados",
-                "D": "Analisando a causa do fracasso"
-            },
-            "correta": "A",
-            "erradas": 
-            [
-                "B",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K1"
-        },
-        {
-            "id": "03",
-            "questao": "Um telefone tocando momentaneamente distrai um programador, fazendo com que o programador programe inadequadamente a lógica que verifica o limite superior de uma variável de entrada. Mais tarde, durante os testes do sistema, um testador percebe que este campo de entrada aceita valores de entrada inválidos. A lógica codificada impropriamente para a verificação do limite superior é:",
-            "alternativas": 
-            {
-                "A": "A causa raiz",
-                "B": "O fracasso",
-                "C": "O erro",
-                "D": "O defeito"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "04",
-            "questao": "Um proprietário de produto diz que seu papel como testador em uma equipe Ágil é pegar todos os bugs antes do final de cada iteração. Qual dos seguintes é um princípio de teste que poderia ser usado para responder a esta falsa afirmação?",
-            "alternativas": 
-            {
-                "A": "Agrupamento de defeitos",
-                "B": "Os testes mostram a presença de defeitos",
-                "C": "Ausência de erros de falácia",
-                "D": "Análise da causa raiz"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "05",
-            "questao": "Os programadores frequentemente escrevem e executam testes unitários contra o código que eles escreveram. Durante esta atividade de autoteste, qual dos seguintes aspectos é uma mentalidade de testador que os programadores devem adotar para realizar estes testes unitários de forma eficaz?",
-            "alternativas": 
-            {
-                "A": "Boa habilidade de comunicação",
-                "B": "Cobertura de código",
-                "C": "Avaliação de defeitos de código",
-                "D": "Atenção aos detalhes"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "06",
-            "questao": "Considere as seguintes atividades de teste: (1) Seleção de testes de regressão (2) Avaliando a completude da execução do teste (3) Identificar quais histórias de usuários têm relatórios de defeitos em aberto (4) Avaliar se o número de testes para cada exigência é consistente com o nível de risco do produto Considere as seguintes maneiras como a rastreabilidade pode ajudar nos testes: (a) Melhorar a compreensibilidade dos relatórios de status dos testes para incluir o status dos itens de base do teste (b) Tornar os testes auditáveis (c) Fornecer informações para avaliar a qualidade do processo (d) Analisar o impacto das mudanças Qual dos seguintes aspectos combina a atividade de teste com a forma como a rastreabilidade pode auxiliar essa atividade?",
-            "alternativas": 
-            {
-                "A": "1d; 2b; 3c; 4a",
-                "B": "1b; 2d; 3a; 4c",
-                "C": "1d; 2c; 3a; 4b",
-                "D": "1d; 2b; 3a; 4c"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "07",
-            "questao": "Um testador participou de uma discussão sobre a estrutura de banco de dados proposta. O testador identificou um problema potencial de desempenho relacionado a certas buscas comuns de usuários. Este possível problema foi explicado para a equipe de desenvolvimento. Qual dos seguintes aspectos é uma contribuição de teste para o sucesso que o MELHOR corresponde a esta situação?",
-            "alternativas": 
-            {
-                "A": "Permitindo que os testes requeridos sejam identificados em um estágio inicial",
-                "B": "Assegurar que os processos sejam realizados corretamente",
-                "C": "Reduzindo o risco de defeitos fundamentais de projeto",
-                "D": "Reduzindo o risco de funcionalidade não testada"
-            },
-            "correta": "C",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "08",
-            "questao": "Qual dos seguintes é um exemplo de uma tarefa que pode ser realizada como parte do processo de teste?",
-            "alternativas": 
-            {
-                "A": "Análise de um defeito",
-                "B": "Dados de teste de projeto",
-                "C": "Atribuição de uma versão a um item de teste",
-                "D": "Escrever uma história de usuário"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "09",
-            "questao": "Você está executando um teste de desempenho com o objetivo de encontrar possíveis gargalos de rede nas interfaces entre os componentes de um sistema. Qual das seguintes afirmações descreve este teste?",
-            "alternativas": 
-            {
-                "A": "Um teste funcional durante o nível de teste de integração",
-                "B": "Um teste não-funcional durante o nível de teste de integração",
-                "C": "Um teste funcional durante o nível de teste de componentes",
-                "D": "Um teste não-funcional durante o nível de teste de componentes"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K1"
-        },
-        {
-            "id": "10",
-            "questao": "Qual das seguintes afirmações é verdadeira?",
-            "alternativas": 
-            {
-                "A": "A análise de impacto é útil para os testes de confirmação durante os testes de manutenção",
-                "B": "O teste de confirmação é útil para o teste de regressão durante o projeto do sistema",
-                "C": "A análise de impacto é útil para testes de regressão durante os testes de manutenção",
-                "D": "O teste de confirmação é útil para a análise de impacto durante os testes de manutenção"
-            },
-            "correta": "C",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "11",
-            "questao": "Considere os seguintes tipos de defeitos nos quais um nível de teste pode se concentrar: (1) Defeitos em módulos ou objetos testáveis separadamente (2) Não focado na identificação de defeitos (3) Defeitos nas interfaces e interações (4) Defeitos em todo o objeto de teste Qual da lista a seguir corresponde corretamente aos níveis de teste do programa da Fundação com as opções de foco de defeitos dadas acima?",
-            "alternativas": 
-            {
-                "A": "1= teste de desempenho; 2= teste de componentes; 3= teste de sistema; 4= teste de aceite",
-                "B": "1= teste de componentes; 2= teste de aceite; 3= teste de sistema; 4= teste de integração",
-                "C": "1= teste de componentes; 2= teste de aceite; 3= teste de integração; 4= teste de sistema",
-                "D": "1= teste de integração; 2= teste do sistema; 3= teste de componentes; 4= teste de aceite"
-            },
-            "correta": "C",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "12",
-            "questao": "Um produto de software de sistema operacional de mercado de massa é projetado para rodar em qualquer hardware de PC com um processador da família x86. Você está executando um conjunto de testes para procurar defeitos relacionados ao suporte dos vários PCs que usam tal processador e para criar confiança de que marcas importantes de PCs funcionarão. Que tipo de teste você está realizando?",
-            "alternativas": 
-            {
-                "A": "Teste de desempenho",
-                "B": "Teste do processador",
-                "C": "Teste funcional",
-                "D": "Teste de portabilidade"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "13",
-            "questao": "Durante um esforço de desenvolvimento ágil, um proprietário de produto descobre uma exigência regulatória desconhecida anteriormente que se aplica à maioria das histórias de usuários dentro de um determinado épico. As histórias de usuários são atualizadas para proporcionar as mudanças necessárias no comportamento do software. Os programadores da equipe estão modificando o código de forma apropriada. Como um testador da equipe, que tipos de testes serão executados?",
-            "alternativas": 
-            {
-                "A": "Testes de confirmação",
-                "B": "Testes de regressão",
-                "C": "Testes funcionais",
-                "D": "Testes relacionados a mudanças"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "14",
-            "questao": "Em uma revisão formal, qual é o nome do papel do participante que dirige uma reunião de inspeção?",
-            "alternativas": 
-            {
-                "A": "Facilitador",
-                "B": "Programador",
-                "C": "Autor",
-                "D": "Gerente de projetos"
-            },
-            "correta": "A",
-            "erradas": 
-            [
-                "B",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K1"
-        },
-        {
-            "id": "15",
-            "questao": "Você está lendo uma história de usuário no acúmulo de produtos para se preparar para uma reunião com o proprietário do produto e um desenvolvedor, notando defeitos potenciais à medida que você vai. Qual das seguintes afirmações é verdadeira sobre esta atividade?",
-            "alternativas": 
-            {
-                "A": "Não é um teste estático, porque o teste estático envolve a execução do objeto de teste",
-                "B": "Não é um teste estático, pois os testes estáticos são sempre realizados com uma ferramenta",
-                "C": "É um teste estático, pois qualquer defeito encontrado pode ser encontrado mais barato durante os testes dinâmicos",
-                "D": "É um teste estático, porque o teste estático não envolve a execução do objeto de teste"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "16",
-            "questao": "Durante um período intensivo de horas extras do projeto, um documento de arquitetura de sistema é enviado a vários participantes do projeto, anunciando uma revisão técnica previamente não planejada para ocorrer em uma semana. Não são feitos ajustes na lista de tarefas atribuídas aos participantes. Com base apenas nestas informações, qual dos seguintes fatores é um fator de sucesso para a revisão que é AUSENTE?",
-            "alternativas": 
-            {
-                "A": "Tipo de revisão apropriada",
-                "B": "Tempo adequado para a preparação",
-                "C": "Métricas suficientes para avaliar o autor",
-                "D": "Reunião de revisão bem gerenciada"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "17",
-            "questao": "Você está trabalhando como um testador em uma equipe Ágil e participou de mais de duas dúzias de sessões de refinamento da história do usuário com o proprietário do produto e os desenvolvedores da equipe no início de cada iteração. Como as revisões se tornaram mais eficazes na detecção de defeitos nas histórias de usuários e o proprietário do produto mais apto a corrigir esses defeitos, você e a equipe notam que a velocidade da equipe, como mostrado em seus gráficos queimados, começou a aumentar. Qual dos seguintes é um benefício dos testes estáticos que DIRETAMENTE se aplica ao aumento da velocidade?",
-            "alternativas": 
-            {
-                "A": "Aumento do custo total da qualidade",
-                "B": "Redução do custo dos testes",
-                "C": "Aumentar a produtividade do desenvolvimento",
-                "D": "Reduzir o custo total da qualidade"
-            },
-            "correta": "C",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "18",
-            "questao": "Você está trabalhando em um projeto de desenvolvimento de videogame, usando métodos ágeis. Ele é baseado na mitologia grega e na história, e os jogadores podem desempenhar papéis-chave em cenários como as batalhas entre gregos e troianos. Considere a seguinte história de usuário e seus critérios de aceite associados: Como um jogador, quero ser capaz de adquirir a Vara de Midas (um novo objeto mágico), para que eu possa transformar objetos e outros jogadores em ouro (1) A Vara deve funcionar em qualquer objeto ou jogador, não importa o tamanho, funciona pelo simples toque. (2) Segurar o bastão não transforma o jogador que o segura em ouro (3) Qualquer objeto ou jogador tocado pelo bastão se transforma completamente em ouro dentro de um milissegundo. (4) A Vara aparece como mostrado no Protótipo O.W.ROM (5) A transformação começa no ponto de contato com a Vara e se move a uma taxa de um metro por milissegundo. Você está participando de uma sessão de revisão baseada em checklist desta história de usuário. Esta história de usuário e seus critérios de aceite associados contêm quais dos seguintes defeitos típicos identificados por testes estáticos neste tipo de produto de trabalho?",
-            "alternativas": 
-            {
-                "A": "Desvio das normas",
-                "B": "Contradição",
-                "C": "Vulnerabilidade de segurança",
-                "D": "Lacunas de cobertura"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K3"
-        },
-        {
-            "id": "19",
-            "questao": "O que é cobertura de decisão?",
-            "alternativas": 
-            {
-                "A": "A cobertura dos resultados das condições",
-                "B": "Cobertura de decisões é sinônimo de cobertura de declarações",
-                "C": "A cobertura das declarações executáveis",
-                "D": "A cobertura dos resultados das decisões"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K1"
-        },
-        {
-            "id": "20",
-            "questao": "Antes de uma sessão de planejamento de iteração, você está estudando uma história de usuário e seus critérios de aceite, derivando as condições de teste e casos de teste associados da história do usuário como uma forma de aplicar o princípio de qualidade e teste antecipados. Que técnica de teste você está aplicando?",
-            "alternativas": 
-            {
-                "A": "Caixa-branca",
-                "B": "Caixa-preta",
-                "C": "Baseado na experiência",
-                "D": "Suposição de erros"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "21",
-            "questao": "Qual dos seguintes aspectos é uma afirmação verdadeira sobre testes exploratórios?",
-            "alternativas": 
-            {
-                "A": "Testadores mais experientes que testaram aplicações e tecnologias similares provavelmente farão melhor do que testadores menos experientes em testes exploratórios",
-                "B": "Os testes exploratórios não identificam nenhum teste adicional além daqueles que resultariam de técnicas de teste formais",
-                "C": "O tempo necessário para completar uma sessão de testes exploratórios não pode ser previsto com antecedência",
-                "D": "Os testes exploratórios podem envolver o uso de técnicas caixa-preta, mas não técnicas caixa-branca"
-            },
-            "correta": "A",
-            "erradas": 
-            [
-                "B",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "22",
-            "questao": "Você está testando um aplicativo móvel que permite aos clientes acessar e gerenciar suas contas bancárias. Você está executando um conjunto de testes que envolve a avaliação de cada tela e cada campo em cada tela em relação a uma lista geral de melhores práticas de interface com o usuário, derivada de um livro popular sobre o tema, que maximiza a atratividade, facilidade de uso e acessibilidade para tais aplicativos. Qual das seguintes opções MELHOR categoriza a técnica de teste que você está usando?",
-            "alternativas": 
-            {
-                "A": "Baseada na especificação",
-                "B": "Exploratório",
-                "C": "Baseado em checklist",
-                "D": "Suposição de erros"
-            },
-            "correta": "C",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "23",
-            "questao": "Considere um aplicativo móvel que permita aos clientes acessar e gerenciar suas contas bancárias. Uma história de usuário acabou de ser adicionada ao conjunto de recursos que verifica as contas de mídia social e os registros bancários dos clientes para dar saudações personalizadas em aniversários e outros marcos pessoais. Qual das seguintes técnicas de teste um PROGRAMADOR poderia utilizar durante um teste unitário do código para garantir que a cobertura de situações quando as saudações são supostas ocorrer e quando as saudações NÃO são supostas ocorrer?",
-            "alternativas": 
-            {
-                "A": "Teste de declaração",
-                "B": "Testes exploratórios",
-                "C": "Testes de transição do Estado",
-                "D": "Testes de decisão"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "24",
-            "questao": "Uma aplicação em lote está em produção inalterada há mais de dois anos. Ele funciona durante a noite uma vez por mês para produzir declarações que serão enviadas aos clientes por e-mail. Para cada cliente, o aplicativo passa por cada conta e lista todas as transações nessa conta no último mês. Ele usa uma estrutura neste loop para processar clientes (loop externo), as contas de cada cliente (loop médio) e as transações de cada conta (loop interno). Uma noite, o pedido de lote termina prematuramente, deixando de enviar extratos por e-mail a alguns clientes, quando encontra um cliente com uma conta para a qual não ocorreram transações no último mês. Esta é uma situação muito incomum e não tem ocorrido nos anos desde que este aplicativo foi colocado em produção. Enquanto conserta o defeito, um programador pede que você recomende técnicas de teste que sejam eficazes contra este tipo de defeito. Qual das seguintes técnicas de teste provavelmente teria sido capaz de detectar o defeito subjacente?",
-            "alternativas": 
-            {
-                "A": "Teste de decisão",
-                "B": "Teste de declaração",
-                "C": "Testes baseados em listas de verificação",
-                "D": "Suposição de erros"
-            },
-            "correta": "A",
-            "erradas": 
-            [
-                "B",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "25",
-            "questao": "Você está testando uma bomba de gasolina desacompanhada que só aceita cartões de crédito. Uma vez validado o cartão de crédito, o bico da bomba colocado no tanque e a nota desejada selecionada, o cliente digita a quantidade desejada de combustível em galões usando o teclado. O teclado permite apenas a entrada de dígitos. O combustível é vendido em décimos (0,1) de um galão, até 50,0 galões. Qual dos seguintes é um conjunto mínimo de quantidades desejadas que cobre as partições de equivalência para esta entrada?",
-            "alternativas": 
-            {
-                "A": "0.0, 20.0, 60.0",
-                "B": "0.0, 0.1, 50.0",
-                "C": "0.0, 0.1, 50.0, 70.0",
-                "D": "-0.1, 0.0, 0.1, 49.9, 50.0, 50.1"
-            },
-            "correta": "A",
-            "erradas": 
-            [
-                "B",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K3"
-        },
-        {
-            "id": "26",
-            "questao": "Você está testando um sistema de comércio eletrônico que vende suprimentos de cozinha como especiarias, farinha e outros itens a granel. As unidades em que os itens são vendidos são gramas (para especiarias e outros itens caros) ou quilogramas (para farinha e outros itens baratos). Independentemente das unidades, a menor quantidade válida de pedido é de 0,5 unidades (p. ex., meia grama de casulos de cardamomo) e a maior quantidade válida de pedido é de 25,0 unidades (p. ex., 25 quilos de açúcar). A precisão do campo de unidades é de 0,1 unidades. Qual dos seguintes é um conjunto de valores de entrada que cobrem os valores limite com valores limite de dois pontos para este campo?",
-            "alternativas": 
-            {
-                "A": "0.3, 10.0, 28.0",
-                "B": "0.4, 0.5, 0.6, 24,9,25,0, 25.1",
-                "C": "0.4, 0.5, 25.0 25.1",
-                "D": "0.5, 0.6, 24.9, 25.0"
-            },
-            "correta": "C",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K3"
-        },
-        {
-            "id": "27",
-            "questao": "Considere a seguinte tabela de decisão para a parte de um sistema de reservas de companhias aéreas online que permite aos passageiros frequentes resgatar pontos para viagens de recompensa: Condição 1 2 3 Conta e senha OK NS S Pontos insuficientes N S Ação Mostrar histórico de voos S N viagens de reco recompensa Permitir N N Y Suponha que haja duas partições de equivalência para a condição em que a conta/senha ok não é verdadeira, uma onde a conta é inválida e outra onde a conta é válida, mas a senha é inválida. Suponha que haja apenas uma partição de equivalência correspondente à condição em que Conta/senha ok é verdadeira, onde tanto a conta quanto a senha são válidas. Se você quiser projetar testes para cobrir as partições de equivalência para Conta/senha ok e para esta parte da tabela de decisão, qual é o número mínimo de testes necessários?",
-            "alternativas": 
-            {
-                "A": "2",
-                "B": "3",
-                "C": "4",
-                "D": "9"
-            },
-            "correta": "C",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K3"
-        },
-        {
-            "id": "28",
-            "questao": "Considere 0 seguinte diagrama de transição de estado apenas para uma bomba de gasolina sem supervisão, com cartão de crédito: Suponha que você queira desenvolver o número mínimo de testes para cobrir cada transição no diagrama de transição de estado. Suponha ainda que cada teste deve começar no estado inicial, esperando cliente, e cada teste termina quando uma transição chega ao estado inicial. Quantos testes você precisa?",
-            "alternativas": 
-            {
-                "A": "4",
-                "B": "7",
-                "C": "1",
-                "D": "Infinito"
-            },
-            "correta": "A",
-            "erradas": 
-            [
-                "B",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "assets/img.jpg",
-            "level": "K3"
-        },
-        {
-            "id": "29",
-            "questao": "Você está testando um sistema de comércio eletrônico que vende suprimentos de cozinha como especiarias, farinha e outros itens a granel. As unidades em que os itens são vendidos são gramas (para especiarias e outros itens caros) ou quilogramas (para farinha e outros itens baratos). Independentemente das unidades, a menor quantidade válida de pedido é de 0,5 unidades (p. ex., meia grama de casulos de cardamomo) e a maior quantidade válida de pedido é de 25,0 unidades (p. ex., 25 quilos de açúcar). A precisão do campo das unidades é de 0,1 unidades. Qual dos seguintes é um conjunto MÍNIMO de valores de entrada que cobre as partições de equivalência para este campo?",
-            "alternativas": 
-            {
-                "A": "10.0, 28.0",
-                "B": "0.4, 0.5, 25.0, 25.1",
-                "C": "0.2, 0.9, 29.5",
-                "D": "12.3"
-            },
-            "correta": "C",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K3"
-        },
-        {
-            "id": "30",
-            "questao": "Você está trabalhando como um testador em um sistema bancário online. A disponibilidade é considerada um dos principais riscos (qualidade) para o sistema. Você encontra uma falha reprodutível que resulta em clientes que perdem suas conexões com o site do banco na Web ao transferir fundos entre tipos comuns de contas e não conseguem se reconectar por entre três e cinco minutos. Qual dos seguintes aspectos seria um bom resumo para um relatório de defeitos para esta falha, um que capte tanto a essência da falha quanto seu impacto sobre as partes interessadas?",
-            "alternativas": 
-            {
-                "A": "Os logs do servidor Web mostram erro 0x44AB27 ao executar o teste 07.005, que não é uma mensagem de erro esperada no sistema de arquivos/tmp",
-                "B": "Os desenvolvedores introduziram um grande defeito de disponibilidade que irá perturbar seriamente nossos clientes",
-                "C": "O desempenho é lento e confiável sob carga",
-                "D": "A típica transação de transferência de fundos resulta no término da sessão do cliente, com um atraso na disponibilidade quando se tenta reconectar"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K3"
-        },
-        {
-            "id": "31",
-            "questao": "Você está testando um aplicativo móvel que permite aos usuários encontrar um restaurante próximo, com base no tipo de comida que eles querem comer. Considere a seguinte lista de casos de teste, prioridades (menor número é alta prioridade), e dependências, no seguinte formato: Número do caso de teste Condição de teste coberta Prioridade Dependência lógica 01.001 Selecione o tipo de alimento 3 Nenhum 01.002 Selecionar restaurante 2 01.001 01.003 Obter instruções 1 01.002 01.004 Chamar restaurante 1 01.002 01.005 Fazer reserva 3 01.002 Qual dos seguintes é um possível cronograma de execução de testes que considera tanto as prioridades quanto as dependências?",
-            "alternativas": 
-            {
-                "A": "01.001, 01.002, 01.003, 01.005, 01.004",
-                "B": "01.001, 01.002, 01.004, 01.003, 01.005",
-                "C": "01.003, 01.004, 01.002, 01.001, 01.002",
-                "D": "01.001, 01.002, 01.004, 01.005, 01.003"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K3"
-        },
-        {
-            "id": "32",
-            "questao": "Qual dos seguintes é uma métrica de teste comum frequentemente usada para monitorar a preparação e execução do teste BOTH?",
-            "alternativas": 
-            {
-                "A": "Status do caso de teste",
-                "B": "Taxas de localização/correção de defeitos",
-                "C": "Preparação do ambiente de teste",
-                "D": "Custo estimado para encontrar o próximo defeito"
-            },
-            "correta": "A",
-            "erradas": 
-            [
-                "B",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K1"
-        },
-        {
-            "id": "33",
-            "questao": "Quais dos dois fatores a seguir podem ser usados para determinar o nível de risco?",
-            "alternativas": 
-            {
-                "A": "Testes e desenvolvimento",
-                "B": "Dinâmico e reativo",
-                "C": "Declaração e decisão",
-                "D": "Probabilidade e impacto"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K1"
-        },
-        {
-            "id": "34",
-            "questao": "Você está trabalhando como gerente de projeto em um projeto de software bancário interno. Para evitar retrabalho e ciclos excessivos de encontrar/corrigir/retestar, o seguinte processo foi colocado em prática para resolver um defeito, uma vez encontrado no laboratório de testes: (a) O desenvolvedor designado encontra e conserta o defeito, depois cria uma construção experimental (b) Um desenvolvedor de um par revisa, testa e confirma a correção do defeito em sua área de trabalho (c) Um testador, geralmente o que encontrou o defeito, testa a confirmação da correção do defeito no ambiente de desenvolvimento (d) Uma vez por dia, um novo lançamento com todas as correções de defeitos confirmadas é instalado no ambiente de teste (e) O mesmo testador da etapa 3 de confirmação testa a correção do defeito no ambiente de teste No entanto, um elevado número de defeitos que os testadores confirmaram como corrigidos no ambiente de desenvolvimento (na etapa 3) são de alguma forma reprovados nos testes de confirmação no ambiente de teste, com os resultados do retrabalho e do tempo de ciclo resultantes. Você tem a maior confiança em seus testadores, e descartou erros ou omissões na etapa 3. Qual dos seguintes aspectos é a parte mais provável do processo a ser verificada a seguir?",
-            "alternativas": 
-            {
-                "A": "A atividade dos desenvolvedores, que podem não estar testando adequadamente na etapa 2",
-                "B": "A atividade dos testadores, que podem estar confusos sobre o que testar no passo 5",
-                "C": "Gerenciamento da configuração, que pode não estar mantendo a integridade do produto na etapa 4",
-                "D": "A atividade dos desenvolvedores, que podem não estar corrigindo defeitos corretamente na etapa 1"
-            },
-            "correta": "C",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "35",
-            "questao": "Você está empenhado em planejar um esforço de teste para uma nova aplicação bancária móvel. Como parte da estimativa, você se encontra primeiro com os testadores propostos e outros sobre o projeto. A equipe está bem coordenada e já trabalhou em projetos similares. Para verificar a estimativa resultante, você então se refere a algumas médias do setor para esforço de teste e custos em projetos similares, publicadas por um consultor de renome. Qual declaração descreve com exatidão sua abordagem de estimativa?",
-            "alternativas": 
-            {
-                "A": "Uma abordagem simultânea baseada em especialistas e em métricas",
-                "B": "Principalmente uma abordagem baseada em especialistas, complementada com uma baseada em métricas",
-                "C": "Principalmente uma abordagem baseada em métricas, complementada com uma baseada em especialistas",
-                "D": "Primeiramente o planning poker, verificado por velocidade a partir de gráficos burndown"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "36",
-            "questao": "Durante um projeto seguindo métodos ágeis, você encontra uma discrepância entre a interpretação do desenvolvedor de um critério de aceite e a interpretação do proprietário do produto, que você traz à tona durante uma sessão de refinamento da história do usuário. Qual dos seguintes aspectos é um benefício de independência de teste exemplificado por esta situação?",
-            "alternativas": 
-            {
-                "A": "Reconhecimento de diferentes tipos de falhas",
-                "B": "Assumir a responsabilidade primária pela qualidade",
-                "C": "Remoção precoce de um defeito",
-                "D": "Desafiar as suposições das partes interessadas"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "37",
-            "questao": "Você está definindo o processo para realizar a análise de risco do produto como parte de cada iteração em um projeto Ágil. Qual dos seguintes é o lugar apropriado para documentar este processo em um plano de teste?",
-            "alternativas": 
-            {
-                "A": "Escopo dos testes",
-                "B": "Abordagem de testes",
-                "C": "Métricas de testes",
-                "D": "Gerenciamento da configuração do objeto de teste"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "38",
-            "questao": "Considere a seguinte lista de resultados indesejáveis que poderiam ocorrer em um esforço de desenvolvimento de aplicativos móveis: (a) Totais incorretos nos relatórios (b) Mudança nos critérios de aceite durante os testes de aceite (c) Os usuários acham o teclado macio muito difícil de usar com seu aplicativo (d) O sistema responde muito lentamente à entrada do usuário durante a entrada da cadeia de busca (e) Testadores não autorizados a relatar resultados de testes em reuniões diárias Qual dos seguintes aspectos classifica adequadamente estes resultados como riscos de projeto e de produto?",
-            "alternativas": 
-            {
-                "A": "Riscos do produto: B, E; Riscos de projeto: A, C, D",
-                "B": "Riscos do produto: A, C, D; Riscos do projeto: B, E",
-                "C": "Riscos do produto: A, C, D, E Riscos do projeto: B",
-                "D": "Riscos do produto: A, C Riscos do projeto: B, D, E"
-            },
-            "correta": "B",
-            "erradas": 
-            [
-                "A",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        },
-        {
-            "id": "39",
-            "questao": "Você acaba de concluir um projeto piloto para uma ferramenta de teste de regressão. Você entende muito melhor a ferramenta e adaptou seu processo de teste a ela. Você padronizou uma abordagem para usar a ferramenta e seus produtos de trabalho associados. Qual dos seguintes objetivos é um projeto piloto típico de automação de testes que ainda deve ser realizado?",
-            "alternativas": 
-            {
-                "A": "Saiba mais detalhes sobre a ferramenta",
-                "B": "Veja como a ferramenta se ajustaria aos processos e práticas existentes",
-                "C": "Decidir sobre formas padrão de usar, gerenciar, armazenar e manter a ferramenta e os ativos de teste",
-                "D": "Avaliar se os benefícios serão alcançados a um custo razoável"
-            },
-            "correta": "D",
-            "erradas": 
-            [
-                "A",
-                "B",
-                "C"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K1"
-        },
-        {
-            "id": "40",
-            "questao": "Qual das seguintes ferramentas é mais útil para relatar as métricas de teste?",
-            "alternativas": 
-            {
-                "A": "Ferramenta de gerenciamento de testes",
-                "B": "Ferramenta de análise estática",
-                "C": "Ferramenta de cobertura",
-                "D": "Ferramentas de teste baseadas em modelos"
-            },
-            "correta": "A",
-            "erradas": 
-            [
-                "B",
-                "C",
-                "D"
-            ],
-            "tipo": "Radio button",
-            "imagem": "",
-            "level": "K2"
-        }
-    ]
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Qual dos seguintes é um objetivo típico de teste?",
+      "alternativas": {
+        "A": "Validar que os requisitos documentados foram atendidos",
+        "B": "Causar falhas e identificar defeitos",
+        "C": "Iniciar erros e identificar causas raiz",
+        "D": "Verificar se o objeto de teste atende às expectativas do usuário"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "02",
+      "questao": "Qual das seguintes afirmações descreve MELHOR a diferença entre teste e depuração?",
+      "alternativas": {
+        "A": "O teste causa falhas enquanto a depuração corrige falhas",
+        "B": "O teste é uma atividade negativa enquanto a depuração é uma atividade positiva",
+        "C": "O teste determina que existem defeitos enquanto a depuração remove defeitos",
+        "D": "O teste encontra a causa dos defeitos enquanto a depuração corrige a causa dos defeitos"
+      },
+      "correta": "C",
+      "erradas": ["B", "A", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "03",
+      "questao": "A “falácia da ausência de defeitos” é um dos princípios do teste. Qual das seguintes é um exemplo de como abordar esse princípio na prática?",
+      "alternativas": {
+        "A": "Explicar que não é possível que o teste mostre a ausência de defeitos",
+        "B": "Apoiar os usuários finais na realização de testes de aceitação",
+        "C": "Garantir que não restem defeitos de implementação no sistema entregue",
+        "D": "Modificar testes que não causam falhas para garantir que poucos defeitos permaneçam"
+      },
+      "correta": "B",
+      "erradas": ["A", "D", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "04",
+      "questao": "Quais das seguintes atividades de teste são MAIS propensas a envolver a aplicação de análise de valor limite e particionamento de equivalência?",
+      "alternativas": {
+        "A": "Implementação de teste",
+        "B": "Projeto de teste",
+        "C": "Execução de teste",
+        "D": "Monitoramento de teste",
+        "E": "Análise de teste"
+      },
+      "correta": ["B", "E"],
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "05",
+      "questao": "Dado o seguinte testware:<br> 1. Itens de cobertura<br>2. Solicitações de mudança<br>3.Cronograma de execução de testes<br>4.Condições de teste priorizadas<br>E as seguintes atividades de teste:<br>A. Análise de teste <br>B. Projeto de teste <br>C. Implementação de teste <br>D. Conclusão de teste <br>Qual das seguintes opções MOSTRA MELHOR o testware produzido pelas atividades?",
+      "alternativas": {
+        "A": "1B, 2D, 3C, 4A",
+        "B": "1B, 2D, 3A, 4C",
+        "C": "1D, 2C, 3A, 4B",
+        "D": "1D, 2C, 3B, 4A"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "06",
+      "questao": "Qual das seguintes afirmações sobre os diferentes papéis de teste é MAIS provável de estar CORRETA?",
+      "alternativas": {
+        "A": "No desenvolvimento de software ágil, o papel de gerenciamento de teste é responsabilidade principal da equipe, enquanto o papel de teste é principalmente responsabilidade de um único indivíduo de fora da equipe",
+        "B": "O papel de teste é principalmente responsável pelo monitoramento e controle de teste, enquanto o papel de gerenciamento de teste é principalmente responsável pelo planejamento e conclusão de teste",
+        "C": "No desenvolvimento de software ágil, atividades de gerenciamento de teste que abrangem múltiplas equipes são tratadas por um gerente de teste externo à equipe, enquanto algumas tarefas de gerenciamento de teste são tratadas pela própria equipe",
+        "D": "papel de gerenciamento de teste é principalmente responsável pela análise e projeto de teste, enquanto o papel de teste é principalmente responsável pela implementação e execução de teste"
+      },
+      "correta": "C",
+      "erradas": ["D", "B", "A"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "07",
+      "questao": "Qual dos seguintes é uma vantagem da abordagem de equipe inteira (whole-team)?",
+      "alternativas": {
+        "A": "Equipes sem testadores",
+        "B": "Melhoria na dinâmica da equipe",
+        "C": "Membros de equipe especializados",
+        "D": "Tamanhos de equipe maiores"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "08",
+      "questao": "Qual das seguintes afirmações sobre a independência do teste é CORRETA?",
+      "alternativas": {
+        "A": "Testadores independentes encontrarão defeitos devido à sua perspectiva técnica diferente dos desenvolvedores, mas sua independência pode levar a uma relação adversarial com os desenvolvedores",
+        "B": "DA familiaridade dos desenvolvedores com seu próprio código significa que eles encontram apenas alguns defeitos nele; no entanto, seu conhecimento compartilhado de software com os testadores significa que esses defeitos também seriam encontrados pelos testadores",
+        "C": "O teste independente requer testadores que estejam fora da equipe de desenvolvimento e, idealmente, fora da organização; no entanto, esses testadores têm dificuldade em entender o domínio da aplicação",
+        "D": "Testadores de fora da equipe de desenvolvimento são mais independentes do que testadores de dentro da equipe, mas os testadores de dentro da equipe têm mais probabilidade de serem responsabilizados por atrasos na entrega do produto"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "09",
+      "questao": "Qual das seguintes é uma boa prática de teste que se aplica a todos os ciclos de vida de desenvolvimento de software?",
+      "alternativas": {
+        "A": "Para cada nível de teste, existe um nível de desenvolvimento correspondente",
+        "B": "Para cada objetivo de teste, existe um objetivo de desenvolvimento correspondente",
+        "C": "Para cada atividade de teste, existe uma atividade de usuário correspondente",
+        "D": "Para cada atividade de desenvolvimento, existe uma atividade de teste correspondente"
+      },
+      "correta": "D",
+      "erradas": ["A", "C", "B"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "10",
+      "questao": "Qual dos seguintes é um exemplo de uma abordagem de desenvolvimento “test-first” (teste primeiro)?",
+      "alternativas": {
+        "A": "Desenvolvimento Orientado a Testes de Componentes",
+        "B": "Desenvolvimento Orientado a Testes de Integração",
+        "C": "Desenvolvimento Orientado a Testes de Sistema",
+        "D": "Desenvolvimento Orientado a Testes de Aceitação"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "11",
+      "questao": "Qual das seguintes fornece a MELHOR descrição do “shift-left”?",
+      "alternativas": {
+        "A": "Quando acordado pelos desenvolvedores, atividades manuais do lado esquerdo do processo de teste são automatizadas para apoiar o princípio de “testes precoces economizam tempo e dinheiro”",
+        "B": "uando for custo-efetivo, as atividades de teste são antecipadas no ciclo de vida de desenvolvimento de software (SDLC) para reduzir o custo total da qualidade, diminuindo o número de defeitos encontrados posteriormente no SDLC",
+        "C": "Quando tiverem tempo disponível, os testadores são obrigados a automatizar testes para testes de regressão, começando com testes de componentes e testes de integração de componentes",
+        "D": "Quando disponível, os testadores são treinados para executar tarefas no início do SDLC, permitindo que mais atividades de teste sejam automatizadas posteriormente no SDLC"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "12",
+      "questao": "Qual das seguintes é MENOS provável de ocorrer como resultado de uma retrospectiva?",
+      "alternativas": {
+        "A": "A qualidade dos futuros objetos de teste melhora ao identificar melhorias nas práticas de desenvolvimento",
+        "B": "A eficiência dos testes melhora ao acelerar a configuração de ambientes de teste por meio de automação",
+        "C": "A compreensão dos usuários finais sobre os processos de desenvolvimento e teste é aprimorada",
+        "D": "Scripts de teste automatizados são aprimorados por meio de feedback dos desenvolvedores"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "13",
+      "questao": "Qual dos seguintes níveis de teste é MAIS provável de estar sendo realizado se o teste estiver focado em validação e não estiver sendo realizado por testadores?",
+      "alternativas": {
+        "A": "Teste de componente",
+        "B": "Teste de integração de componentes",
+        "C": "Teste de integração de sistema",
+        "D": "Teste de aceitação"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "14",
+      "questao": "O software do sistema de navegação foi atualizado porque sugeria rotas que infringiam as leis de trânsito, como dirigir na contramão de ruas de mão única. Qual das seguintes opções descreve MELHOR os testes que serão realizados?",
+      "alternativas": {
+        "A": "Apenas teste de confirmação",
+        "B": "Teste de confirmação seguido de teste de regressão",
+        "C": "Apenas teste de regressão",
+        "D": "Teste de regressão seguido de teste de confirmação"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "15",
+      "questao": "Dado os seguintes exemplos de defeitos:<br>i. Duas partes diferentes da especificação de design entram em conflito devido à complexidade do design<br>ii. A resposta do sistema é muito lenta, fazendo com que os usuários percam a paciência<br>iii. Um caminho no código não pode ser alcançado durante a execução<br>iv. Uma variável é declarada, mas nunca é utilizada posteriormente no programa<br>v. A quantidade de memória necessária pelo programa para gerar um relatório é muito alta<br>Qual das seguintes opções IDENTIFICA MELHOR os exemplos de defeitos que poderiam ser encontrados por teste estático (em vez de teste dinâmico)?",
+      "alternativas": {
+        "A": "ii, v",
+        "B": "iii, v",
+        "C": "i, ii, iv",
+        "D": "i, iii, iv"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "16",
+      "questao": "Qual dos seguintes é um benefício do feedback precoce e frequente das partes interessadas?",
+      "alternativas": {
+        "A": "Mudanças nos requisitos são compreendidas e implementadas mais cedo",
+        "B": "Garante que as partes interessadas do negócio entendam os requisitos dos usuários",
+        "C": "Permite que os proprietários do produto alterem seus requisitos sempre que quiserem",
+        "D": "Os usuários finais são informados sobre quais requisitos não serão implementados antes da liberação"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "17",
+      "questao": "Dado os seguintes tipos de revisão:<br>1. Revisão técnica<br>2. Revisão informal<br>3. Inspeção<br>4. Walkthrough<br>E as seguintes descrições:<br>A. Inclui objetivos como obter consenso, gerar novas ideias e motivar os autores a melhorar<br>B. Inclui objetivos como educar os revisores, obter consenso, gerar novas ideias e detectar defeitos potenciais<br>C. O principal objetivo é detectar defeitos potenciais e requer coleta de métricas para apoiar a melhoria do processo<br>D. O principal objetivo é detectar defeitos potenciais e não gera saída formal documentada<br>Qual das seguintes opções corresponde MELHOR os tipos de revisão às descrições?",
+      "alternativas": {
+        "A": "1A, 2B, 3C, 4D",
+        "B": "1A, 2D, 3C, 4B",
+        "C": "1B, 2C, 3D, 4A",
+        "D": "1C, 2D, 3A, 4B"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "18",
+      "questao": "Qual dos seguintes é um fator que contribui para uma revisão bem-sucedida?",
+      "alternativas": {
+        "A": "Garantir que a gerência participe como revisores",
+        "B": "Dividir grandes produtos de trabalho em partes menores",
+        "C": "Definir a avaliação dos revisores como um objetivo",
+        "D": "Planejar revisar um documento por vez"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "19",
+      "questao": "Qual é a PRINCIPAL diferença entre técnicas de teste black-box e técnicas de teste baseadas em experiência?",
+      "alternativas": {
+        "A": "O objeto de teste",
+        "B": "O nível de teste no qual a técnica de teste é usada",
+        "C": "A base do teste",
+        "D": "O ciclo de vida de desenvolvimento de software (SDLC) no qual a técnica de teste pode ser usada"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "20",
+      "questao": "Você está testando um validador de PIN, que aceita PINs válidos e rejeita PINs inválidos. Um PIN é uma sequência de dígitos. Um PIN é válido se consistir em quatro dígitos, que não sejam todos iguais. Você identificou as seguintes partições de equivalência válidas: Variável: Comprimento do código PIN ->Partição “comprimento correto” ->Partição “comprimento incorreto” Variável: Número de dígitos diferentes (para PINs de quatro dígitos) ->Partição “número de dígitos diferentes correto” – PINs com pelo menos dois dígitos diferentes ->Partição “número de dígitos diferentes incorreto” – PINs com todos os dígitos iguais; Qual dos seguintes é o MELHOR conjunto de dados de teste de entrada para cobrir as partições de equivalência identificadas?",
+      "alternativas": {
+        "A": "12, 1111, 1234, 12345",
+        "B": "1, 123, 1111, 1234",
+        "C": "11, 12, 1111, 12345",
+        "D": "123, 1222, 12345"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "21",
+      "questao": "Um desenvolvedor foi solicitado a implementar a seguinte regra de negócio: Você projeta os casos de teste usando análise de valor limite com 2 valores. Qual dos seguintes conjuntos de entradas de teste atinge a maior cobertura?",
+      "alternativas": {
+        "A": "100, 150, 200, 201",
+        "B": "99, 100, 200, 201",
+        "C": "98, 99, 100, 101",
+        "D": "101, 150, 199, 200"
+      },
+      "correta": "D",
+      "erradas": ["B", "C", "A"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q21.png"],
+      "level": "K3"
+    },
+    {
+      "id": "22",
+      "questao": "Você está trabalhando em um projeto para desenvolver um sistema de análise de resultados de exames de direção. Foi solicitado que você projetasse casos de teste com base na seguinte tabela de decisão: Qual conjunto de dados de teste mostrará que existem regras contraditórias na tabela de decisão?",
+      "alternativas": {
+        "A": "C1 = T,  C2 = T,  C3 = F",
+        "B": "C1 = T,  C2 = F,  C3 = T",
+        "C": "C1 = T,  C2 = T,  C3 = T and C1 = F, C2 = T, C3 = T",
+        "D": "C1 = F,  C2 = F,  C3 = F"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q22.png"],
+      "level": "K3"
+    },
+    {
+      "id": "23",
+      "questao": "Você está projetando casos de teste com base no seguinte diagrama de transição de estados: Qual é o NÚMERO MÍNIMO de casos de teste necessário para alcançar 100% de cobertura de transições válidas?",
+      "alternativas": {
+        "A": "3",
+        "B": "2",
+        "C": "5",
+        "D": "6"
+      },
+      "correta": "A",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q23.png"],
+      "level": "K3"
+    },
+    {
+      "id": "24",
+      "questao": "Uma aplicação em lote está em produção inalterada há mais de dois anos. Ele funciona durante a noite uma vez por mês para produzir declarações que serão enviadas aos clientes por e-mail. Para cada cliente, o aplicativo passa por cada conta e lista todas as transações nessa conta no último mês. Ele usa uma estrutura neste loop para processar clientes (loop externo), as contas de cada cliente (loop médio) e as transações de cada conta (loop interno). Uma noite, o pedido de lote termina prematuramente, deixando de enviar extratos por e-mail a alguns clientes, quando encontra um cliente com uma conta para a qual não ocorreram transações no último mês. Esta é uma situação muito incomum e não tem ocorrido nos anos desde que este aplicativo foi colocado em produção. Enquanto conserta o defeito, um programador pede que você recomende técnicas de teste que sejam eficazes contra este tipo de defeito. Qual das seguintes técnicas de teste provavelmente teria sido capaz de detectar o defeito subjacente?",
+      "alternativas": {
+        "A": "Teste de decisão",
+        "B": "Teste de declaração",
+        "C": "Testes baseados em listas de verificação",
+        "D": "Suposição de erros"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q24.png"],
+      "level": "K3"
+    },
+    {
+      "id": "25",
+      "questao": "Como o teste de caixa branca pode ser útil no suporte ao teste de caixa preta?",
+      "alternativas": {
+        "A": "As métricas de cobertura de caixa branca podem ajudar os testadores a avaliar os testes de caixa preta em termos da cobertura de código alcançada por esses testes de caixa preta",
+        "B": "A análise de cobertura de caixa branca pode ajudar os testadores a identificar trechos inalcançáveis do código-fonte",
+        "C": "O teste de ramos (branch testing) subsume as técnicas de teste de caixa preta, portanto alcançar cobertura total de ramos garante alcançar cobertura total de qualquer técnica de caixa preta",
+        "D": "As técnicas de teste de caixa branca podem fornecer itens de cobertura para técnicas de caixa preta"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "26",
+      "questao": " Considere a seguinte lista:<br> 1. Entrada correta não aceita<br>2. Entrada incorreta aceita<br>3. Formato de saída incorreto<br>4. Divisão por zero<br>Qual técnica de teste é MAIS PROVAVELMENTE usada pelo testador que utiliza essa lista ao realizar os testes?",
+      "alternativas": {
+        "A": "este exploratório",
+        "B": "Ataque a falhas (fault attack)",
+        "C": "Teste baseado em checklist",
+        "D": "Análise de valor limite"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "27",
+      "questao": "Qual das seguintes opções descreve MELHOR como o uso de testes baseados em checklist pode resultar em aumento de cobertura?",
+      "alternativas": {
+        "A": "Os itens do checklist podem ser definidos em um nível suficientemente detalhado, de modo que o testador possa implementar e executar casos de teste detalhados com base nesses itens",
+        "B": "Os checklists podem ser automatizados, então cada vez que uma execução de teste automatizado cobre os itens do checklist, isso resulta em cobertura adicional",
+        "C": "Cada item do checklist deve ser testado separadamente e de forma independente, de modo que os elementos cubram diferentes áreas do software",
+        "D": "Dois testadores projetando e executando testes com base nos mesmos itens de checklist de alto nível normalmente realizarão os testes de maneiras ligeiramente diferentes"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "28",
+      "questao": "Qual das seguintes fornece o MELHOR exemplo de um critério de aceitação orientado a cenário?",
+      "alternativas": {
+        "A": "O aplicativo deve permitir que os usuários excluam sua conta e todos os dados associados mediante solicitação",
+        "B": "Quando um cliente adiciona um item ao carrinho e prossegue para o checkout, ele deve ser solicitado a fazer login ou criar uma conta caso ainda não tenha feito isso",
+        "C": "IF (contain(product(23).Name, cart.products())) THEN return FALSE",
+        "D": "O site deve estar em conformidade com os Padrões de Acessibilidade ICT 508 e garantir que todo o conteúdo seja acessível a usuários com deficiência"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "29",
+      "questao": "Você está usando desenvolvimento orientado a testes de aceitação (ATDD) e projetando casos de teste com base na seguinte user story:<br>Como um usuário Regular ou Especial, quero poder usar meu cartão eletrônico de acesso para acessar andares específicos.<br>Critérios de Aceitação:<br>AC1: Usuários Regulares têm acesso aos andares 1 a 3<br>AC2: O andar 4 é acessível apenas para Usuários Especiais<br>AC3: Usuários Especiais têm todos os direitos de acesso dos Usuários Regulares<br>Qual caso de teste é o MAIS razoável para testar o AC3?",
+      "alternativas": {
+        "A": "Verificar que um usuário Regular pode acessar os andares 1 e 3",
+        "B": "Verificar que um usuário Regular não pode acessar o andar 4",
+        "C": "Verificar que um usuário Especial pode acessar o andar 5",
+        "D": "Verificar que um usuário Especial pode acessar os andares 1, 2 e 3"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "30",
+      "questao": "Qual das seguintes NÃO é uma finalidade de um plano de teste?",
+      "alternativas": {
+        "A": "Definir os dados de teste e os resultados esperados para testes de componentes e testes de integração de componentes",
+        "B": "Definir como critério de saída do nível de teste de componentes que '100% de cobertura de instruções e 100% de cobertura de ramos devem ser alcançados'",
+        "C": "Descrever quais campos o relatório de progresso de teste deve conter e qual deve ser o formato desse relatório",
+        "D": "Explicar por que o teste de integração de sistema será excluído dos testes, embora a estratégia de teste exija esse nível de teste"
+      },
+      "correta": "A",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "31",
+      "questao": "No início de cada iteração, a equipe estima o trabalho necessário (em pessoa-dias). A partir da terceira iteração, a equipe usa o seguinte modelo de extrapolação: O gráfico mostra o trabalho estimado e real para as 4 primeiras iterações. Qual é o valor estimado de trabalho para a iteração #5?",
+      "alternativas": {
+        "A": "10,5 pessoa-dias",
+        "B": "8,25 pessoa-dias",
+        "C": "6,5 pessoa-dias",
+        "D": "9,4 pessoa-dias"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q31.png"],
+      "level": "K3"
+    },
+    {
+      "id": "32",
+      "questao": "Você está preparando um cronograma de execução de testes para executar sete casos de teste, TC1 a TC7. A figura a seguir inclui as prioridades desses casos de teste (1 = prioridade mais alta, 3 = prioridade mais baixa). A figura também mostra as dependências entre os casos de teste usando setas. Por exemplo, a seta de TC4 para TC5 significa que o TC5 só pode ser executado se o TC4 tiver sido executado previamente. Qual caso de teste deve ser executado em sexto lugar?",
+      "alternativas": {
+        "A": "TC 3 ",
+        "B": "TC 5 ",
+        "C": "TC 6",
+        "D": "TC 2 "
+      },
+      "correta": "C",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q32.png"],
+      "level": "K1"
+    },
+    {
+      "id": "33",
+      "questao": "O que o modelo da pirâmide de testes mostra?",
+      "alternativas": {
+        "A": "Que os testes podem ter diferentes prioridades",
+        "B": "Que os testes podem ter diferentes granularidades",
+        "C": "Que os testes podem exigir diferentes critérios de cobertura",
+        "D": "Que os testes podem depender de outros testes"
+      },
+      "correta": "B",
+      "erradas": ["D", "A", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "34",
+      "questao": "Qual é a relação entre os quadrantes de teste, os níveis de teste e os tipos de teste?",
+      "alternativas": {
+        "A": "Os quadrantes de teste representam combinações específicas de níveis de teste e tipos de teste, definindo sua localização no ciclo de vida do desenvolvimento de software",
+        "B": "Os quadrantes de teste descrevem o grau de granularidade dos tipos de teste individuais realizados em cada nível de teste",
+        "C": "Os quadrantes de teste atribuem os tipos de teste que podem ser realizados aos níveis de teste",
+        "D": "Os quadrantes de teste agrupam níveis de teste e tipos de teste por vários critérios, como direcionamento a partes interessadas específicas"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "35",
+      "questao": "Qual dos seguintes é um exemplo de como a análise de risco do produto pode influenciar a profundidade e o escopo dos testes?",
+      "alternativas": {
+        "A": "O monitoramento contínuo de riscos permite identificar um risco emergente o mais cedo possível",
+        "B": "A identificação de riscos permite implementar atividades de mitigação de riscos e reduzir o nível de risco",
+        "C": "O nível de risco avaliado ajuda a selecionar o rigor dos testes",
+        "D": "A análise de riscos permite derivar itens de cobertura"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "36",
+      "questao": "Qual das seguintes atividades no processo de teste faz MAIS uso dos relatórios de progresso de teste?",
+      "alternativas": {
+        "A": "Projeto de teste",
+        "B": "Conclusão de teste",
+        "C": "Análise de teste",
+        "D": "Planejamento de teste"
+      },
+      "correta": "B",
+      "erradas": ["A", "D", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "37",
+      "questao": "Qual das seguintes NÃO é um exemplo de como o gerenciamento de configuração apoia os testes?",
+      "alternativas": {
+        "A": "Todos os commits no repositório são identificados de forma única e controlados por versão",
+        "B": "Todas as alterações nos elementos do ambiente de teste são rastreadas",
+        "C": "Todas as especificações de requisitos são referenciadas de forma inequívoca nos planos de teste",
+        "D": "Todos os defeitos identificados têm um status atribuído"
+      },
+      "correta": "D",
+      "erradas": ["A", "C", "B"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "38",
+      "questao": "Considere o seguinte relatório de defeito para uma aplicação de compras web:<br>Aplicação: WebShop v0.99<br>Defeito: Botão de login não funciona<br>Passos para reproduzir:<br>Abrir o site<br>Clicar no botão de login<br>Resultado esperado: O usuário deve ser redirecionado para a página de login<br>Resultado real: O botão de login não responde ao ser clicado<br>Severidade: Alta<br>Prioridade: Urgente<br>Qual é a informação MAIS importante que está faltando neste relatório de defeito?",
+      "alternativas": {
+        "A": "Nome do testador e data",
+        "B": "Elementos do ambiente de teste e suas versões",
+        "C": "Identificação do objeto de teste",
+        "D": "Impacto nos interesses das partes interessadas"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "39",
+      "questao": "Ferramentas de qual das seguintes categorias ajudam na organização de casos de teste, defeitos detectados e gerenciamento de configuração?",
+      "alternativas": {
+        "A": "Ferramentas de execução de teste e cobertura",
+        "B": "Ferramentas de projeto e implementação de teste",
+        "C": "Ferramentas de gerenciamento de defeitos",
+        "D": "Ferramentas de gerenciamento de teste"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "40",
+      "questao": "Qual dos seguintes é MAIS provável de ser um benefício da automação de testes?",
+      "alternativas": {
+        "A": "A capacidade de gerar casos de teste sem acesso à base de teste",
+        "B": "A obtenção de maior cobertura por meio de uma avaliação mais objetiva",
+        "C": "O aumento do tempo disponível para execução de testes com maior poder de processamento",
+        "D": "A prevenção de erros humanos por meio de maior consistência e repetibilidade"
+      },
+      "correta": "D",
+      "erradas": ["B", "C", "A"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    }
+  ]
 }
