@@ -465,9 +465,11 @@ function fixTimerHeader() {
 }
 
 function submitQuiz() {
+  saveUserSelection(currentQuestionIndex);
   clearInterval(timer);
   let acertos = 0;
   let total = currentQuestions.length;
+  console.log(total);
   let html = "";
   // Array para salvar o gabarito completo
   let gabarito = [];
@@ -533,6 +535,7 @@ function submitQuiz() {
       corretaTextos: corretaTextos,
       acertou,
     });
+    //console.table(gabarito);
     // ...renderização do resultado...
     const level = (q.level || q.nivel || "").toUpperCase();
     html += `<div class="mb-4 p-4 rounded bg-gray-50 border ${
