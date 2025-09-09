@@ -1,0 +1,94 @@
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Qual atividade de teste é suportada por uma ferramenta de preparação de dados?",
+      "alternativas": {
+        "A": "Monitoramento e controle de testes",
+        "B": "Análise e projeto de testes",
+        "C": "Implementação e execução de testes",
+        "D": "Conclusão do teste"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "02",
+      "questao": "Qual item identifica corretamente um risco potencial de realizar a automação de testes?",
+      "alternativas": {
+        "A": "Ele pode introduzir regressões desconhecidas na produção",
+        "B": "Esforços suficientes para manter o material de teste podem não ser alocados adequadamente",
+        "C": "As ferramentas de teste e o material de teste associado podem não ser suficientemente confiáveis",
+        "D": "Pode reduzir o tempo alocado para testes manuais"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "03",
+      "questao": "Dadas as seguintes descrições:<br> 1. Suportar rastreamento de workflow<br> 2. Facilitar a comunicação<br> 3. Máquinas virtuais<br> 4. Suportar revisões<br> E as seguintes categorias de ferramentas de teste:<br> A. Ferramentas de teste estático<br> B. Ferramentas que suportam escalabilidade e padronização de deployment<br> C. Ferramentas DevOps<br> D. Ferramentas de colaboração<br> Qual das alternativas MELHOR corresponde às descrições e categorias?",
+      "alternativas": {
+        "A": "1A, 2B, 3C, 4D",
+        "B": "1B, 2D, 3C, 4A",
+        "C": "1C, 2D, 3B, 4A",
+        "D": "1D, 2C, 3A, 4B"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "04",
+      "questao": "Qual das seguintes alternativas é MAIS PROVÁVEL de ser um benefício da automação de testes?",
+      "alternativas": {
+        "A": "Fornece métricas de cobertura que são muito complexas para humanos derivarem",
+        "B": "Compartilha a responsabilidade pelos testes com o fornecedor da ferramenta",
+        "C": "Elimina a necessidade de pensamento crítico ao analisar os resultados dos testes",
+        "D": "Gera casos de teste a partir da análise do código do programa"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "05",
+      "questao": "Ferramentas de qual das seguintes categorias ajudam na organização de casos de teste, defeitos detectados e gerenciamento de configuração?",
+      "alternativas": {
+        "A": "Ferramentas de execução de teste e cobertura",
+        "B": "Ferramentas de projeto e implementação de teste",
+        "C": "Ferramentas de gerenciamento de defeitos",
+        "D": "Ferramentas de gerenciamento de teste"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "06",
+      "questao": "Qual dos seguintes é MAIS provável de ser um benefício da automação de testes?",
+      "alternativas": {
+        "A": "A capacidade de gerar casos de teste sem acesso à base de teste",
+        "B": "A obtenção de maior cobertura por meio de uma avaliação mais objetiva",
+        "C": "O aumento do tempo disponível para execução de testes com maior poder de processamento",
+        "D": "A prevenção de erros humanos por meio de maior consistência e repetibilidade"
+      },
+      "correta": "D",
+      "erradas": ["B", "C", "A"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    }
+  ]
+}

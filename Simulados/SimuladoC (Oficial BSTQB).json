@@ -57,7 +57,7 @@
       },
       "correta": ["B", "E"],
       "erradas": ["A", "C", "D"],
-      "tipo": "Radio button",
+      "tipo": "Checkbox",
       "imagem": "",
       "level": "K2"
     },

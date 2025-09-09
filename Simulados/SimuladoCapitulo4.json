@@ -1,0 +1,503 @@
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Qual das seguintes é uma característica das técnicas de teste baseadas em experiência?",
+      "alternativas": {
+        "A": "Os casos de teste são criados com base em informações detalhadas do projeto",
+        "B": "Os itens testados na seção de código da interface são usados para medir a cobertura",
+        "C": "As técnicas dependem muito do conhecimento do testador sobre o software e o domínio do negócio",
+        "D": "Os casos de teste são usados para identificar desvios dos requisitos"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "02",
+      "questao": "Você está testando um formulário simplificado de busca de apartamento que tem apenas dois critérios de busca: andar (com três opções possíveis: térreo; primeiro andar; segundo andar) e tipo de jardim (com três opções possíveis: sem jardim; jardim pequeno; jardim grande). Somente apartamentos no andar térreo podem ter jardins. O formulário tem um mecanismo de validação integrado que não permitirá que você use os critérios de pesquisa que violam essa regra. Qual é o número mínimo de casos de teste para atingir 100% de cobertura do EP?",
+      "alternativas": {
+        "A": "3",
+        "B": "4",
+        "C": "5",
+        "D": "6"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "03",
+      "questao": "Você está testando um sistema que calcula a nota final do curso para um determinado aluno. A nota final é atribuída com base no resultado final de pontos, de acordo com as regras a seguir: 0 a 50 - Reprovado; 51 a 60 - Razoável; 61 a 70 - Satisfatório; 71 a 80 - Bom; 81 a 90 - Muito Bom; 91 a 100 - Excelente. Qual é a cobertura da Análise de Valor Limite - BVA (Boundary Value Analysis) de dois valores para o resultado final obtido com os casos de teste existentes?",
+      "alternativas": {
+        "A": "50%",
+        "B": "60%",
+        "C": "33.3%",
+        "D": "100%"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": [
+        "./assets/img/SimuladoA/Q21a.png",
+        "./assets/img/SimuladoA/Q21b.png"
+      ],
+      "level": "K3"
+    },
+    {
+      "id": "04",
+      "questao": "Sua loja favorita de aluguel de bicicletas acaba de lançar um novo sistema de Gerenciamento de Relacionamento com o Cliente e pediu a você, um dos membros mais fiéis, que o testasse. Com base APENAS na descrição dos recursos do sistema de Gerenciamento de Relacionamento com o Cliente, qual das regras acima descreve uma situação impossível?",
+      "alternativas": {
+        "A": "R4",
+        "B": "R2",
+        "C": "R6",
+        "D": "R8"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoA/Q22.png"],
+      "level": "K3"
+    },
+    {
+      "id": "05",
+      "questao": "Você testa um sistema cujo ciclo de vida é modelado pelo diagrama de transição de estado mostrado abaixo. O sistema começa no estado INIT e termina sua operação no estado OFF. Qual é o número MÍNIMO de casos de teste para obter uma cobertura de transições válida?",
+      "alternativas": {
+        "A": "4",
+        "B": "2",
+        "C": "7",
+        "D": "3"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoA/Q23.png"],
+      "level": "K3"
+    },
+    {
+      "id": "06",
+      "questao": "Seu conjunto de testes atingiu 100% de cobertura de instrução. Qual é a consequência desse fato?",
+      "alternativas": {
+        "A": "Cada instrução no código que contém um defeito foi executada pelo menos uma vez",
+        "B": "Qualquer conjunto de testes que contenha mais casos de teste do que o seu conjunto de testes também alcançará 100% de cobertura de instrução",
+        "C": "Cada caminho no código foi executado pelo menos uma vez",
+        "D": "Cada combinação de valores de entrada foi testada pelo menos uma vez"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "07",
+      "questao": "Qual das opções a seguir NÃO é verdadeira para testes caixa-branca?",
+      "alternativas": {
+        "A": "Durante o teste caixa-branca, toda a implementação do software é considerada",
+        "B": "As métricas de cobertura caixa-branca podem ajudar a identificar testes adicionais para aumentar a cobertura do código",
+        "C": "As técnicas de teste caixa-branca podem ser usadas em testes estáticos",
+        "D": "O teste caixa-branca pode ajudar a identificar lacunas na implementação dos requisitos"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "08",
+      "questao": "Qual das opções a seguir descreve MELHOR o conceito por trás da suposição de erros?",
+      "alternativas": {
+        "A": "A suposição de erros envolve o uso de seu conhecimento e experiência de defeitos encontrados no passado e erros típicos cometidos por desenvolvedores",
+        "B": "A suposição de erros envolve o uso de sua experiência pessoal de desenvolvimento e os erros que você cometeu como desenvolvedor",
+        "C": "A suposição de erros exige que você imagine que é o usuário do objeto de teste e adivinhe os erros que o usuário poderia cometer ao interagir com ele",
+        "D": "A suposição de erros exige que você duplique rapidamente a tarefa de desenvolvimento para identificar os tipos de erros que um desenvolvedor pode cometer"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "09",
+      "questao": "Em seu projeto, houve um atraso no lançamento de um aplicativo totalmente novo e a execução do teste começa tarde, mas você tem um conhecimento de domínio muito detalhado e boas habilidades analíticas. A lista completa de requisitos ainda não foi compartilhada com a equipe, mas a gerência está pedindo que alguns resultados de testes sejam apresentados. Qual técnica de teste se encaixa MELHOR nessa situação?",
+      "alternativas": {
+        "A": "Testes baseados em listas de verificação",
+        "B": "Suposição de erros",
+        "C": "Testes exploratórios",
+        "D": "Teste de ramificação"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "10",
+      "questao": "Qual das opções a seguir descreve MELHOR a maneira como os critérios de aceite podem ser documentados?",
+      "alternativas": {
+        "A": "Realizar retrospectivas para determinar as necessidades reais dos stakeholders em relação a uma determinada história de usuário",
+        "B": "Usar o formato dado/quando/então para descrever um exemplo de condição de teste relacionada a uma determinada história de usuário",
+        "C": "Usar a comunicação verbal para reduzir o risco de outras pessoas não entenderem os critérios de aceite",
+        "D": "Documentar os riscos relacionados a uma determinada história de usuário em um plano de teste para facilitar o teste baseado em riscos de uma determinada história de usuário"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "11",
+      "questao": "Considere a seguinte história de usuário: 'Como editor, quero revisar o conteúdo antes de ser publicado, para que eu possa garantir que a gramática esteja correta', e seus critérios de aceite. Qual dos seguintes é o MELHOR exemplo de um teste ATDD para essa história de usuário?",
+      "alternativas": {
+        "A": "testar se o editor pode salvar o documento após excluir o conteúdo da página",
+        "B": "testar se o proprietário do conteúdo pode fazer login e fazer atualizações no conteúdo",
+        "C": "testar se o editor pode programar o conteúdo editado para publicação",
+        "D": "testar se o editor pode reatribuir a outro editor para fazer atualizações"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "13",
+      "questao": "Qual das seguintes afirmações descreve MELHOR a diferença entre o teste com tabela de decisão (decision table testing) e o teste de ramificações (branch testing)?",
+      "alternativas": {
+        "A": "No teste com tabela de decisão, os casos de teste são derivados das instruções de decisão no código. No teste de ramificações, os casos de teste são derivados do conhecimento do fluxo de controle do objeto de teste.",
+        "B": "No teste com tabela de decisão, os casos de teste são derivados da especificação que descreve a lógica de negócio. No teste de ramificações, os casos de teste são baseados na antecipação de defeitos potenciais no código-fonte.",
+        "C": "No teste com tabela de decisão, os casos de teste são derivados do conhecimento do fluxo de controle do objeto de teste. No teste de ramificações, os casos de teste são derivados da especificação que descreve a lógica de negócio.",
+        "D": "No teste com tabela de decisão, os casos de teste são independentes de como o software é implementado. No teste de ramificações, os casos de teste só podem ser criados após o design ou implementação do código."
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "14",
+      "questao": "Os clientes da rede de lava-rápido TestWash possuem cartões com um registro do número de lavagens que compraram até o momento. O valor inicial é 0. Após entrar no lava-rápido, o sistema aumenta o número no cartão em um. Esse valor representa o número da lavagem atual. Com base nesse número, o sistema decide qual desconto o cliente tem direito. Para cada décima lavagem, o sistema concede 10% de desconto, e a cada vigésima lavagem, o sistema concede mais 40% de desconto (ou seja, um total de 50% de desconto). Qual dos seguintes conjuntos de dados de entrada (entendidos como os números da lavagem atual) atinge a maior cobertura de partições de equivalência?",
+      "alternativas": {
+        "A": "19, 20, 30",
+        "B": "11, 12, 20",
+        "C": "1, 10, 50",
+        "D": "10, 29, 30, 31"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "15",
+      "questao": "Você está testando um formulário que verifica a correção do tamanho da senha fornecida como entrada. O formulário aceita uma senha com o tamanho correto e rejeita uma senha que seja muito curta ou muito longa. O tamanho da senha é considerado correto se tiver entre 6 e 12 caracteres, inclusive. Caso contrário, é considerado incorreto. <p> Inicialmente, o formulário está vazio (tamanho da senha = 0). Você aplica a análise de valor limite à variável “tamanho da senha”. Seu conjunto de casos de teste alcança 100% de cobertura de valor limite 2-valores. A equipe decidiu que, devido ao alto risco deste componente, casos de teste adicionais devem ser incluídos para garantir 100% de cobertura de valor limite 3-valores.</p> <p>Quais comprimentos de senha adicionais devem ser testados para atingir isso?</p>",
+      "alternativas": {
+        "A": "4, 5, 13, 14",
+        "B": "7, 11",
+        "C": "1, 5, 13",
+        "D": "1, 4, 7, 11, 14"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "16",
+      "questao": "A tabela de decisão a seguir contém as regras para determinar o risco de aterosclerose.<br> Você projetou os casos de teste com os seguintes dados de entrada:<br>  1)TC1: Colesterol = 125 mg/dl, Pressão arterial = 141 mm Hg;<br> 2)TC2: Colesterol = 200 mg/dl, Pressão arterial = 201 mm Hg;<br> 3)TC3: Colesterol = 124 mg/dl, Pressão arterial = 201 mm Hg;<br> 4)TC4: Colesterol = 109 mg/dl, Pressão arterial = 200 mm Hg<br> 5)TC5: Colesterol = 201 mg/dl, Pressão arterial = 140 mm Hg",
+      "alternativas": {
+        "A": "40%",
+        "B": "60%",
+        "C": "80%",
+        "D": "100%"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoB/Q22.png"],
+      "level": "K3"
+    },
+    {
+      "id": "17",
+      "questao": "Um sistema de armazenamento pode armazenar até três elementos e é modelado pelo seguinte diagrama de transição de estados. A variável N representa o número de elementos atualmente armazenados.<br> Qual dos seguintes casos de teste, representados como sequências de eventos, atinge o maior nível de cobertura de transições válidas?",
+      "alternativas": {
+        "A": "Adicionar, Remover, Adicionar, Adicionar, Adicionar",
+        "B": "Adicionar, Adicionar, Adicionar, Adicionar, Remover, Remover",
+        "C": "Adicionar, Adicionar, Adicionar, Remover, Remover",
+        "D": "Adicionar, Adicionar, Adicionar, Remover, Adicionar"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoB/Q23.png"],
+      "level": "K3"
+    },
+    {
+      "id": "18",
+      "questao": "Você executa dois casos de teste, T1 e T2, no mesmo código. O teste T1 alcançou 40% de cobertura de instruções e o teste T2 alcançou 65% de cobertura de instruções.<br> Qual das seguintes afirmações deve ser necessariamente verdadeira?",
+      "alternativas": {
+        "A": "O conjunto de testes composto pelos testes T1 e T2 alcança 105% de cobertura de instruções",
+        "B": "Existe pelo menos uma instrução que deve ter sido executada tanto pelo T1 quanto pelo T2",
+        "C": "Pelo menos 5% das instruções no código testado são não-executáveis",
+        "D": "O conjunto de testes composto pelos testes T1 e T2 alcança cobertura total de ramificações"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "19",
+      "questao": "Seja a métrica de cobertura de ramificações definida como BCov = (X / Y) * 100%. O que X e Y representam nesta fórmula?",
+      "alternativas": {
+        "A": "X = número de resultados de decisão exercitados pelos casos de teste Y = número total de resultados de decisão no código",
+        "B": "X = número de ramificações condicionais exercitadas pelos casos de teste Y = número total de ramificações no código",
+        "C": "X = número de ramificações exercitadas pelos casos de teste Y = número total de ramificações no código",
+        "D": "X = número de ramificações condicionais exercitadas pelos casos de teste Y = número total de resultados de decisão no código"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "20",
+      "questao": "Quais DUAS das seguintes afirmações fornecem a MELHOR justificativa para usar testes exploratórios?",
+      "alternativas": {
+        "A": "Os testadores não receberam tempo suficiente para o design e execução de testes",
+        "B": "A estratégia de teste existente exige que os testadores usem técnicas formais de teste de caixa-preta",
+        "C": "A especificação está escrita em uma linguagem formal que pode ser processada por uma ferramenta",
+        "D": "Os testadores são membros de uma equipe ágil e possuem boas habilidades de programação",
+        "E": "Os testadores são experientes no domínio do negócio e possuem boas habilidades analíticas"
+      },
+      "correta": ["A", "E"],
+      "erradas": ["B", "C", "D"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "21",
+      "questao": "Qual das alternativas a seguir SE ENCAIXA MELHOR como um elemento da checklist usada em testes baseados em checklist (checklist-based testing)?",
+      "alternativas": {
+        "A": "O desenvolvedor cometeu um erro ao implementar o código",
+        "B": "A cobertura de instruções alcançada excede 85%",
+        "C": "O programa funciona corretamente em relação aos requisitos funcionais e não funcionais",
+        "D": "As mensagens de erro estão escritas em linguagem que o usuário consegue entender"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "22",
+      "questao": "Considere os seguintes critérios de aceitação para uma história de usuário escrita a partir da perspectiva de um dono de loja online:<br> Dado que o usuário está logado e na página inicial,<br> Quando o usuário clica no botão 'Adicionar Item',<br> Então o formulário 'Criar Item' deve aparecer,<br> E o usuário deve ser capaz de inserir um nome e preço para o novo item.<br> Em qual formato esses critérios de aceitação estão escritos?",
+      "alternativas": {
+        "A": "Orientado a regras (Rule-oriented)",
+        "B": "Orientado a cenário (Scenario-oriented)",
+        "C": "Orientado a produto (Product-oriented)",
+        "D": "Orientado a processo (Process-oriented)"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "23",
+      "questao": "Sua equipe analisa a seguinte história de usuário para definir os critérios de aceitação:<br> Como um cliente registrado, quero poder visualizar meus pedidos anteriores no site da empresa, para que eu possa acompanhar minhas compras.<br> Qual dos seguintes casos de teste NÃO será relevante para esta história de usuário?",
+      "alternativas": {
+        "A": "Entrada: o cliente faz login em sua conta no site e clica no botão “ver histórico de pedidos” Resultado esperado: o sistema mostra uma lista de todos os pedidos anteriores do cliente, incluindo data, número do pedido e custo total",
+        "B": "Entrada: o cliente clica em um pedido da lista de pedidos Resultado esperado: o sistema exibe os itens individuais comprados, juntamente com seus preços e quantidades",
+        "C": "Entrada: o cliente clica no botão “Ordenar crescente” na tela do histórico de pedidos Resultado esperado: o sistema mostra o histórico de pedidos ordenado pelo número do pedido em ordem crescente",
+        "D": "Entrada: um cliente não registrado se cadastra como novo cliente com um endereço de e-mail válido que ainda não existe na base de dados de clientes Resultado esperado: o sistema aceita o cadastro e cria a conta"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "24",
+      "questao": "Qual é a PRINCIPAL diferença entre técnicas de teste black-box e técnicas de teste baseadas em experiência?",
+      "alternativas": {
+        "A": "O objeto de teste",
+        "B": "O nível de teste no qual a técnica de teste é usada",
+        "C": "A base do teste",
+        "D": "O ciclo de vida de desenvolvimento de software (SDLC) no qual a técnica de teste pode ser usada"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "25",
+      "questao": "Você está testando um validador de PIN, que aceita PINs válidos e rejeita PINs inválidos. Um PIN é uma sequência de dígitos. Um PIN é válido se consistir em quatro dígitos, que não sejam todos iguais. Você identificou as seguintes partições de equivalência válidas: Variável: Comprimento do código PIN ->Partição “comprimento correto” ->Partição “comprimento incorreto” Variável: Número de dígitos diferentes (para PINs de quatro dígitos) ->Partição “número de dígitos diferentes correto” – PINs com pelo menos dois dígitos diferentes ->Partição “número de dígitos diferentes incorreto” – PINs com todos os dígitos iguais; Qual dos seguintes é o MELHOR conjunto de dados de teste de entrada para cobrir as partições de equivalência identificadas?",
+      "alternativas": {
+        "A": "12, 1111, 1234, 12345",
+        "B": "1, 123, 1111, 1234",
+        "C": "11, 12, 1111, 12345",
+        "D": "123, 1222, 12345"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "26",
+      "questao": "Um desenvolvedor foi solicitado a implementar a seguinte regra de negócio: Você projeta os casos de teste usando análise de valor limite com 2 valores. Qual dos seguintes conjuntos de entradas de teste atinge a maior cobertura?",
+      "alternativas": {
+        "A": "100, 150, 200, 201",
+        "B": "99, 100, 200, 201",
+        "C": "98, 99, 100, 101",
+        "D": "101, 150, 199, 200"
+      },
+      "correta": "D",
+      "erradas": ["B", "C", "A"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q21.png"],
+      "level": "K3"
+    },
+    {
+      "id": "27",
+      "questao": "Você está trabalhando em um projeto para desenvolver um sistema de análise de resultados de exames de direção. Foi solicitado que você projetasse casos de teste com base na seguinte tabela de decisão: Qual conjunto de dados de teste mostrará que existem regras contraditórias na tabela de decisão?",
+      "alternativas": {
+        "A": "C1 = T,  C2 = T,  C3 = F",
+        "B": "C1 = T,  C2 = F,  C3 = T",
+        "C": "C1 = T,  C2 = T,  C3 = T and C1 = F, C2 = T, C3 = T",
+        "D": "C1 = F,  C2 = F,  C3 = F"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q22.png"],
+      "level": "K3"
+    },
+    {
+      "id": "28",
+      "questao": "Você está projetando casos de teste com base no seguinte diagrama de transição de estados: Qual é o NÚMERO MÍNIMO de casos de teste necessário para alcançar 100% de cobertura de transições válidas?",
+      "alternativas": {
+        "A": "3",
+        "B": "2",
+        "C": "5",
+        "D": "6"
+      },
+      "correta": "A",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q23.png"],
+      "level": "K3"
+    },
+    {
+      "id": "29",
+      "questao": "Uma aplicação em lote está em produção inalterada há mais de dois anos. Ele funciona durante a noite uma vez por mês para produzir declarações que serão enviadas aos clientes por e-mail. Para cada cliente, o aplicativo passa por cada conta e lista todas as transações nessa conta no último mês. Ele usa uma estrutura neste loop para processar clientes (loop externo), as contas de cada cliente (loop médio) e as transações de cada conta (loop interno). Uma noite, o pedido de lote termina prematuramente, deixando de enviar extratos por e-mail a alguns clientes, quando encontra um cliente com uma conta para a qual não ocorreram transações no último mês. Esta é uma situação muito incomum e não tem ocorrido nos anos desde que este aplicativo foi colocado em produção. Enquanto conserta o defeito, um programador pede que você recomende técnicas de teste que sejam eficazes contra este tipo de defeito. Qual das seguintes técnicas de teste provavelmente teria sido capaz de detectar o defeito subjacente?",
+      "alternativas": {
+        "A": "Teste de decisão",
+        "B": "Teste de declaração",
+        "C": "Testes baseados em listas de verificação",
+        "D": "Suposição de erros"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q24.png"],
+      "level": "K3"
+    },
+    {
+      "id": "30",
+      "questao": "Como o teste de caixa branca pode ser útil no suporte ao teste de caixa preta?",
+      "alternativas": {
+        "A": "As métricas de cobertura de caixa branca podem ajudar os testadores a avaliar os testes de caixa preta em termos da cobertura de código alcançada por esses testes de caixa preta",
+        "B": "A análise de cobertura de caixa branca pode ajudar os testadores a identificar trechos inalcançáveis do código-fonte",
+        "C": "O teste de ramos (branch testing) subsume as técnicas de teste de caixa preta, portanto alcançar cobertura total de ramos garante alcançar cobertura total de qualquer técnica de caixa preta",
+        "D": "As técnicas de teste de caixa branca podem fornecer itens de cobertura para técnicas de caixa preta"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "31",
+      "questao": " Considere a seguinte lista:<br> 1. Entrada correta não aceita<br>2. Entrada incorreta aceita<br>3. Formato de saída incorreto<br>4. Divisão por zero<br>Qual técnica de teste é MAIS PROVAVELMENTE usada pelo testador que utiliza essa lista ao realizar os testes?",
+      "alternativas": {
+        "A": "este exploratório",
+        "B": "Ataque a falhas (fault attack)",
+        "C": "Teste baseado em checklist",
+        "D": "Análise de valor limite"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "32",
+      "questao": "Qual das seguintes opções descreve MELHOR como o uso de testes baseados em checklist pode resultar em aumento de cobertura?",
+      "alternativas": {
+        "A": "Os itens do checklist podem ser definidos em um nível suficientemente detalhado, de modo que o testador possa implementar e executar casos de teste detalhados com base nesses itens",
+        "B": "Os checklists podem ser automatizados, então cada vez que uma execução de teste automatizado cobre os itens do checklist, isso resulta em cobertura adicional",
+        "C": "Cada item do checklist deve ser testado separadamente e de forma independente, de modo que os elementos cubram diferentes áreas do software",
+        "D": "Dois testadores projetando e executando testes com base nos mesmos itens de checklist de alto nível normalmente realizarão os testes de maneiras ligeiramente diferentes"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "33",
+      "questao": "Qual das seguintes fornece o MELHOR exemplo de um critério de aceitação orientado a cenário?",
+      "alternativas": {
+        "A": "O aplicativo deve permitir que os usuários excluam sua conta e todos os dados associados mediante solicitação",
+        "B": "Quando um cliente adiciona um item ao carrinho e prossegue para o checkout, ele deve ser solicitado a fazer login ou criar uma conta caso ainda não tenha feito isso",
+        "C": "IF (contain(product(23).Name, cart.products())) THEN return FALSE",
+        "D": "O site deve estar em conformidade com os Padrões de Acessibilidade ICT 508 e garantir que todo o conteúdo seja acessível a usuários com deficiência"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "34",
+      "questao": "Você está usando desenvolvimento orientado a testes de aceitação (ATDD) e projetando casos de teste com base na seguinte user story:<br>Como um usuário Regular ou Especial, quero poder usar meu cartão eletrônico de acesso para acessar andares específicos.<br>Critérios de Aceitação:<br>AC1: Usuários Regulares têm acesso aos andares 1 a 3<br>AC2: O andar 4 é acessível apenas para Usuários Especiais<br>AC3: Usuários Especiais têm todos os direitos de acesso dos Usuários Regulares<br>Qual caso de teste é o MAIS razoável para testar o AC3?",
+      "alternativas": {
+        "A": "Verificar que um usuário Regular pode acessar os andares 1 e 3",
+        "B": "Verificar que um usuário Regular não pode acessar o andar 4",
+        "C": "Verificar que um usuário Especial pode acessar o andar 5",
+        "D": "Verificar que um usuário Especial pode acessar os andares 1, 2 e 3"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    }
+  ]
+}

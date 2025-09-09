@@ -1,0 +1,184 @@
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Qual das opções a seguir NÃO é um benefício dos testes estáticos?",
+      "alternativas": {
+        "A": "Ter um gerenciamento de defeitos menos dispendioso devido à facilidade de detectar defeitos mais tarde no processo SDLC",
+        "B": "A correção de defeitos encontrados durante o teste estático geralmente é muito mais barata do que a correção de defeitos encontrados durante o teste dinâmico",
+        "C": "Encontrar defeitos de codificação que poderiam não ter sido encontrados apenas com a realização de testes dinâmicos",
+        "D": "Detecção de lacunas e inconsistências nos requisitos"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "02",
+      "questao": "Qual dos seguintes é um benefício do feedback antecipado e frequente?",
+      "alternativas": {
+        "A": "Melhora o processo de teste para projetos futuros",
+        "B": "Ele força os clientes a priorizarem seus requisitos com base nos riscos acordados",
+        "C": "Essa é a única maneira de medir a qualidade das mudanças",
+        "D": "Isso ajuda a evitar mal-entendidos sobre os requisitos"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "03",
+      "questao": "As revisões que estão sendo usadas em sua organização têm os seguintes atributos: há o papel de um redator; o principal objetivo é avaliar a qualidade; a reunião é conduzida pelo autor do produto de trabalho; há uma preparação individual; é produzido um relatório de revisão. Qual dos seguintes tipos de revisão é MAIS provável que esteja sendo usado?",
+      "alternativas": {
+        "A": "Revisão informal",
+        "B": "Walkthrough",
+        "C": "Revisão técnica",
+        "D": "Inspeção"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "04",
+      "questao": "Qual dessas afirmações NÃO é um fator que contribui para revisões bem-sucedidas?",
+      "alternativas": {
+        "A": "Os participantes devem dedicar tempo suficiente para a análise",
+        "B": "Dividir grandes produtos de trabalho em pequenas partes para tornar o esforço necessário menos intenso",
+        "C": "Os participantes devem evitar comportamentos que possam indicar tédio, exasperação ou hostilidade com outros participantes",
+        "D": "As falhas encontradas devem ser reconhecidas, apreciadas e tratadas de forma objetiva"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "05",
+      "questao": "Qual das seguintes é um exemplo de defeito que pode ser encontrado por meio de teste estático, mas NÃO por meio de teste dinâmico?",
+      "alternativas": {
+        "A": "Falta de usabilidade fornecida pela interface do usuário",
+        "B": "Código sem nenhum caminho que o alcance",
+        "C": "Tempos de resposta ruins para a maioria dos usuários esperados",
+        "D": "Funcionalidades obrigatórias que não estão implementadas no código"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "06",
+      "questao": "Qual das seguintes é um benefício do feedback precoce e frequente das partes interessadas (stakeholders)?",
+      "alternativas": {
+        "A": "Os gerentes ficam cientes de quais desenvolvedores são menos produtivos",
+        "B": "Permite que os gerentes de projeto priorizem suas interações com as partes interessadas",
+        "C": "Facilita a comunicação antecipada de potenciais problemas de qualidade",
+        "D": "Os usuários finais compreendem melhor por que a entrega do produto de trabalho está atrasada"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "08",
+      "questao": "Dadas as seguintes descrições de tarefas:<br> 1)As características de qualidade a serem avaliadas e os critérios de saída são selecionados;<br>2)Todos têm acesso ao produto de trabalho;<br> 3)Anomalias são identificadas no produto de trabalho;<br> 4)As anomalias são discutidas.<br> E as seguintes atividades de revisão:<br> A. Revisão individual;<br> B. Iniciação da revisão;<br> C. Planejamento;<br> D. Comunicação e análise.<br> Qual das seguintes alternativas corresponde MELHOR às descrições de tarefas e atividades?",
+      "alternativas": {
+        "A": "1B, 2C, 3D, 4A",
+        "B": "1B, 2D, 3C, 4A",
+        "C": "1C, 2A, 3B, 4D",
+        "D": "1C, 2B, 3A, 4D"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "09",
+      "questao": "Dadas as seguintes funções em revisões: 1)Escritor (Scribe); 2)Líder da revisão (Review leader); 3)Facilitador (Facilitator); 4)Gerente (Manager); E as seguintes responsabilidades em revisões: A. Garante o andamento eficaz das reuniões de revisão e a criação de um ambiente seguro para a revisão; B. Registra informações da revisão, como decisões e novas anomalias encontradas durante a reunião de revisão; C. Decide o que deve ser revisado e fornece recursos, como equipe e tempo para a revisão; D. Assume a responsabilidade geral pela revisão, como organizar quando e onde a revisão acontecerá; Qual das seguintes alternativas corresponde MELHOR às funções e responsabilidades?",
+      "alternativas": {
+        "A": "1A, 2B, 3D, 4C",
+        "B": "1A, 2C, 3B, 4D",
+        "C": "1B, 2D, 3A, 4C",
+        "D": "1B, 2D, 3C, 4A"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "10",
+      "questao": "Dado os seguintes exemplos de defeitos:<br>i. Duas partes diferentes da especificação de design entram em conflito devido à complexidade do design<br>ii. A resposta do sistema é muito lenta, fazendo com que os usuários percam a paciência<br>iii. Um caminho no código não pode ser alcançado durante a execução<br>iv. Uma variável é declarada, mas nunca é utilizada posteriormente no programa<br>v. A quantidade de memória necessária pelo programa para gerar um relatório é muito alta<br>Qual das seguintes opções IDENTIFICA MELHOR os exemplos de defeitos que poderiam ser encontrados por teste estático (em vez de teste dinâmico)?",
+      "alternativas": {
+        "A": "ii, v",
+        "B": "iii, v",
+        "C": "i, ii, iv",
+        "D": "i, iii, iv"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "11",
+      "questao": "Qual dos seguintes é um benefício do feedback precoce e frequente das partes interessadas?",
+      "alternativas": {
+        "A": "Mudanças nos requisitos são compreendidas e implementadas mais cedo",
+        "B": "Garante que as partes interessadas do negócio entendam os requisitos dos usuários",
+        "C": "Permite que os proprietários do produto alterem seus requisitos sempre que quiserem",
+        "D": "Os usuários finais são informados sobre quais requisitos não serão implementados antes da liberação"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "12",
+      "questao": "Dado os seguintes tipos de revisão:<br>1. Revisão técnica<br>2. Revisão informal<br>3. Inspeção<br>4. Walkthrough<br>E as seguintes descrições:<br>A. Inclui objetivos como obter consenso, gerar novas ideias e motivar os autores a melhorar<br>B. Inclui objetivos como educar os revisores, obter consenso, gerar novas ideias e detectar defeitos potenciais<br>C. O principal objetivo é detectar defeitos potenciais e requer coleta de métricas para apoiar a melhoria do processo<br>D. O principal objetivo é detectar defeitos potenciais e não gera saída formal documentada<br>Qual das seguintes opções corresponde MELHOR os tipos de revisão às descrições?",
+      "alternativas": {
+        "A": "1A, 2B, 3C, 4D",
+        "B": "1A, 2D, 3C, 4B",
+        "C": "1B, 2C, 3D, 4A",
+        "D": "1C, 2D, 3A, 4B"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "13",
+      "questao": "Qual dos seguintes é um fator que contribui para uma revisão bem-sucedida?",
+      "alternativas": {
+        "A": "Garantir que a gerência participe como revisores",
+        "B": "Dividir grandes produtos de trabalho em partes menores",
+        "C": "Definir a avaliação dos revisores como um objetivo",
+        "D": "Planejar revisar um documento por vez"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    }
+  ]
+}

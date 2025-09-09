@@ -1,0 +1,395 @@
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Como os testadores agregam valor aos planejamentos de iteração e lançamento?",
+      "alternativas": {
+        "A": "Os testadores determinam a prioridade das histórias de usuários a serem desenvolvidas",
+        "B": "Os testadores se concentram apenas nos aspectos funcionais do sistema a ser testado",
+        "C": "Os testadores participam da identificação de riscos e da avaliação de riscos das histórias de usuários",
+        "D": "Os testadores garantem o lançamento de software de alta qualidade por meio de um projeto de teste antecipado durante o planejamento do lançamento"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "02",
+      "questao": "Quais das DUAS opções a seguir são os critérios de saída para testar um sistema?",
+      "alternativas": {
+        "A": "Prontidão do ambiente de teste",
+        "B": "A capacidade do testador de fazer login no objeto de teste",
+        "C": "A densidade de defeitos estimada é atingida",
+        "D": "Os requisitos são traduzidos para o formato dado/quando/então",
+        "E": "Os testes de regressão são automatizados"
+      },
+      "correta": ["C", "E"],
+      "erradas": ["A", "B", "D"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "03",
+      "questao": "Sua equipe usa a técnica de estimativa de três pontos para estimar o esforço de teste de um novo recurso de alto risco. Foram feitas as seguintes estimativas: Estimativa mais otimista: 2 homens/hora; Estimativa mais provável: 11 homens/hora; Estimativa mais pessimista: 14 homens/hora. Qual é a estimativa final?",
+      "alternativas": {
+        "A": "9 homens/hora",
+        "B": "14 homens/hora",
+        "C": "11 homens/hora",
+        "D": "10 homens/hora"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "04",
+      "questao": "Você está testando um aplicativo móvel que permite que os usuários encontrem um restaurante próximo com base no tipo de comida que desejam comer. Considere a seguinte lista de casos de teste, prioridades (ou seja, um número menor significa uma prioridade maior) e dependências. Qual dos seguintes casos de teste deve ser o terceiro a ser executado?",
+      "alternativas": {
+        "A": "TC 003",
+        "B": "TC 005",
+        "C": "TC 002",
+        "D": "TC 001"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoA/Q33.png"],
+      "level": "K3"
+    },
+    {
+      "id": "05",
+      "questao": "Considere as seguintes categorias de teste (1-4) e os quadrantes de teste ágil (A-D). Como as seguintes categorias de teste são mapeadas nos quadrantes de teste ágil?",
+      "alternativas": {
+        "A": "1C, 2A, 3B, 4D",
+        "B": "1D, 2A, 3C, 4B",
+        "C": "1C, 2B, 3D, 4A",
+        "D": "1D, 2B, 3C, 4A"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoA/Q34.png"],
+      "level": "K2"
+    },
+    {
+      "id": "06",
+      "questao": "Durante uma análise de risco, o seguinte risco foi identificado e avaliado: Risco: o tempo de resposta é muito longo para gerar um relatório; Probabilidade do risco: média; Impacto do risco: alto; Resposta ao risco: (1) uma equipe de teste independente realiza testes de performance durante o teste do sistema; (2) uma amostra selecionada de usuários finais realiza testes de aceite alfa e beta antes do lançamento. Que medida é proposta para ser tomada em resposta a esse risco analisado?",
+      "alternativas": {
+        "A": "Aceite de riscos",
+        "B": "Plano de contingência",
+        "C": "Mitigação de riscos",
+        "D": "Transferência de risco"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagens": [],
+      "level": "K2"
+    },
+    {
+      "id": "07",
+      "questao": "Qual ferramenta pode ser usada por uma equipe ágil para mostrar a quantidade de trabalho que foi concluída e a quantidade de trabalho total restante para uma determinada iteração?",
+      "alternativas": {
+        "A": "Critérios de aceite",
+        "B": "Relatório de defeitos",
+        "C": "Relatório de conclusão do teste",
+        "D": "Gráfico de Burndown"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "08",
+      "questao": "Você precisa atualizar um dos scripts de teste automatizados para que esteja de acordo com um novo requisito. Qual processo indica que você deve criar uma nova versão do script de teste no repositório de testes?",
+      "alternativas": {
+        "A": "Gerenciamento de Rastreabilidade",
+        "B": "Teste de Manutenção",
+        "C": "Gerenciamento de Configuração",
+        "D": "Engenharia de Requisitos"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "09",
+      "questao": "Você recebeu o seguinte relatório de defeito dos desenvolvedores afirmando que a anomalia descrita neste relatório de teste não é reproduzível. Que informações essenciais estão FALTANDO nesse relatório de teste que teriam sido úteis para os desenvolvedores?",
+      "alternativas": {
+        "A": "Resultado esperado e resultado real",
+        "B": "Referências e status do defeito",
+        "C": "Ambiente de teste e item de teste",
+        "D": "Prioridade e gravidade"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "10",
+      "questao": "Sua equipe segue o processo que utiliza o pipeline de entrega DevOps. Os três primeiros passos desse processo são:<br> 1. Desenvolvimento de código<br> 2. Submeter o código em um sistema de controle de versão e mesclá-lo no branch “test”<br> 3. Realizar testes de componentes para o código submetido<br> Qual das seguintes opções é MELHOR adequada para ser o critério de entrada para o passo (2) deste pipeline?",
+      "alternativas": {
+        "A": "A análise estática não retorna alertas de alta severidade para o código submetido",
+        "B": "O controle de versão do sistema não apresenta conflitos ao mesclar o código no branch 'test'",
+        "C": "Os testes de componentes estão compilados e prontos para serem executados",
+        "D": "A cobertura de instruções é de pelo menos 80%"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "11",
+      "questao": "Você deseja estimar o esforço de teste para um novo projeto utilizando estimativa baseada em ratios. Você calcula a razão teste-desenvolvimento usando os dados médios de esforço de desenvolvimento e esforço de teste de quatro projetos históricos similares ao novo projeto. A tabela apresenta esses dados históricos:<br> O esforço estimado de desenvolvimento para o novo projeto é $800.000. Qual é a sua estimativa para o esforço de teste neste projeto?",
+      "alternativas": {
+        "A": "$40,000",
+        "B": "$80,000",
+        "C": "$81,250",
+        "D": "$82,500"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoB/Q31.png"],
+      "level": "K3"
+    },
+    {
+      "id": "12",
+      "questao": "Você está testando uma aplicação web que permite aos usuários PESQUISAR produtos, VER detalhes do produto, ADICIONAR produtos ao carrinho de compras e fazer um PEDIDO. Você preparou os seguintes sete casos de teste, todos os quais deseja executar. Os testes devem ser executados na melhor ordem, baseada na prioridade de teste: Você também identificou as seguintes dependências lógicas entre os casos de teste:<br> A funcionalidade PESQUISAR deve ser testada antes da funcionalidade VER.<br> A funcionalidade VER deve ser testada antes da funcionalidade ADICIONAR.<br> A funcionalidade ADICIONAR deve ser testada antes da funcionalidade PEDIDO.<br> Qual caso de teste deve ser executado como o quarto?",
+      "alternativas": {
+        "A": "TC3",
+        "B": "TC1",
+        "C": "TC7",
+        "D": "TC2"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoB/Q32.png"],
+      "level": "K3"
+    },
+    {
+      "id": "13",
+      "questao": "De acordo com o modelo dos quadrantes de teste, qual das opções a seguir se enquadra no quadrante Q1 (“voltado à tecnologia” e “apoia a equipe”)?",
+      "alternativas": {
+        "A": "Teste de usabilidade",
+        "B": "Teste funcional",
+        "C": "Teste de aceitação do usuário",
+        "D": "Teste de integração de componentes"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "14",
+      "questao": "Dados os seguintes riscos:<br> 1. Implementação ineficaz de loop causa respostas longas do sistema<br> 2. Consumidores mudam suas preferências<br> 3. Inundação da sala do servidor<br> 4. Pacientes acima de certa idade recebem relatórios imprecisos<br> E as seguintes atividades de mitigação:<br> A. Aceitação de risco (Risk acceptance) B. Teste de eficiência de performance (Testing for performance efficiency)<br> C. Usar análise de valor limite como técnica de teste (Using boundary value analysis as the test technique)<br> D. Transferência de risco (Risk transfer)<br> Qual das seguintes alternativas corresponde MELHOR os riscos com as atividades de mitigação?",
+      "alternativas": {
+        "A": "1C, 2D, 3A, 4B",
+        "B": "1B, 2D, 3A, 4C",
+        "C": "1B, 2A, 3D, 4C",
+        "D": "1C, 2A, 3D, 4B"
+      },
+      "correta": "C",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    },
+    {
+      "id": "15",
+      "questao": "Qual das seguintes é uma métrica de qualidade do produto?",
+      "alternativas": {
+        "A": "Tempo médio até falha",
+        "B": "Número de defeitos encontrados",
+        "C": "Cobertura de requisitos",
+        "D": "Percentual de detecção de defeitos"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "16",
+      "questao": "Você é membro de uma equipe de teste localizada na América do Norte, desenvolvendo um produto para um cliente localizado na Europa. A equipe é ágil, segue a abordagem DevOps e utiliza um pipeline de integração contínua / entrega contínua. Qual das seguintes formas é a menos eficaz para comunicar o progresso dos testes ao cliente?",
+      "alternativas": {
+        "A": "Presencial",
+        "B": "Dashboards",
+        "C": "E-mail",
+        "D": "Videoconferência"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "17",
+      "questao": "Qual das seguintes alternativas MELHOR descreve um exemplo de como o gerenciamento de configuração (CM) apoia os testes?",
+      "alternativas": {
+        "A": "Tendo o número da versão do ambiente, a ferramenta de CM pode recuperar os números de versão das bibliotecas, stubs e drivers usados nesse ambiente",
+        "B": "Tendo um registro dos valores de entrada, a ferramenta de CM pode executar os casos de teste para essas configurações e calcular a cobertura",
+        "C": "Tendo dados sobre a data de compra de uma licença de software, a ferramenta de CM gera automaticamente informações sobre o fato de que a licença do produto está prestes a expirar",
+        "D": "Tendo o número da versão do caso de teste, a ferramenta de CM pode gerar automaticamente dados de teste para esse caso de teste"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "18",
+      "questao": "Qual das seguintes NÃO é uma finalidade de um plano de teste?",
+      "alternativas": {
+        "A": "Definir os dados de teste e os resultados esperados para testes de componentes e testes de integração de componentes",
+        "B": "Definir como critério de saída do nível de teste de componentes que '100% de cobertura de instruções e 100% de cobertura de ramos devem ser alcançados'",
+        "C": "Descrever quais campos o relatório de progresso de teste deve conter e qual deve ser o formato desse relatório",
+        "D": "Explicar por que o teste de integração de sistema será excluído dos testes, embora a estratégia de teste exija esse nível de teste"
+      },
+      "correta": "A",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "19",
+      "questao": "No início de cada iteração, a equipe estima o trabalho necessário (em pessoa-dias). A partir da terceira iteração, a equipe usa o seguinte modelo de extrapolação: O gráfico mostra o trabalho estimado e real para as 4 primeiras iterações. Qual é o valor estimado de trabalho para a iteração #5?",
+      "alternativas": {
+        "A": "10,5 pessoa-dias",
+        "B": "8,25 pessoa-dias",
+        "C": "6,5 pessoa-dias",
+        "D": "9,4 pessoa-dias"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q31.png"],
+      "level": "K3"
+    },
+    {
+      "id": "20",
+      "questao": "Você está preparando um cronograma de execução de testes para executar sete casos de teste, TC1 a TC7. A figura a seguir inclui as prioridades desses casos de teste (1 = prioridade mais alta, 3 = prioridade mais baixa). A figura também mostra as dependências entre os casos de teste usando setas. Por exemplo, a seta de TC4 para TC5 significa que o TC5 só pode ser executado se o TC4 tiver sido executado previamente. Qual caso de teste deve ser executado em sexto lugar?",
+      "alternativas": {
+        "A": "TC 3 ",
+        "B": "TC 5 ",
+        "C": "TC 6",
+        "D": "TC 2 "
+      },
+      "correta": "C",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoC/Q32.png"],
+      "level": "K1"
+    },
+    {
+      "id": "21",
+      "questao": "O que o modelo da pirâmide de testes mostra?",
+      "alternativas": {
+        "A": "Que os testes podem ter diferentes prioridades",
+        "B": "Que os testes podem ter diferentes granularidades",
+        "C": "Que os testes podem exigir diferentes critérios de cobertura",
+        "D": "Que os testes podem depender de outros testes"
+      },
+      "correta": "B",
+      "erradas": ["D", "A", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "22",
+      "questao": "Qual é a relação entre os quadrantes de teste, os níveis de teste e os tipos de teste?",
+      "alternativas": {
+        "A": "Os quadrantes de teste representam combinações específicas de níveis de teste e tipos de teste, definindo sua localização no ciclo de vida do desenvolvimento de software",
+        "B": "Os quadrantes de teste descrevem o grau de granularidade dos tipos de teste individuais realizados em cada nível de teste",
+        "C": "Os quadrantes de teste atribuem os tipos de teste que podem ser realizados aos níveis de teste",
+        "D": "Os quadrantes de teste agrupam níveis de teste e tipos de teste por vários critérios, como direcionamento a partes interessadas específicas"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "23",
+      "questao": "Qual dos seguintes é um exemplo de como a análise de risco do produto pode influenciar a profundidade e o escopo dos testes?",
+      "alternativas": {
+        "A": "O monitoramento contínuo de riscos permite identificar um risco emergente o mais cedo possível",
+        "B": "A identificação de riscos permite implementar atividades de mitigação de riscos e reduzir o nível de risco",
+        "C": "O nível de risco avaliado ajuda a selecionar o rigor dos testes",
+        "D": "A análise de riscos permite derivar itens de cobertura"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "24",
+      "questao": "Qual das seguintes atividades no processo de teste faz MAIS uso dos relatórios de progresso de teste?",
+      "alternativas": {
+        "A": "Projeto de teste",
+        "B": "Conclusão de teste",
+        "C": "Análise de teste",
+        "D": "Planejamento de teste"
+      },
+      "correta": "B",
+      "erradas": ["A", "D", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "25",
+      "questao": "Qual das seguintes NÃO é um exemplo de como o gerenciamento de configuração apoia os testes?",
+      "alternativas": {
+        "A": "Todos os commits no repositório são identificados de forma única e controlados por versão",
+        "B": "Todas as alterações nos elementos do ambiente de teste são rastreadas",
+        "C": "Todas as especificações de requisitos são referenciadas de forma inequívoca nos planos de teste",
+        "D": "Todos os defeitos identificados têm um status atribuído"
+      },
+      "correta": "D",
+      "erradas": ["A", "C", "B"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "26",
+      "questao": "Considere o seguinte relatório de defeito para uma aplicação de compras web:<br>Aplicação: WebShop v0.99<br>Defeito: Botão de login não funciona<br>Passos para reproduzir:<br>Abrir o site<br>Clicar no botão de login<br>Resultado esperado: O usuário deve ser redirecionado para a página de login<br>Resultado real: O botão de login não responde ao ser clicado<br>Severidade: Alta<br>Prioridade: Urgente<br>Qual é a informação MAIS importante que está faltando neste relatório de defeito?",
+      "alternativas": {
+        "A": "Nome do testador e data",
+        "B": "Elementos do ambiente de teste e suas versões",
+        "C": "Identificação do objeto de teste",
+        "D": "Impacto nos interesses das partes interessadas"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K3"
+    }
+  ]
+}

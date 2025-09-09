@@ -1,0 +1,366 @@
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Quais das seguintes afirmações descrevem um objetivo de teste válido?",
+      "alternativas": {
+        "A": "Para provar que não há defeitos não corrigidos no sistema em teste",
+        "B": "Para provar que não haverá falhas após a implementação do sistema na produção",
+        "C": "Reduzir o nível de risco do objeto de teste e aumentar a confiança no nível de qualidade",
+        "D": "Para verificar se não há combinações não testadas de entradas"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagens": [],
+      "level": "K1"
+    },
+    {
+      "id": "02",
+      "questao": "Qual das opções a seguir mostra um exemplo que contribui para o sucesso das atividades de teste?",
+      "alternativas": {
+        "A": "O envolvimento dos testadores durante várias atividades do ciclo de vida de desenvolvimento de software (SDLC) ajudará a detectar defeitos nos produtos de trabalho",
+        "B": "Os testadores tentam não perturbar os desenvolvedores durante a codificação, para que eles escrevam um código melhor",
+        "C": "Os testadores que colaboram com os usuários finais ajudam a melhorar a qualidade dos relatórios de defeitos durante a integração de componentes e o teste do sistema",
+        "D": "Os testadores certificados modelarão casos de teste muito melhores do que os testadores não certificados"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "03",
+      "questao": "Você foi designado como testador de uma equipe que está produzindo um novo sistema de forma incremental. Você notou que nenhuma alteração foi feita nos casos de teste de regressão existentes durante várias iterações e nenhum novo defeito de regressão foi identificado. Seu gerente está feliz, mas você não está. Qual princípio de teste explica seu ceticismo?",
+      "alternativas": {
+        "A": "Os testes se desgastam",
+        "B": "Falácia da ausência de erros",
+        "C": "Os defeitos se agrupam",
+        "D": "É impossível realizar testes exaustivos"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "04",
+      "questao": "Você trabalha em uma equipe que desenvolve um aplicativo móvel para pedidos de comida. Na iteração atual, a equipe decidiu implementar a funcionalidade de pagamento. Qual das atividades a seguir faz parte da análise de teste?",
+      "alternativas": {
+        "A": "Estimativa de que o teste da integração com o serviço de pagamento levará 8 dias/homem",
+        "B": "Decidir que a equipe deve testar se é possível realizar o pagamento entre muitos usuários",
+        "C": "Usar a análise de valor limite (BVA) para derivar os dados de teste para os casos de teste que verificam o processamento correto do pagamento para o valor mínimo permitido a ser pago",
+        "D": "Analisar a discrepância entre o resultado atual e o resultado esperado após a execução de um caso de teste que verifica o processo de pagamento com cartão de crédito e relatar um defeito"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "05",
+      "questao": "Quais dos seguintes fatores (i-v) têm influência SIGNIFICATIVA no processo de teste?<br><br>i. O SDLC;<br>ii. O número de defeitos detectados em projetos anteriores;<br>iii. Os riscos identificados do produto;<br>iv. Novos requisitos regulatórios forçando;<br>v. O número de testadores certificados na organização;",
+      "alternativas": {
+        "A": "i, ii têm influência significativa; iii, iv, v não têm",
+        "B": "i, iii, iv têm influência significativa; ii, v não têm",
+        "C": "ii, iv, v têm influência significativa; i, iii não têm",
+        "D": "iii, v têm influência significativa; i, ii, iv não têm"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "06",
+      "questao": "Quais das DUAS tarefas a seguir pertencem PRINCIPALMENTE a um papel no teste?",
+      "alternativas": {
+        "A": "Configurar ambientes de teste",
+        "B": "Manter o backlog do produto",
+        "C": "Projetar soluções para novos requisitos",
+        "D": "Criar o plano de teste",
+        "E": "Relatório sobre a cobertura alcançada"
+      },
+      "correta": ["A", "E"],
+      "erradas": ["B", "C", "D"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "07",
+      "questao": "Quais das seguintes habilidades (i-v) são as MAIS importantes para um testador?<br><br>i. Ter conhecimento do domínio;<br>ii. Criação de uma visão do produto;<br>iii. Ser um bom membro da equipe;<br>iv. Planejar e organizar o trabalho da equipe;<br>v. Pensamento crítico;",
+      "alternativas": {
+        "A": "ii e iv são importantes; i, iii e v não são",
+        "B": "i, iii e v são importantes; ii e iv não são",
+        "C": "i, ii e v são importantes; iii e iv não são",
+        "D": "iii e iv são importantes; i, ii e v não são"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "08",
+      "questao": "Como a abordagem de equipe inteira está presente nas interações entre os testadores e os representantes da empresa?",
+      "alternativas": {
+        "A": "Os representantes do negócio decidem sobre as abordagens de automação de testes",
+        "B": "Os testadores ajudam os representantes da empresa a definir a estratégia de teste",
+        "C": "Os representantes de negócio não participam da abordagem de equipe inteira",
+        "D": "Os testadores ajudam os representantes de negócio a criar testes de aceite adequados"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "09",
+      "questao": "Qual das alternativas a seguir é um exemplo do porquê o teste é necessário?",
+      "alternativas": {
+        "A": "O teste dinâmico aumenta a qualidade ao fazer com que os objetos de teste falhem de maneiras que nunca poderiam ser alcançadas pelos usuários.",
+        "B": "O teste estático é usado pelos desenvolvedores para identificar falhas em seu código mais cedo do que seria possível por meio do teste dinâmico.",
+        "C": "A análise estática fornece evidências aos clientes de que os elementos do sistema que não produzem saídas estão prontos para liberação.",
+        "D": "As revisões aumentam a qualidade das especificações de requisitos e levam à necessidade de menos mudanças nos produtos de trabalho derivados."
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "10",
+      "questao": "Qual das seguintes afirmações sobre garantia da qualidade (QA) e/ou controle da qualidade (QC) está correta?",
+      "alternativas": {
+        "A": "QA é realizada como parte do teste",
+        "B": "O teste é realizado como parte do QC",
+        "C": "Teste é outro termo para QC",
+        "D": "O teste é realizado como parte do QA"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "11",
+      "questao": "Um dos “princípios de teste” afirma que o teste exaustivo é impossível. Qual das seguintes alternativas é um exemplo de como abordar esse princípio na prática?",
+      "alternativas": {
+        "A": "Criar casos de teste que cubram todas as saídas especificadas possíveis",
+        "B": "Documentar todas as variações possíveis de entradas de teste e priorizá-las com base na importância",
+        "C": "Iniciar o teste o mais cedo possível, com revisões e outras abordagens de teste estático",
+        "D": "Usar particionamento de equivalência e análise de valor limite para gerar casos de teste"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "12",
+      "questao": "Qual atividade de teste envolve trabalhar com requisitos de dados de teste, condições de teste, requisitos de ambiente de teste e casos de teste?",
+      "alternativas": {
+        "A": "Projeto de teste",
+        "B": "Execução de teste",
+        "C": "Análise de teste",
+        "D": "Implementação do teste"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "13",
+      "questao": "Qual das alternativas a seguir é a que MAIS provavelmente impacta em como o teste é realizado para um determinado objeto de teste?",
+      "alternativas": {
+        "A": "O nível médio de experiência da equipe de marketing da organização",
+        "B": "O conhecimento dos usuários de que um novo sistema está sendo desenvolvido para eles",
+        "C": "O número de anos de experiência dos membros da equipe de teste",
+        "D": "A estrutura organizacional do usuário final para um aplicativo comercial de streaming de música"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "14",
+      "questao": "Qual das seguintes afirmações é um exemplo CORRETO do valor da rastreabilidade?",
+      "alternativas": {
+        "A": "A rastreabilidade entre os riscos mitigados e os casos de teste que passaram fornece um meio de determinar o nível de risco residual",
+        "B": "A rastreabilidade entre os requisitos do usuário e os resultados de teste fornece um meio de medir o progresso do projeto em relação aos objetivos de negócio",
+        "C": "A rastreabilidade entre os testadores e os casos de teste que falharam fornece um meio de determinar o nível de habilidade dos testadores",
+        "D": "A rastreabilidade entre os riscos identificados e as condições de teste escritas fornece um meio de determinar quais riscos valem a pena testar"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "15",
+      "questao": "Qual das alternativas a seguir é a que MAIS provavelmente representa um exemplo de um testador utilizando uma habilidade genérica durante o teste?",
+      "alternativas": {
+        "A": "O profundo conhecimento do testador sobre diversos jogos de computador fez com que ele se desse bem com um dos desenvolvedores que também gostava de jogos",
+        "B": "O testador era um ex-piloto e conseguiu compreender melhor os critérios de aceitação para o sistema de controle de helicópteros",
+        "C": "O testador já havia trabalhado como programador e utilizou suas habilidades nessa área para se comunicar melhor com os analistas de negócios",
+        "D": "O testador foi muito cuidadoso para não cometer erros ao gerar metodicamente casos de teste antes de iniciar sua sessão de testes exploratórios"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "16",
+      "questao": "Qual das seguintes é uma vantagem da abordagem de equipe inteira (whole-team approach)?",
+      "alternativas": {
+        "A": "Permite que os membros da equipe assumam qualquer função a qualquer momento",
+        "B": "Necessita apenas de uma única equipe para dar suporte a todo o projeto de desenvolvimento",
+        "C": "Incorpora representantes do negócio junto aos desenvolvedores na mesma equipe",
+        "D": "Gera uma sinergia de equipe que beneficia todo o projeto"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "17",
+      "questao": "Qual dos seguintes é um objetivo típico de teste?",
+      "alternativas": {
+        "A": "Validar que os requisitos documentados foram atendidos",
+        "B": "Causar falhas e identificar defeitos",
+        "C": "Iniciar erros e identificar causas raiz",
+        "D": "Verificar se o objeto de teste atende às expectativas do usuário"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "18",
+      "questao": "Qual das seguintes afirmações descreve MELHOR a diferença entre teste e depuração?",
+      "alternativas": {
+        "A": "O teste causa falhas enquanto a depuração corrige falhas",
+        "B": "O teste é uma atividade negativa enquanto a depuração é uma atividade positiva",
+        "C": "O teste determina que existem defeitos enquanto a depuração remove defeitos",
+        "D": "O teste encontra a causa dos defeitos enquanto a depuração corrige a causa dos defeitos"
+      },
+      "correta": "C",
+      "erradas": ["B", "A", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "19",
+      "questao": "A “falácia da ausência de defeitos” é um dos princípios do teste. Qual das seguintes é um exemplo de como abordar esse princípio na prática?",
+      "alternativas": {
+        "A": "Explicar que não é possível que o teste mostre a ausência de defeitos",
+        "B": "Apoiar os usuários finais na realização de testes de aceitação",
+        "C": "Garantir que não restem defeitos de implementação no sistema entregue",
+        "D": "Modificar testes que não causam falhas para garantir que poucos defeitos permaneçam"
+      },
+      "correta": "B",
+      "erradas": ["A", "D", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "20",
+      "questao": "Quais das seguintes atividades de teste são MAIS propensas a envolver a aplicação de análise de valor limite e particionamento de equivalência?",
+      "alternativas": {
+        "A": "Implementação de teste",
+        "B": "Projeto de teste",
+        "C": "Execução de teste",
+        "D": "Monitoramento de teste",
+        "E": "Análise de teste"
+      },
+      "correta": ["B", "E"],
+      "erradas": ["A", "C", "D"],
+      "tipo": "Checkbox",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "21",
+      "questao": "Dado o seguinte testware:<br> 1. Itens de cobertura<br>2. Solicitações de mudança<br>3.Cronograma de execução de testes<br>4.Condições de teste priorizadas<br>E as seguintes atividades de teste:<br>A. Análise de teste <br>B. Projeto de teste <br>C. Implementação de teste <br>D. Conclusão de teste <br>Qual das seguintes opções MOSTRA MELHOR o testware produzido pelas atividades?",
+      "alternativas": {
+        "A": "1B, 2D, 3C, 4A",
+        "B": "1B, 2D, 3A, 4C",
+        "C": "1D, 2C, 3A, 4B",
+        "D": "1D, 2C, 3B, 4A"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "22",
+      "questao": "Qual das seguintes afirmações sobre os diferentes papéis de teste é MAIS provável de estar CORRETA?",
+      "alternativas": {
+        "A": "No desenvolvimento de software ágil, o papel de gerenciamento de teste é responsabilidade principal da equipe, enquanto o papel de teste é principalmente responsabilidade de um único indivíduo de fora da equipe",
+        "B": "O papel de teste é principalmente responsável pelo monitoramento e controle de teste, enquanto o papel de gerenciamento de teste é principalmente responsável pelo planejamento e conclusão de teste",
+        "C": "No desenvolvimento de software ágil, atividades de gerenciamento de teste que abrangem múltiplas equipes são tratadas por um gerente de teste externo à equipe, enquanto algumas tarefas de gerenciamento de teste são tratadas pela própria equipe",
+        "D": "papel de gerenciamento de teste é principalmente responsável pela análise e projeto de teste, enquanto o papel de teste é principalmente responsável pela implementação e execução de teste"
+      },
+      "correta": "C",
+      "erradas": ["D", "B", "A"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "23",
+      "questao": "Qual dos seguintes é uma vantagem da abordagem de equipe inteira (whole-team)?",
+      "alternativas": {
+        "A": "Equipes sem testadores",
+        "B": "Melhoria na dinâmica da equipe",
+        "C": "Membros de equipe especializados",
+        "D": "Tamanhos de equipe maiores"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "24",
+      "questao": "Qual das seguintes afirmações sobre a independência do teste é CORRETA?",
+      "alternativas": {
+        "A": "Testadores independentes encontrarão defeitos devido à sua perspectiva técnica diferente dos desenvolvedores, mas sua independência pode levar a uma relação adversarial com os desenvolvedores",
+        "B": "DA familiaridade dos desenvolvedores com seu próprio código significa que eles encontram apenas alguns defeitos nele; no entanto, seu conhecimento compartilhado de software com os testadores significa que esses defeitos também seriam encontrados pelos testadores",
+        "C": "O teste independente requer testadores que estejam fora da equipe de desenvolvimento e, idealmente, fora da organização; no entanto, esses testadores têm dificuldade em entender o domínio da aplicação",
+        "D": "Testadores de fora da equipe de desenvolvimento são mais independentes do que testadores de dentro da equipe, mas os testadores de dentro da equipe têm mais probabilidade de serem responsabilizados por atrasos na entrega do produto"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    }
+  ]
+}

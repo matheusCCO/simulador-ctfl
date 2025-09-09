@@ -1,0 +1,274 @@
+{
+  "questoes": [
+    {
+      "id": "01",
+      "questao": "Considere a seguinte regra: 'para cada atividade do SDLC, há uma atividade de teste correspondente'. Em quais modelos de SDLC essa regra é válida?",
+      "alternativas": {
+        "A": "Somente em modelos sequenciais",
+        "B": "Somente em modelos iterativos",
+        "C": "Somente em modelos iterativos e incrementais",
+        "D": "Em modelos de sequenciais, incrementais e iterativos"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "02",
+      "questao": "Qual das seguintes afirmações descreve MELHOR a abordagem de desenvolvimento orientado por testes de aceite (ATDD)?",
+      "alternativas": {
+        "A": "No ATDD, os critérios de aceite geralmente são criados com base no formato dado/quando/então",
+        "B": "No ATDD, os casos de teste são criados principalmente no teste de componentes e são orientados para o código",
+        "C": "No ATDD, os testes são criados com base em critérios de aceite para orientar o desenvolvimento do software",
+        "D": "No ATDD, os testes são baseados no comportamento desejado do software, o que facilita a compreensão dos membros da equipe"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "03",
+      "questao": "Qual das opções a seguir NÃO é um exemplo da abordagem shift-left?",
+      "alternativas": {
+        "A": "Revisar os requisitos do usuário antes que eles sejam formalmente aceitos pelos stakeholders",
+        "B": "Escrever um teste de componente antes que o código correspondente seja escrito",
+        "C": "Execução de um teste de eficiência de performance para um componente durante o teste do componente",
+        "D": "Escrever um script de teste antes de definir o processo de gerenciamento de configuração"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "04",
+      "questao": "Qual dos argumentos abaixo você usaria para convencer seu gerente a organizar retrospectivas no final de cada ciclo de lançamento?",
+      "alternativas": {
+        "A": "As retrospectivas são muito populares hoje em dia e os clientes gostariam que as adicionássemos aos nossos processos",
+        "B": "A organização de retrospectivas economizará dinheiro, pois os representantes dos usuários finais não fornecem feedback imediato sobre o produto",
+        "C": "Os pontos fracos do processo, identificados durante a retrospectiva, podem ser analisados e servir como uma lista de tarefas para o programa de melhoria contínua do processo da organização",
+        "D": "As retrospectivas adotam cinco valores, incluindo coragem e respeito, que são cruciais para manter o aprimoramento contínuo na organização"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "05",
+      "questao": "Quais tipos de falhas (1-4) se encaixam melhor em quais níveis de teste (A-D)?",
+      "alternativas": {
+        "A": "1D, 2B, 3A, 4C",
+        "B": "1D, 2B, 3C, 4A",
+        "C": "1B, 2A, 3D, 4C",
+        "D": "1C, 2B, 3A, 4D"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoA/Q13.png"],
+      "level": "K2"
+    },
+    {
+      "id": "06",
+      "questao": "Você está testando uma história de usuário com três critérios de aceite: AC1, AC2 e AC3. O AC1 é coberto pelo caso de teste TC1, o AC2 pelo TC2 e o AC3 pelo TC3. O histórico de execução do teste teve três execuções de teste em três versões consecutivas do software. Quais dos testes acima são executados como testes de regressão?",
+      "alternativas": {
+        "A": "4, 7, 8, 9",
+        "B": "5, 7",
+        "C": "4, 6, 8, 9",
+        "D": "5, 6"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagens": ["./assets/img/SimuladoA/Q14.png"],
+      "level": "K2"
+    },
+    {
+      "id": "07",
+      "questao": "Qual das seguintes afirmações sobre o ciclo de vida de desenvolvimento de software escolhido está CORRETA?",
+      "alternativas": {
+        "A": "Se o desenvolvimento ágil de software for utilizado, a automação dos testes de sistema substitui a necessidade de testes de regressão",
+        "B": "Se um modelo de desenvolvimento sequencial for utilizado, então o teste dinâmico é tipicamente restrito às fases posteriores do ciclo de vida",
+        "C": "Se um modelo de desenvolvimento iterativo for utilizado, então o teste de componentes é tipicamente realizado manualmente pelos desenvolvedores",
+        "D": "Se um modelo de desenvolvimento incremental for utilizado, então o teste estático é feito nos primeiros incrementos e o teste dinâmico nos incrementos posteriores"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "08",
+      "questao": "Qual das seguintes é uma boa prática de teste que se aplica a todos os ciclos de vida de desenvolvimento de software?",
+      "alternativas": {
+        "A": "Os testadores devem revisar os produtos de trabalho como parte da próxima fase de desenvolvimento",
+        "B": "Os testadores devem revisar os produtos de trabalho assim que os rascunhos estiverem disponíveis",
+        "C": "Os testadores devem revisar os produtos de trabalho antes que a análise e o projeto de teste comecem",
+        "D": "Os testadores devem revisar os produtos de trabalho imediatamente após serem publicados"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "09",
+      "questao": "Qual das alternativas a seguir é um exemplo de abordagem de desenvolvimento orientada a testes (test-first approach)?",
+      "alternativas": {
+        "A": "Desenvolvimento Orientado por Testes (Test-Driven Development)",
+        "B": "Desenvolvimento Orientado por Cobertura (Coverage-Driven Development)",
+        "C": "Desenvolvimento Orientado por Qualidade (Quality-Driven Development)",
+        "D": "Desenvolvimento Orientado por Funcionalidades (Feature-Driven Development)"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "10",
+      "questao": "Qual das seguintes afirmações sobre DevOps está CORRETA?",
+      "alternativas": {
+        "A": "Para acelerar as entregas, a integração contínua é usada para incentivar os desenvolvedores a submeterem código rapidamente, sem a necessidade de concluir o teste de componentes",
+        "B": "Para conseguir atualizar e liberar sistemas com mais frequência, muitos testes automatizados de regressão são necessários para reduzir o risco de regressão",
+        "C": "Para tratar desenvolvedores e operações de forma igual, os testadores dedicarão mais esforço ao teste de liberação feito pelas operações, usando uma abordagem shift-right",
+        "D": "Para criar maior sinergia entre testadores, desenvolvedores e operações, o teste deve se tornar totalmente automatizado, sem nenhum teste manual"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "11",
+      "questao": "Qual das seguintes atividades é a MAIS provável de ser realizada como parte do teste de sistema?",
+      "alternativas": {
+        "A": "Teste de segurança de um sistema de gestão de crédito por uma equipe de teste independente",
+        "B": "Teste da interface de um sistema de câmbio com um sistema bancário externoo",
+        "C": "Teste beta de um sistema de ensino a distância realizado pelos desenvolvedores do material do curso",
+        "D": "Teste das interações entre a interface do usuário e o banco de dados de um sistema de recursos humanos"
+      },
+      "correta": "A",
+      "erradas": ["B", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "12",
+      "questao": "Qual das seguintes afirmações está CORRETA?",
+      "alternativas": {
+        "A": "Os testes de regressão aumentam em número à medida que o projeto avança, enquanto o número de testes de confirmação diminui à medida que o projeto avança",
+        "B": "Os testes de regressão são criados e executados quando o objeto de teste é corrigido, enquanto os testes de confirmação são executados sempre que o objeto de teste é aprimorado",
+        "C": "O teste de regressão está relacionado a verificar se o ambiente operacional permanece inalterado, enquanto o teste de confirmação está relacionado a testar mudanças no objeto de teste",
+        "D": "O teste de regressão está relacionado a efeitos adversos em código não alterado, enquanto o teste de confirmação está relacionado a testar código alterado"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "13",
+      "questao": "Qual das seguintes é uma boa prática de teste que se aplica a todos os ciclos de vida de desenvolvimento de software?",
+      "alternativas": {
+        "A": "Para cada nível de teste, existe um nível de desenvolvimento correspondente",
+        "B": "Para cada objetivo de teste, existe um objetivo de desenvolvimento correspondente",
+        "C": "Para cada atividade de teste, existe uma atividade de usuário correspondente",
+        "D": "Para cada atividade de desenvolvimento, existe uma atividade de teste correspondente"
+      },
+      "correta": "D",
+      "erradas": ["A", "C", "B"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "14",
+      "questao": "Qual dos seguintes é um exemplo de uma abordagem de desenvolvimento “test-first” (teste primeiro)?",
+      "alternativas": {
+        "A": "Desenvolvimento Orientado a Testes de Componentes",
+        "B": "Desenvolvimento Orientado a Testes de Integração",
+        "C": "Desenvolvimento Orientado a Testes de Sistema",
+        "D": "Desenvolvimento Orientado a Testes de Aceitação"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K1"
+    },
+    {
+      "id": "15",
+      "questao": "Qual das seguintes fornece a MELHOR descrição do “shift-left”?",
+      "alternativas": {
+        "A": "Quando acordado pelos desenvolvedores, atividades manuais do lado esquerdo do processo de teste são automatizadas para apoiar o princípio de “testes precoces economizam tempo e dinheiro”",
+        "B": "uando for custo-efetivo, as atividades de teste são antecipadas no ciclo de vida de desenvolvimento de software (SDLC) para reduzir o custo total da qualidade, diminuindo o número de defeitos encontrados posteriormente no SDLC",
+        "C": "Quando tiverem tempo disponível, os testadores são obrigados a automatizar testes para testes de regressão, começando com testes de componentes e testes de integração de componentes",
+        "D": "Quando disponível, os testadores são treinados para executar tarefas no início do SDLC, permitindo que mais atividades de teste sejam automatizadas posteriormente no SDLC"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "16",
+      "questao": "Qual das seguintes é MENOS provável de ocorrer como resultado de uma retrospectiva?",
+      "alternativas": {
+        "A": "A qualidade dos futuros objetos de teste melhora ao identificar melhorias nas práticas de desenvolvimento",
+        "B": "A eficiência dos testes melhora ao acelerar a configuração de ambientes de teste por meio de automação",
+        "C": "A compreensão dos usuários finais sobre os processos de desenvolvimento e teste é aprimorada",
+        "D": "Scripts de teste automatizados são aprimorados por meio de feedback dos desenvolvedores"
+      },
+      "correta": "C",
+      "erradas": ["A", "B", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "17",
+      "questao": "Qual dos seguintes níveis de teste é MAIS provável de estar sendo realizado se o teste estiver focado em validação e não estiver sendo realizado por testadores?",
+      "alternativas": {
+        "A": "Teste de componente",
+        "B": "Teste de integração de componentes",
+        "C": "Teste de integração de sistema",
+        "D": "Teste de aceitação"
+      },
+      "correta": "D",
+      "erradas": ["A", "B", "C"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    },
+    {
+      "id": "18",
+      "questao": "O software do sistema de navegação foi atualizado porque sugeria rotas que infringiam as leis de trânsito, como dirigir na contramão de ruas de mão única. Qual das seguintes opções descreve MELHOR os testes que serão realizados?",
+      "alternativas": {
+        "A": "Apenas teste de confirmação",
+        "B": "Teste de confirmação seguido de teste de regressão",
+        "C": "Apenas teste de regressão",
+        "D": "Teste de regressão seguido de teste de confirmação"
+      },
+      "correta": "B",
+      "erradas": ["A", "C", "D"],
+      "tipo": "Radio button",
+      "imagem": "",
+      "level": "K2"
+    }
+  ]
+}
