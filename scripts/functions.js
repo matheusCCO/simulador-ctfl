@@ -3,7 +3,12 @@ const simuladosArquivos = [
   "Simulados/SimuladoB (Oficial BSTQB).json",
   "Simulados/SimuladoC (Oficial BSTQB).json",
   "Simulados/SimualdoF (Inspirado no Simulado A feito por IA).json",
+  "Simulados/SimuladoCapitulo1.json",
   "Simulados/SimuladoCapitulo2.json",
+  "Simulados/SimuladoCapitulo3.json",
+  "Simulados/SimuladoCapitulo4.json",
+  "Simulados/SimuladoCapitulo5.json",
+  "Simulados/SimuladoCapitulo6.json",
 ];
 
 const MODO_ALEATORIO_ID = "aleatorio_40";
