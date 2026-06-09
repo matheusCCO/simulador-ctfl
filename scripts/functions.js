@@ -50,6 +50,12 @@ let currentQuestions = [];
 let currentQuestionIndex = 0;
 let userSelections = {};
 let timer;
+
+function getQuestionText(q) {
+  const rawText = q.questao || q.questão || q.question || "";
+  return Array.isArray(rawText) ? rawText.map(String).join("<br><br>") : rawText;
+}
+
 async function startQuiz() {
   if (timer) {
     clearInterval(timer);
@@ -142,7 +148,7 @@ function renderCurrentQuestion() {
   const qDiv = document.createElement("div");
   const level = (q.level || q.nivel || "").toUpperCase();
   qDiv.className = `mb-4 p-4 rounded bg-gray-50 ${level ? "k" + level[1] : ""}`;
-  const texto = q.questao || q.questão || q.question || "";
+  const texto = getQuestionText(q);
   let alternativas = [];
   let letras = [];
   if (Array.isArray(q.alternativas)) {
@@ -359,7 +365,7 @@ function renderQuestions() {
     qDiv.className = `mb-4 p-4 rounded bg-gray-50 ${
       level ? "k" + level[1] : ""
     }`;
-    const texto = q.questao || q.questão || q.question || "";
+    const texto = getQuestionText(q);
     let alternativas = [];
     let letras = [];
     if (Array.isArray(q.alternativas)) {
@@ -548,7 +554,7 @@ function submitQuiz() {
       acertou ? "border-green-400 bg-green-50" : "border-red-400 bg-red-50"
     }">`;
     html += `<p class="font-semibold flex items-center gap-2">${i + 1}. ${
-      q.questao || q.questão || q.question || ""
+      getQuestionText(q)
     }`;
     if (level) {
       html += `<span class="inline-block align-middle text-xs font-bold px-2 py-1 rounded-full border bg-Se border-gray-400 shadow-sm ml-2 ${

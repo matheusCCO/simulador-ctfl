@@ -423,7 +423,16 @@
     },
     {
       "id": "29",
-      "questao": "Considere a seguinte história de usuário: 'Como editor, quero revisar o conteúdo antes de ser publicado, para que eu possa garantir que a gramática esteja correta', e seus critérios de aceite. Qual dos seguintes é o MELHOR exemplo de um teste ATDD para essa história de usuário?",
+      "questao": [
+        "Considere a seguinte história de usuário: 'Como editor, quero revisar o conteúdo antes de ser publicado, para que eu possa garantir que a gramática esteja correta', e seus critérios de aceite.",
+        "- O usuário pode fazer login no sistema de gerenciamento de conteúdo com a função de 'Editor'.",
+        "- O editor pode visualizar páginas de conteúdo existentes.",
+        "- O editor pode editar o conteúdo da página.",
+        "- O editor pode adicionar comentários de marcação.",
+        "- O editor pode salvar as alterações.",
+        "- O editor pode reatribuir a função de 'proprietário do conteúdo' para fazer atualizações.",
+        "- Qual dos seguintes é o MELHOR exemplo de um teste ATDD para essa história de usuário?"
+      ],
       "alternativas": {
         "A": "testar se o editor pode salvar o documento após excluir o conteúdo da página",
         "B": "testar se o proprietário do conteúdo pode fazer login e fazer atualizações no conteúdo",
