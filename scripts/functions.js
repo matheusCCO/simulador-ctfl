@@ -2,13 +2,13 @@ const simuladosArquivos = [
   "Simulados/SimuladoA (Oficial BSTQB).json",
   "Simulados/SimuladoB (Oficial BSTQB).json",
   "Simulados/SimuladoC (Oficial BSTQB).json",
-  "Simulados/SimualdoF (Inspirado no Simulado A feito por IA).json",
-  "Simulados/SimuladoCapitulo1.json",
-  "Simulados/SimuladoCapitulo2.json",
-  "Simulados/SimuladoCapitulo3.json",
-  "Simulados/SimuladoCapitulo4.json",
-  "Simulados/SimuladoCapitulo5.json",
-  "Simulados/SimuladoCapitulo6.json",
+  "Simulados/SimualdoD (Oficial BSTQB).json",
+  "Simulados/Simulado Capitulo1.json",
+  "Simulados/Simulado Capitulo2.json",
+  "Simulados/Simulado Capitulo3.json",
+  "Simulados/Simulado Capitulo4.json",
+  "Simulados/Simulado Capitulo5.json",
+  "Simulados/Simulado Capitulo6.json",
 ];
 
 const MODO_ALEATORIO_ID = "aleatorio_40";
@@ -53,7 +53,9 @@ let timer;
 
 function getQuestionText(q) {
   const rawText = q.questao || q.questão || q.question || "";
-  return Array.isArray(rawText) ? rawText.map(String).join("<br><br>") : rawText;
+  return Array.isArray(rawText)
+    ? rawText.map(String).join("<br><br>")
+    : rawText;
 }
 
 async function startQuiz() {
@@ -68,6 +70,7 @@ async function startQuiz() {
         "Simulados/SimuladoA (Oficial BSTQB).json",
         "Simulados/SimuladoB (Oficial BSTQB).json",
         "Simulados/SimuladoC (Oficial BSTQB).json",
+        "Simulados/SimualdoD (Oficial BSTQB).json"
       ];
       let todasQuestoes = [];
       for (const arquivo of arquivos) {
@@ -187,7 +190,7 @@ function renderCurrentQuestion() {
       <label class="block mt-2 cursor-pointer">
         <input type="checkbox" name="q${i}" value="${letra}" class="mr-2" /> <span class="font-mono">${letra}</span>) ${alternativas[j]}
       </label>
-    `
+    `,
       )
       .join("");
   } else {
@@ -197,7 +200,7 @@ function renderCurrentQuestion() {
       <label class="block mt-2 cursor-pointer">
         <input type="radio" name="q${i}" value="${letra}" class="mr-2" /> <span class="font-mono">${letra}</span>) ${alternativas[j]}
       </label>
-    `
+    `,
       )
       .join("");
   }
@@ -404,7 +407,7 @@ function renderQuestions() {
         <label class="block mt-2 cursor-pointer">
           <input type="checkbox" name="q${i}" value="${letra}" class="mr-2" /> <span class="font-mono">${letra}</span>) ${alternativas[j]}
         </label>
-      `
+      `,
         )
         .join("");
     } else {
@@ -414,7 +417,7 @@ function renderQuestions() {
         <label class="block mt-2 cursor-pointer">
           <input type="radio" name="q${i}" value="${letra}" class="mr-2" /> <span class="font-mono">${letra}</span>) ${alternativas[j]}
         </label>
-      `
+      `,
         )
         .join("");
     }
@@ -553,9 +556,9 @@ function submitQuiz() {
     html += `<div class="mb-4 p-4 rounded bg-gray-50 border ${
       acertou ? "border-green-400 bg-green-50" : "border-red-400 bg-red-50"
     }">`;
-    html += `<p class="font-semibold flex items-center gap-2">${i + 1}. ${
-      getQuestionText(q)
-    }`;
+    html += `<p class="font-semibold flex items-center gap-2">${i + 1}. ${getQuestionText(
+      q,
+    )}`;
     if (level) {
       html += `<span class="inline-block align-middle text-xs font-bold px-2 py-1 rounded-full border bg-Se border-gray-400 shadow-sm ml-2 ${
         level ? "k" + level[1] : ""
@@ -575,7 +578,7 @@ function submitQuiz() {
         : '<span class="text-gray-500">Nenhuma resposta</span>'
     }</div>`;
     html += `<div class="mt-2"><strong>Resposta correta:</strong> ${corretaTextos.join(
-      "<br>"
+      "<br>",
     )}</div>`;
     html += acertou
       ? `<div class="text-green-700 font-bold mt-2">✔ Acertou</div>`
@@ -601,7 +604,7 @@ function submitQuiz() {
   historico.unshift(tentativa);
   localStorage.setItem(
     "ctfl_historico",
-    JSON.stringify(historico.slice(0, 10))
+    JSON.stringify(historico.slice(0, 10)),
   );
   renderHistory();
   setTimeout(() => {
@@ -610,7 +613,7 @@ function submitQuiz() {
         aprovado
           ? "✅ Parabéns, você foi APROVADO!"
           : "❌ Você NÃO foi aprovado."
-      }\n\nAcertos: ${acertos}\nErros: ${erros}\nNota: ${nota}%`
+      }\n\nAcertos: ${acertos}\nErros: ${erros}\nNota: ${nota}%`,
     );
   }, 100);
   html =
@@ -694,15 +697,15 @@ function showGabarito(idx) {
                   g.userTextos && g.userTextos.length > 0
                     ? g.userTextos.join("<br>")
                     : g.user && g.user.length > 0
-                    ? g.user.join(", ")
-                    : '<span class="text-gray-500">Nenhuma resposta</span>'
+                      ? g.user.join(", ")
+                      : '<span class="text-gray-500">Nenhuma resposta</span>'
                 }</td>
                 <td class='border border-gray-300 px-2 py-2 text-xs'>${
                   g.corretaTextos
                     ? g.corretaTextos.join("<br>")
                     : Array.isArray(g.correta)
-                    ? g.correta.join(", ")
-                    : g.correta
+                      ? g.correta.join(", ")
+                      : g.correta
                 }</td>
                 <td class='border border-gray-300 px-2 py-2 text-center'>${
                   g.acertou
@@ -710,7 +713,7 @@ function showGabarito(idx) {
                     : '<span class="text-red-700 font-bold">✘</span>'
                 }</td>
               </tr>
-            `
+            `,
               )
               .join("")}
           </tbody>
@@ -740,7 +743,7 @@ function exportGabarito(idx) {
       gabarito: tentativa.gabarito,
     },
     null,
-    2
+    2,
   );
   const blob = new Blob([dataStr], { type: "application/json" });
   const url = URL.createObjectURL(blob);
@@ -789,7 +792,7 @@ function exportGabarito(idx) {
       tentativa.aprovado ? "APROVADO" : "REPROVADO"
     }`,
     10,
-    y
+    y,
   );
   y += 10;
   // Cabeçalho da tabela
