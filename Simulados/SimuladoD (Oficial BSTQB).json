@@ -47,7 +47,7 @@
     },
     {
       "id": "04",
-      "questao": "Given the following test tasks:<br>1. Derive test cases from test conditions <br>2. Identify reusable testware<br>3. Organize test cases into test procedures<br>4. Evaluate the test basis and the test object<br>And the following test activities:<br>A. Test analysis<br>B. Test design<br>C. Test implementation<br>D. Test completionWhich of the following BEST matches the tasks with the activities?",
+      "questao": "Considerando as seguintes tarefas de teste:<br>1. Derivar casos de teste a partir de condições de teste<br>2. Identificar *testware* reutilizável<br>3. Organizar casos de teste em procedimentos de teste<br>4. Avaliar a base de teste e o objeto de teste<br>E as seguintes atividades de teste:<br>A. Análise de teste<br>B. Projeto de teste<br>C. Implementação de testebr>D. Conclusão de teste <br>Qual das opções a seguir associa MELHOR as tarefas às atividades?",
       "alternativas": {
         "A": "1B, 2A, 3D, 4C",
         "B": "1B, 2D, 3C, 4A",
@@ -295,7 +295,7 @@
         "D": "BY = 2011, CY = 2029",
         "E": "BY = 2000, CY = 2000"
       },
-      "correta": ["B","E"],
+      "correta": ["B", "E"],
       "erradas": ["A", "B", "D"],
       "tipo": "Checkbox",
       "imagem": "",
@@ -328,7 +328,7 @@
       "correta": "A",
       "erradas": ["A", "C", "D"],
       "tipo": "Radio button",
-      "imagem": ["./assets/img/SimuladoD/Q22.png"],
+      "imagens": ["./assets/img/SimuladoD/Q22.png"],
       "level": "K3"
     },
     {
@@ -343,7 +343,7 @@
       "correta": "B",
       "erradas": ["A", "C", "D"],
       "tipo": "Radio button",
-      "imagem": ["./assets/img/SimuladoD/Q23.png"],
+      "imagens": ["./assets/img/SimuladoD/Q23.png"],
       "level": "K3"
     },
     {
@@ -433,7 +433,7 @@
       "correta": "A",
       "erradas": ["B", "C", "D"],
       "tipo": "Radio button",
-      "imagem": ["./assets/img/SimuladoD/Q29.png"],
+      "imagens": ["./assets/img/SimuladoD/Q29.png"],
       "level": "K3"
     },
     {
@@ -446,7 +446,7 @@
         "D": "Os casos de teste atingiram pelo menos 80% de cobertura de instruções (statement coverage)",
         "E": "Todos os analistas de teste são certificados pelo ISTQB no Nível Foundation"
       },
-      "correta": ["B","D"],
+      "correta": ["B", "D"],
       "erradas": ["A", "C", "E"],
       "tipo": "Checkbox",
       "imagem": "",
@@ -479,7 +479,7 @@
       "correta": "B",
       "erradas": ["A", "C", "D"],
       "tipo": "Radio button",
-      "imagem": ["./assets/img/SimuladoD/Q32.png"],
+      "imagens": ["./assets/img/SimuladoD/Q32.png"],
       "level": "K3"
     },
     {
@@ -494,7 +494,7 @@
       "correta": "C",
       "erradas": ["B", "A", "D"],
       "tipo": "Radio button",
-      "imagem": ["./assets/img/SimuladoD/Q32.png"],
+      "imagens": "",
       "level": "K3"
     },
     {
@@ -522,7 +522,7 @@
         "D": "Suporte precário de ferramentas",
         "E": "Tempo de resposta excessivamente longo"
       },
-      "correta": ["B","E"],
+      "correta": ["B", "E"],
       "erradas": ["A", "C", "D"],
       "tipo": "Radio button",
       "imagem": "",
@@ -570,7 +570,7 @@
       "correta": "A",
       "erradas": ["C", "B", "D"],
       "tipo": "Radio button",
-      "imagem": ["./assets/img/SimuladoD/Q38.png"],
+      "imagens": ["./assets/img/SimuladoD/Q38.png"],
       "level": "K3"
     },
     {

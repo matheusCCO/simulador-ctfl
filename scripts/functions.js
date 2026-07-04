@@ -2,7 +2,7 @@ const simuladosArquivos = [
   "Simulados/SimuladoA (Oficial BSTQB).json",
   "Simulados/SimuladoB (Oficial BSTQB).json",
   "Simulados/SimuladoC (Oficial BSTQB).json",
-  "Simulados/SimualdoD (Oficial BSTQB).json",
+  "Simulados/SimuladoD (Oficial BSTQB).json",
   "Simulados/Simulado Capitulo1.json",
   "Simulados/Simulado Capitulo2.json",
   "Simulados/Simulado Capitulo3.json",
@@ -70,7 +70,7 @@ async function startQuiz() {
         "Simulados/SimuladoA (Oficial BSTQB).json",
         "Simulados/SimuladoB (Oficial BSTQB).json",
         "Simulados/SimuladoC (Oficial BSTQB).json",
-        "Simulados/SimualdoD (Oficial BSTQB).json"
+        "Simulados/SimualdoD (Oficial BSTQB).json",
       ];
       let todasQuestoes = [];
       for (const arquivo of arquivos) {
@@ -179,7 +179,7 @@ function renderCurrentQuestion() {
   if (Array.isArray(q.imagens) && q.imagens.length > 0) {
     html += '<div class="flex flex-col items-center">';
     q.imagens.forEach((img) => {
-      html += `<img src="${img}" alt="Imagem da questão" class="mt-2" style="width:500px;max-width:100%;height:auto;" />`;
+      html += `<img src="${img}" alt="Imagem da questão" class="mt-2" style="width:800px;max-width:100%;height:auto;" />`;
     });
     html += "</div>";
   }
