@@ -2,7 +2,7 @@ const simuladosArquivos = [
   "Simulados/SimuladoA (Oficial BSTQB).json",
   "Simulados/SimuladoB (Oficial BSTQB).json",
   "Simulados/SimuladoC (Oficial BSTQB).json",
-  "Simulados/SimualdoF (Inspirado no Simulado A feito por IA).json",
+  "Simulados/SimuladoD (Oficial BSTQB).json",
   "Simulados/SimuladoCapitulo1.json",
   "Simulados/SimuladoCapitulo2.json",
   "Simulados/SimuladoCapitulo3.json",
@@ -68,6 +68,7 @@ async function startQuiz() {
         "Simulados/SimuladoA (Oficial BSTQB).json",
         "Simulados/SimuladoB (Oficial BSTQB).json",
         "Simulados/SimuladoC (Oficial BSTQB).json",
+        "Simulados/SimuladoD (Oficial BSTQB).json"
       ];
       let todasQuestoes = [];
       for (const arquivo of arquivos) {
