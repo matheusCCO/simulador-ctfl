@@ -415,8 +415,8 @@
         "C": "Planejamento da iteração, para que as histórias de usuário com maior valor de negócio para o cliente possam ser priorizadas para implementação",
         "D": "Conversa, para que os membros da equipe possam entender como o software será utilizado"
       },
-      "correta": "A",
-      "erradas": ["B", "C", "D"],
+      "correta": "D",
+      "erradas": ["B", "C", "A"],
       "tipo": "Radio button",
       "imagem": "",
       "level": "K2"
@@ -597,7 +597,7 @@
         "C": "Incompatibilidade com a plataforma de desenvolvimento",
         "D": "Tempos de execução de testes substancialmente reduzidos"
       },
-      "correta": "B",
+      "correta": "C",
       "erradas": ["A", "C", "D"],
       "tipo": "Radio button",
       "imagem": "",
