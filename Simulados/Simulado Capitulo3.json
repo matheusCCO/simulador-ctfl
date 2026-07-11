@@ -91,7 +91,7 @@
       "level": "K2"
     },
     {
-      "id": "08",
+      "id": "07",
       "questao": "Dadas as seguintes descrições de tarefas:<br> 1)As características de qualidade a serem avaliadas e os critérios de saída são selecionados;<br>2)Todos têm acesso ao produto de trabalho;<br> 3)Anomalias são identificadas no produto de trabalho;<br> 4)As anomalias são discutidas.<br> E as seguintes atividades de revisão:<br> A. Revisão individual;<br> B. Iniciação da revisão;<br> C. Planejamento;<br> D. Comunicação e análise.<br> Qual das seguintes alternativas corresponde MELHOR às descrições de tarefas e atividades?",
       "alternativas": {
         "A": "1B, 2C, 3D, 4A",
@@ -106,8 +106,8 @@
       "level": "K2"
     },
     {
-      "id": "09",
-      "questao": "Dadas as seguintes funções em revisões: 1)Escritor (Scribe); 2)Líder da revisão (Review leader); 3)Facilitador (Facilitator); 4)Gerente (Manager); E as seguintes responsabilidades em revisões: A. Garante o andamento eficaz das reuniões de revisão e a criação de um ambiente seguro para a revisão; B. Registra informações da revisão, como decisões e novas anomalias encontradas durante a reunião de revisão; C. Decide o que deve ser revisado e fornece recursos, como equipe e tempo para a revisão; D. Assume a responsabilidade geral pela revisão, como organizar quando e onde a revisão acontecerá; Qual das seguintes alternativas corresponde MELHOR às funções e responsabilidades?",
+      "id": "08",
+      "questao": "Dadas as seguintes funções em revisões: <br>1)Escritor (Scribe); <br>2)Líder da revisão (Review leader); <br>3)Facilitador (Facilitator); <br>4)Gerente (Manager); <br>E as seguintes responsabilidades em revisões: <br>A. Garante o andamento eficaz das reuniões de revisão e a criação de um ambiente seguro para a revisão; <br>B. Registra informações da revisão, como decisões e novas anomalias encontradas durante a reunião de revisão; <br>C. Decide o que deve ser revisado e fornece recursos, como equipe e tempo para a revisão; <br>D. Assume a responsabilidade geral pela revisão, como organizar quando e onde a revisão acontecerá; <br>Qual das seguintes alternativas corresponde MELHOR às funções e responsabilidades?",
       "alternativas": {
         "A": "1A, 2B, 3D, 4C",
         "B": "1A, 2C, 3B, 4D",
@@ -121,7 +121,7 @@
       "level": "K1"
     },
     {
-      "id": "10",
+      "id": "09",
       "questao": "Dado os seguintes exemplos de defeitos:<br>i. Duas partes diferentes da especificação de design entram em conflito devido à complexidade do design<br>ii. A resposta do sistema é muito lenta, fazendo com que os usuários percam a paciência<br>iii. Um caminho no código não pode ser alcançado durante a execução<br>iv. Uma variável é declarada, mas nunca é utilizada posteriormente no programa<br>v. A quantidade de memória necessária pelo programa para gerar um relatório é muito alta<br>Qual das seguintes opções IDENTIFICA MELHOR os exemplos de defeitos que poderiam ser encontrados por teste estático (em vez de teste dinâmico)?",
       "alternativas": {
         "A": "ii, v",
@@ -136,7 +136,7 @@
       "level": "K2"
     },
     {
-      "id": "11",
+      "id": "10",
       "questao": "Qual dos seguintes é um benefício do feedback precoce e frequente das partes interessadas?",
       "alternativas": {
         "A": "Mudanças nos requisitos são compreendidas e implementadas mais cedo",
@@ -151,7 +151,7 @@
       "level": "K1"
     },
     {
-      "id": "12",
+      "id": "11",
       "questao": "Dado os seguintes tipos de revisão:<br>1. Revisão técnica<br>2. Revisão informal<br>3. Inspeção<br>4. Walkthrough<br>E as seguintes descrições:<br>A. Inclui objetivos como obter consenso, gerar novas ideias e motivar os autores a melhorar<br>B. Inclui objetivos como educar os revisores, obter consenso, gerar novas ideias e detectar defeitos potenciais<br>C. O principal objetivo é detectar defeitos potenciais e requer coleta de métricas para apoiar a melhoria do processo<br>D. O principal objetivo é detectar defeitos potenciais e não gera saída formal documentada<br>Qual das seguintes opções corresponde MELHOR os tipos de revisão às descrições?",
       "alternativas": {
         "A": "1A, 2B, 3C, 4D",
@@ -166,7 +166,7 @@
       "level": "K2"
     },
     {
-      "id": "13",
+      "id": "12",
       "questao": "Qual dos seguintes é um fator que contribui para uma revisão bem-sucedida?",
       "alternativas": {
         "A": "Garantir que a gerência participe como revisores",

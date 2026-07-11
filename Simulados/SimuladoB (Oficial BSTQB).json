@@ -257,7 +257,7 @@
     },
     {
       "id": "18",
-      "questao": "Dadas as seguintes funções em revisões: 1)Escritor (Scribe); 2)Líder da revisão (Review leader); 3)Facilitador (Facilitator); 4)Gerente (Manager); E as seguintes responsabilidades em revisões: A. Garante o andamento eficaz das reuniões de revisão e a criação de um ambiente seguro para a revisão; B. Registra informações da revisão, como decisões e novas anomalias encontradas durante a reunião de revisão; C. Decide o que deve ser revisado e fornece recursos, como equipe e tempo para a revisão; D. Assume a responsabilidade geral pela revisão, como organizar quando e onde a revisão acontecerá; Qual das seguintes alternativas corresponde MELHOR às funções e responsabilidades?",
+      "questao": "Dadas as seguintes funções em revisões: <br>1)Escritor (Scribe); <br>2)Líder da revisão (Review leader); <br>3)Facilitador (Facilitator); <br>4)Gerente (Manager); <br>E as seguintes responsabilidades em revisões: <br>A. Garante o andamento eficaz das reuniões de revisão e a criação de um ambiente seguro para a revisão; <br>B. Registra informações da revisão, como decisões e novas anomalias encontradas durante a reunião de revisão; <br>C. Decide o que deve ser revisado e fornece recursos, como equipe e tempo para a revisão; <br>D. Assume a responsabilidade geral pela revisão, como organizar quando e onde a revisão acontecerá; <br>Qual das seguintes alternativas corresponde MELHOR às funções e responsabilidades?",
       "alternativas": {
         "A": "1A, 2B, 3D, 4C",
         "B": "1A, 2C, 3B, 4D",
